@@ -1,0 +1,20 @@
+{
+  "name": "stairing-is-caring",
+  "description": "",
+  "main": "index.html",
+  "authors": [
+    "Zachary Bedell <zbedell@bpcs.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  }
+}

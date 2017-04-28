@@ -1,0 +1,28 @@
+@import "sicvariables";
+@import "bootstrap";
+// Stairing is Caring
+// FORM STYLES
+
+.sic-form{
+margin-top: 32px;
+padding-bottom: 15px;
+}
+
+//Sign-in form
+.sign-in {}
+
+//Sign-up form
+.sign-up {
+ img {max-width: 100%;}
+ button.btn-default {margin-top: 15px;}
+ p {text-align: left;}
+
+}
+a.new-company {
+  display: block;
+  margin: 7px 0 13px 11px;
+  cursor: pointer;
+}
+#new-company-group{
+  display: none;
+}

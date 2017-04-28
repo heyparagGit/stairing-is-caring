@@ -1,0 +1,50 @@
+/* Stairing Brand Fonts */
+@import url("https://fonts.googleapis.com/css?family=Baloo");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+/* Custom Bootstrap SASS */
+/* #2E2B2B */
+/* #F5EDED */
+.text-brand-offwhite {
+  color: #f5eded; }
+
+.text-brand-info-lighter {
+  color: white; }
+
+.text-brand-success {
+  color: #13bc96; }
+
+.px {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+/* BUTTONS */
+.container.main {
+  margin-top: 80px;
+  margin-left: 0;
+  margin-right: 0; }
+
+.navbar a {
+  font-family: "Roboto Slab", serif; }
+
+.navbar button {
+  margin: 26px 0 7px; }
+
+.navbar-brand img {
+  height: auto;
+  width: auto;
+  max-width: 358px;
+  min-width: 182px;
+  max-height: 34px; }
+
+@media (max-width: 480px) {
+  .navbar-brand img {
+    width: 181px;
+    height: auto; } }
+
+.label {
+  font-family: "Open Sans", sans-serif;
+  text-transform: capitalize; }
+
+h2 a.page-anchor {
+  padding-top: 80px; }
