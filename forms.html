@@ -167,6 +167,7 @@
                             <div class="form-group" id="new-company-group">
                                 <label for="company-name">Company Name</label>
                                 <input type="text" class="form-control" id="company-name" placeholder="" />
+                                <img class="company-logo" src="http://placehold.it/125x60" />
                                 <button class="btn btn-default btn-sm">Upload logo image</button>
                                 <button id="x-new-company" class="btn btn-default btn-sm">Cancel</button>
                             </div>
@@ -184,27 +185,84 @@
         <!-- /Sign-up Form -->
 
         <!-- Donation Form -->
-        <div class="row">
+        <div class="row ">
             <div class="col-sm-2">
             </div>
-            <div class="sic-form sign-in col-sm-8">
-                <h2 class="text-muted">Pledge</h2>
-                <form>
-                    <div class="form-group form-group-lg">
-                        <label for="sign-in-email">Email</label>
-                        <input type="text" class="form-control" id="sign-in-email" placeholder="you@example.com" />
+            <div class="sic-form pledge-no-api col-sm-8">
+                <h2 class="text-muted">Pledge support for</h2>
+                <h2 id="team-name" class="text-brand-primary">%Team Name%</h2>
+                <form class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="post-name">Your Name</label>
+                            <input type="text" class="form-control" id="post-name" placeholder="" />
+                        </div>
                     </div>
-                    <div class="form-group form-group-lg">
-                        <label for="sign-in-password">Password</label>
-                        <input type="password" class="form-control" id="sign-in-password" />
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="post-email">Email (will not be made public)</label>
+                            <input type="text" class="form-control" id="post-email" placeholder="" />
+                        </div>
                     </div>
-                    <div class="text-right">
-                        <button type="submit" class="btn btn-lg btn-success">Sign in</button>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="post-comment">Comment</label>
+                            <textarea type="text" class="form-control" id="post-comment" placeholder=""></textarea>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="pledge-amount">Pledge Amount</label>
+                            <div class="input-group">
+                              <div class="input-group-addon">$</div>
+                              <input type="text" class="form-control" id="pledge-amount" placeholder="USD">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="stairs-guess">Stairs Guess</label>
+                            <input type="text" class="form-control" id="stairs-guess" placeholder="" />
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="captcha">Captcha</label>
+                            <input type="text" class="form-control" id="captcha" placeholder="" />
+                        </div>
+                    </div>
+                    <div class="col-sm-6 text-right">
+                        <button type="submit" class="btn btn-lg btn-success">Post Comment</button>
+                        <p class="help-block">
+                            This will post your comment and open<br />
+                            <a href="" id="charity-site">https://charity-site.org</a><br />
+                            <span>Be sure to complete your donation on the charity’s site!</span>
+                        </p>
                     </div>
                 </form>
             </div>
         </div>
         <!-- /Donation Form -->
+
+        <!-- Donation Confirm -->
+        <div class="row ">
+            <div class="col-sm-2">
+            </div>
+            <div class="sic-form pledge-no-api-confirm col-sm-8">
+                <h2 class="text-muted">Thank you for supporting</h2>
+                <h2 id="team-name" class="text-brand-primary">%Team Name%</h2>
+                <form class="row">
+                    <div class="col-sm-12 text-center">
+                        <p>
+                          Be sure to complete your donation at<br />
+                          <a href="" id="charity-site">https://charity-site.org</a>
+                        </p>
+                        <button class="btn btn-default">Yes, I donated to the charity</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- /Donation Confirm -->
 
     </div>
     <!-- /container -->

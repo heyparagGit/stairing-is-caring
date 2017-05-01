@@ -17832,5 +17832,27 @@ a.new-company {
   margin: 7px 0 13px 11px;
   cursor: pointer; }
 
+img.company-logo {
+  margin-top: 11px; }
+
 #new-company-group {
   display: none; }
+
+.pledge-no-api textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 107px;
+  max-height: 107px;
+  resize: none; }
+
+.pledge-no-api .help-block {
+  text-align: left; }
+  .pledge-no-api .help-block span {
+    color: #2e2b2b; }
+
+.pledge-no-api button {
+  margin-top: 12px; }
+
+.pledge-no-api-confirm p {
+  margin-top: 35px;
+  color: #2e2b2b; }
