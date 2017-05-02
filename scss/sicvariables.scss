@@ -8,6 +8,8 @@ $roboto-slab: 'Roboto Slab', serif;
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 $open-sans: 'Open Sans', sans-serif;
 
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+
 /* Custom Bootstrap SASS */
 
 $gray-base: rgb(46, 43, 43); /* #2E2B2B */
@@ -15,7 +17,7 @@ $gray-darker: lighten($gray-base, 13.5%);
 $gray-dark: lighten($gray-base, 20%);
 $gray: lighten($gray-base, 33.5%);
 $gray-light: lighten($gray-base, 46.7%);
-$gray-lighter: lighten($gray-base, 93.5%);
+$gray-lighter: lighten($gray-base, 80%);
 
 $brand-primary: rgb(237, 20, 22);
 $brand-success: rgb(19, 188, 150);
@@ -62,9 +64,9 @@ $headings-font-weight: 500;
 $headings-line-height: 1.1;
 $headings-color: $brand-info;
 
-$icon-font-path: "./bower_components/boostrap-sass/assets/fonts/bootstrap/";
-$icon-font-name: "glyphicons-halflings-regular";
-$icon-font-svg-id: "glyphicons_halflingsregular";
+$icon-font-path: "../bower_components/boostrap-sass/assets/fonts/bootstrap/";
+$icon-font-name: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular";
+$icon-font-svg-id: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular";
 
 $padding-base-vertical: 6px;
 $padding-base-horizontal: 12px;
@@ -122,7 +124,7 @@ $btn-border-radius-large: $border-radius-large;
 $btn-border-radius-small: $border-radius-small;
 
 $input-bg: rgb(255, 255, 255);
-$input-bg-disabled: $gray-lighter;
+$input-bg-disabled: #eae7e7;
 $input-color: $gray;
 $input-border: rgb(204, 204, 204);
 $input-border-radius: $border-radius-base;
@@ -215,7 +217,7 @@ $navbar-default-link-disabled-bg: transparent;
 
 $navbar-default-brand-color: $navbar-default-link-color;
 $navbar-default-brand-hover-color: $brand-info;
-$navbar-default-brand-hover-bg: $brand-offwhite;
+$navbar-default-brand-hover-bg: lighten($brand-offwhite, 4%);
 
 $navbar-default-toggle-hover-bg: rgb(221, 221, 221);
 $navbar-default-toggle-icon-bar-bg: rgb(136, 136, 136);

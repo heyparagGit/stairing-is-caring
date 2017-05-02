@@ -85,8 +85,6 @@ a:hover {
 .thermometer {
     position: relative;
     height: 22px;
-    margin: 0 17px;
-
     div {
         height: 100%;
         position: absolute;
@@ -111,6 +109,10 @@ a:hover {
 }
 .thermo-val {
     margin-top: 7px;
+    text-align: center;
+}
+.event-card .thermometer{
+  margin: 0 17px;
 }
 
 // Heart Rule
@@ -153,22 +155,23 @@ hr.heart:after, hr.heart-no-bg:after {
     h3 {
         margin: 7px;
     }
+}
+.recent-activity {
+    background: white;
+    padding: 7px;
+    margin-bottom: 2px;
 
-    .recent-activity {
-        background: white;
-        padding: 7px;
-        margin-bottom: 2px;
-
-        a {
-            margin: 0;
-        }
-
-        h6,
-        p {
-            margin-left: 47px;
-        }
-        p {font-size: $font-size-small;}
+    a {
+        margin: 0;
     }
+
+    h6,
+    p {
+        margin-left: 47px;
+        font-size: $font-size-small;
+        padding-right: 15px;
+    }
+
 }
 
 .avatar-small {
@@ -219,6 +222,7 @@ hr.heart:after, hr.heart-no-bg:after {
       }
       .thermometer {
           margin-left: 0;
+          margin-right: 17px;
       }
 
       .thermo-val {
@@ -242,8 +246,15 @@ hr.heart:after, hr.heart-no-bg:after {
 .site-footer-panel {
     background-color: $brand-info;
     padding: 30px 15px;
+    box-shadow: 0px 5px 10px 5px rgba(0,0,0,.8);
     ul li {list-style: none; color: #FFF;}
-    h3 {color: $gray-base; font-weight: bold;}
+    h3 {color: $gray-base; font-weight: bold; font-size: $font-size-small;}
     a {color: #FFF; cursor: pointer;}
     a:hover {text-decoration: underline;}
+}
+
+// Pre-footer
+.pre-footer{
+  padding-top: 27px;
+  margin-bottom: 15px;
 }

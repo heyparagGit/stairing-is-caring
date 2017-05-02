@@ -4,8 +4,9 @@
 // FORM STYLES
 
 .sic-form{
-margin-top: 32px;
+margin-top: 32px auto;
 padding-bottom: 15px;
+  select {border-radius: $border-radius-large;}
 }
 
 //Sign-in form
@@ -48,3 +49,35 @@ img.company-logo {
   p {margin-top: 35px;
   color:$gray-base;}
 }
+
+//Event Request
+.event-request {
+ .dropdown {
+
+   span {color: $gray;}
+   span.caret {color:$brand-success;}
+   li {cursor: pointer;}
+   li:hover {background: $brand-success;}
+   .dropdown-menu{
+     border-radius: 0;
+     li {margin-left: 5px;}
+   }
+ }
+}
+
+//Create Team
+.create-team {
+ img {max-width: 100%;}
+ textarea {
+   min-width: 100%;
+   max-width: 100%;
+   min-height: 107px;
+   max-height: 107px;
+   resize: none;
+ }
+ .help-block {text-align: left;}
+ button {margin-top:12px;}
+}
+
+//Dev tools
+hr {border-top: 1px solid $gray;}
