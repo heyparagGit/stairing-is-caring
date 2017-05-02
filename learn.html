@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Stairing is Caring">
+    <meta name="author" content="Blueprint Consulting Services">
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./img/icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/icon/favicon-16x16.png">
+    <link rel="manifest" href="./img/icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./img/icon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script src="./bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/bower_components/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/bower_components/moment/min/moment.min.js"></script>
+    <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+    <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css" />
+    <title>Stairing is Caring</title>
+
+    <!-- Compiled Bootstrap CSS -->
+    <link href="./css/style.css" rel="stylesheet" />
+    <link href="./css/bootstrap-datepicker3.css" rel="stylesheet" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+                <a class="navbar-brand" href="#"><img src="./img/SiC-logo-color.png" alt="Stairing is Caring" /></a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Learn</a></li>
+                    <li><a href="#">Sign up</a></li>
+                </ul>
+                <button type="button" class="btn btn-success pull-right">Join us!</button>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <div class="container main" role="main">
+      <!-- row 1 -->
+      <div class="row event-list">
+
+        <h2 class="text-muted">Upcoming Events</h2>
+        <button class="btn btn-default pull-right">Create Event</button>
+        <div class="col-sm-3">
+            <div id="event-card-1" class="event-card">
+                <img src="img/unsplash.it-400x300.png" />
+                <div class="event-card-content">
+                    <a class="h3">%Event Name here can wrap two lines%</a>
+                    <p>%M D YYYY%</p>
+                    <p>%Event City%</p>
+                    <h4 class="text-muted uppercase">Benefiting</h4>
+                    <h3>%Charity Name here can wrap two lines%</h3>
+                    <div class="thermometer">
+                        <div class="thermo-border"></div>
+                        <div class="thermo-fill" style="width:33%;"></div>
+                        <div class="thermo-bg"></div>
+                    </div>
+                    <h3 class="thermo-val text-muted">%$999%</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div id="event-card-2" class="event-card">
+                <img src="img/unsplash.it-400x300.png" />
+                <div class="event-card-content">
+                    <a class="h3">%Event Name here can wrap two lines%</a>
+                    <p class="event-date">%M D YYYY%</p>
+                    <p class="event-city">%Event City%</p>
+                    <h4 class="text-muted uppercase">Benefiting</h4>
+                    <h3>%Charity Name here can wrap two lines%</h3>
+                    <div class="thermometer">
+                        <div class="thermo-border"></div>
+                        <div class="thermo-fill" style="width:33%;"></div>
+                        <div class="thermo-bg"></div>
+                    </div>
+                    <h3 class="thermo-val text-muted">%$999%</h3>
+                </div>
+            </div>
+        </div>
+
+      </div><!-- /row 1 -->
+<hr class="heart" />
+      <!-- row 2 -->
+      <div class="row all-events">
+        <h2 class="text-muted">All Events</h2>
+        <table class="table no-border">
+          <thead>
+            <tr>
+              <th></th>
+              <th>
+                Name
+              </th>
+              <th>
+                Date
+              </th>
+              <th>
+                Charity
+              </th>
+              <th>
+                Location
+              </th>
+              <th>
+                Donations
+              </th>
+              <th>
+                Teams
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img src="http://placehold.it/50x50" />
+              </td>
+              <td>
+                <a href="%event-page-uri%">%Event Name%</a>
+              </td>
+              <td>
+                <span>%MMMM D, YYYY%</span><br />
+                <span>%h:m A%</span>&nbsp;&ndash;&nbsp;<span>%h:m A%</span>
+              </td>
+              <td>
+                %Charity Name%
+              </td>
+              <td>
+                %City%, %ST%
+              </td>
+              <td>
+                <div class="thermometer">
+                    <div class="thermo-border"></div>
+                    <div class="thermo-fill" style="width:33%;"></div>
+                    <div class="thermo-bg"></div>
+                </div>
+                <h3 class="thermo-val text-muted">%$999%</h3>
+              </td>
+              <td>
+                <h3>
+                  %15%
+                </h3>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="http://placehold.it/50x50" />
+              </td>
+              <td>
+                <a href="%event-page-uri%">%Event Name%</a>
+              </td>
+              <td>
+                <span>%MMMM D, YYYY%</span><br />
+                <span>%h:m A%</span>&nbsp;&ndash;&nbsp;<span>%h:m A%</span>
+              </td>
+              <td>
+                %Charity Name%
+              </td>
+              <td>
+                %City%, %ST%
+              </td>
+              <td>
+                <div class="thermometer">
+                    <div class="thermo-border"></div>
+                    <div class="thermo-fill" style="width:33%;"></div>
+                    <div class="thermo-bg"></div>
+                </div>
+                <h3 class="thermo-val text-muted">%$999%</h3>
+              </td>
+              <td>
+                <h3>
+                  %15%
+                </h3>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+
+      </div>
+      <!-- /row 2-->
+<hr class="heart-no-bg" />
+    <!-- Pre-footer -->
+    <div class="row pre-footer text-center">
+      <div>
+        <h3 class="text-muted">Total Raised</h3>
+        <h2 class="text-primary">$90,191</h2>
+      </div>
+    </div>
+    <!-- /Pre-footer -->
+    <!-- Site Footer panel -->
+    <div class="row site-footer-panel">
+      <div class="col-sm-3">
+        <ul>
+          <li>
+            <h3>List Title</h3>
+          </li>
+          <li>
+            <a href="">List item</a>
+          </li>
+          <li>
+            List item
+          </li>
+          <li>
+            List item
+          </li>
+          <li>
+            List item
+          </li>
+          <li>
+            List item
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <ul>
+          <li>
+            <h3>List Title</h3>
+          </li>
+          <li>
+            <a href="">List item</a>
+          </li>
+          <li>
+            List item
+          </li>
+          <li>
+            List item
+          </li>
+          <li>
+            List item
+          </li>
+          <li>
+            List item
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <ul>
+          <li>
+            <h3>List Title</h3>
+          </li>
+          <li>
+            <a href="">List item</a>
+          </li>
+          <li>
+            List item
+          </li>
+          <li>
+            List item
+          </li>
+          <li>
+            List item
+          </li>
+          <li>
+            List item
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <ul>
+          <li>
+            <h3>List Title</h3>
+          </li>
+          <li>
+            <a href="">List item</a>
+          </li>
+          <li>
+            List item
+          </li>
+          <li>
+            List item
+          </li>
+          <li>
+            List item
+          </li>
+          <li>
+            List item
+          </li>
+        </ul>
+      </div><!-- /row -->
+
+    </div>
+    <!-- /Site Footer panel -->
+    </div>
+    <!-- /container -->
+</body>
+
+</html>

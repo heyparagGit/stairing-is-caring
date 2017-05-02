@@ -1,0 +1,118 @@
+@import "sicvariables";
+@import "bootstrap";
+// Stairing is Caring
+// Object Create/Read/Update/Delete STYLES
+
+// Common
+.object-props {
+  padding: 32px 0;
+  border-bottom: 1px solid $gray-light;
+  img {max-width: 100%;}
+  label {
+    font-size: 10px;
+    font-weight: normal;
+    margin:0;}
+  h3 {margin-top:6px;}
+  a {color: $brand-success;}
+}
+.iterator-nav{
+  #previous {
+    margin: -25px 0 0 15px;
+
+    i {margin-right: 4px;}
+  }
+  #next {
+    margin: -25px 15px 0 0px;
+
+    i {margin-left: 4px;}
+  }
+}
+.social {
+	width: 46px;
+	height: 46px;
+	border-radius: 50%;
+  text-align: center;
+  margin-right: 5px;
+  color: #FFF;
+  font-size: 24px;
+  margin-top: 13px;
+  padding-top: 5px;
+}
+#facebook {
+  background: #3365A0;
+  img {
+    height: 32px;
+    padding-top: 7px;
+  }
+  &:hover {
+    background: lighten(#3365A0, 8%);
+    cursor: pointer;
+  }
+}
+
+#twitter {
+  background: #49C1E2;
+  &:hover {
+    background: darken(#49C1E2, 5%);
+    cursor: pointer;}
+}
+#mailto {
+  background: $brand-success;
+  &:hover {
+    background: lighten($brand-success, 5%);
+    cursor: pointer;}
+}
+
+#linkto {
+  background: #A7A5A5;
+  &:hover {
+    background: darken(#A7A5A5, 5%);
+    cursor: pointer;}
+}
+//Climber
+.climber-history{
+ background-color: #FFF;
+ padding-bottom: 30px;
+}
+#donation-goal{text-align: left;}
+
+//Team
+#team-moto{
+  background-color: #A5E5D7;
+  padding: 7px 14px;
+  border-radius: $border-radius-base;
+  font-style: italic;
+  margin-bottom: 9px;
+}
+.climber-name {
+  display: block;
+  margin-bottom: 7px;
+}
+.team-comments {
+  background-color: #FFF;
+  padding-bottom: 15px;
+}
+
+label {font-size: $font-size-small;}
+
+//Event
+#create-team {margin-top:32px;}
+.event-teams {
+  background-color: #FFF;
+  padding-bottom: 30px;
+  th {font-size: $font-size-small;}
+}
+.event-list{
+  margin: 0 15px;
+  button {margin: -50px -16px 0 0;}
+}
+.all-events{
+  padding: 0 30px;
+  background-color: #FFF;
+  .table.no-border{
+    thead th {
+      font-size: $font-size-small;
+      }
+    tbody td {border: none;}
+  }
+}

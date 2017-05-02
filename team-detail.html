@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Stairing is Caring">
+    <meta name="author" content="Blueprint Consulting Services">
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./img/icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/icon/favicon-16x16.png">
+    <link rel="manifest" href="./img/icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./img/icon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script src="./bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/bower_components/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/bower_components/moment/min/moment.min.js"></script>
+    <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+    <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css" />
+    <title>Stairing is Caring</title>
+
+    <!-- Compiled Bootstrap CSS -->
+    <link href="./css/style.css" rel="stylesheet" />
+    <link href="./css/bootstrap-datepicker3.css" rel="stylesheet" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+                <a class="navbar-brand" href="#"><img src="./img/SiC-logo-color.png" alt="Stairing is Caring" /></a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Learn</a></li>
+                    <li><a href="#">Sign up</a></li>
+                </ul>
+                <button type="button" class="btn btn-success pull-right">Sign up</button>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <div class="container main" role="main">
+      <div class="row object-props">
+        <div class="col-sm-12 iterator-nav">
+          <div id="previous" class="pull-left">
+            <a href=""><i class="fa fa-arrow-circle-left"></i>Previous</a>
+          </div>
+          <div id="next" class="pull-right">
+            <a href="">Next<i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <div class="col-sm-3 col-sm-offset-1">
+          <img id="event-image" src="http://placehold.it/300x300" />
+          <ul class="list-inline">
+            <li id="facebook" class="social">
+              <i class="fa fa-thumbs-o-up"></i>
+            </li>
+            <li id="twitter" class="social">
+              <i class="fa fa-twitter"></i>
+            </li>
+            <li id="mailto" class="social">
+              <i class="fa fa-envelope"></i>
+            </li>
+            <li id="linkto" class="social">
+              <i class="fa fa-code"></i>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-sm-4">
+          <label for="team-name">Team</label>
+          <h3 id="team-name">%Team Name%</h3>
+          <label for="team-moto">Moto</label>
+          <div id="team-moto">%Clever team moto%</div>
+          <label for="team-members">Team Members</label>
+          <div id="team-members" class="row">
+            <div class="col-sm-6">
+              <a class="climber-name" href="%climber-page-uri">%Climber Name%</a>
+              <img src="http://placehold.it/125x50" />
+              <p>
+                %Company Name%
+              </p>
+            </div>
+            <div class="col-sm-6">
+              <a class="climber-name" href="%climber-page-uri">%Climber Name%</a>
+              <img src="http://placehold.it/125x50" />
+              <p>
+                %Company Name%
+              </p>
+            </div>
+          </div>
+
+
+
+          <label for="event-stairs">Stairs at Event Location</label>
+          <h3 class="text-muted" id="event-stairs">%9,999%</h3>
+
+        </div>
+
+        <div class="col-sm-3">
+          <label for="event-name">Event</label>
+          <h3 id="climber-next-event"><a href="%event-page-uri%">%Event Name%</a></h3>
+          <label for="event-date">Event Date</label>
+          <p id="event-date">%ddd MMMM Do, YYYY%</p>
+
+          <label for="donation-goal-row">Donations</label>
+          <div id="donation-goal-row" class="row">
+            <div class="col-sm-12">
+              <div class="thermometer">
+                  <div class="thermo-border"></div>
+                  <div class="thermo-fill" style="width:33%;"></div>
+                  <div class="thermo-bg"></div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <label for="donation-pledged">Pledged</label>
+              <h3 class="text-muted" id="donation-pledged">%$9,999</h3>
+            </div>
+            <div class="col-sm-6">
+              <label for="donation-goal">Goal</label>
+              <h3 class="thermo-val text-muted" id="donation-goal">%$999%</h3>
+            </div>
+          </div>
+
+          <label for="stairs-goal-row">Stairs</label>
+          <div id="stairs-goal-row" class="row">
+            <div class="col-sm-12">
+              <div class="thermometer">
+                  <div class="thermo-border"></div>
+                  <div class="thermo-fill" style="width:33%;"></div>
+                  <div class="thermo-bg"></div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <label for="stairs-climbed">Climbed</label>
+              <h3 class="text-muted" id="donation-pledged">%9,999%</h3>
+            </div>
+            <div class="col-sm-6">
+              <label for="stairs-goal">Goal</label>
+              <h3 class="thermo-val text-muted" id="donation-goal">%999%</h3>
+            </div>
+          </div>
+          <button class="btn btn-primary">Donate</button>
+
+        </div>
+
+      </div><!-- /row 1 -->
+
+      <!-- row 2 -->
+      <div class="row team-comments">
+        <div class="col-sm-11 col-sm-offset-1">
+          <h2 class="text-muted">Pledges &amp; Comments</h2>
+          <div class="col-sm-2 col-sm-offset-7">
+            <label>Pledge</label>
+          </div>
+          <div class="col-sm-2">
+            <label>Stairs Guess</label>
+          </div>
+          <div class="activity-entry">
+            <div class="col-sm-7">
+              <div class="recent-activity">
+                <img class="avatar-small pull-left" src="http://www.radfaces.com/images/avatars/april-oneil.jpg" />
+                <a class="h3" href="#">%User Namehere%</a>
+                <h6>h:m A MMM d YYYY</h6>
+                <p>
+                  Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus!
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <h3 class="pledge-val">$25</h3>
+            </div>
+            <div class="col-sm-2">
+              <h3 class="stairs-guess-val">1000</h3>
+            </div>
+          </div>
+          <div class="activity-entry">
+            <div class="col-sm-7">
+              <div class="recent-activity">
+                <img class="avatar-small pull-left" src="http://www.radfaces.com/images/avatars/april-oneil.jpg" />
+                <a class="h3" href="#">%User Namehere%</a>
+                <h6>h:m A MMM d YYYY</h6>
+                <p>
+                  Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus!
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <h3 class="pledge-val">$25</h3>
+            </div>
+            <div class="col-sm-2">
+              <h3 class="stairs-guess-val">1000</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /row 2-->
+      <!-- Site Footer panel -->
+      <div class="row site-footer-panel">
+        <div class="col-sm-3">
+          <ul>
+            <li>
+              <h3>List Title</h3>
+            </li>
+            <li>
+              <a href="">List item</a>
+            </li>
+            <li>
+              List item
+            </li>
+            <li>
+              List item
+            </li>
+            <li>
+              List item
+            </li>
+            <li>
+              List item
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <ul>
+            <li>
+              <h3>List Title</h3>
+            </li>
+            <li>
+              <a href="">List item</a>
+            </li>
+            <li>
+              List item
+            </li>
+            <li>
+              List item
+            </li>
+            <li>
+              List item
+            </li>
+            <li>
+              List item
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <ul>
+            <li>
+              <h3>List Title</h3>
+            </li>
+            <li>
+              <a href="">List item</a>
+            </li>
+            <li>
+              List item
+            </li>
+            <li>
+              List item
+            </li>
+            <li>
+              List item
+            </li>
+            <li>
+              List item
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <ul>
+            <li>
+              <h3>List Title</h3>
+            </li>
+            <li>
+              <a href="">List item</a>
+            </li>
+            <li>
+              List item
+            </li>
+            <li>
+              List item
+            </li>
+            <li>
+              List item
+            </li>
+            <li>
+              List item
+            </li>
+          </ul>
+        </div><!-- /row -->
+
+      </div>
+      <!-- /Site Footer panel -->
+
+    </div>
+    <!-- /container -->
+</body>
+
+</html>
