@@ -26,12 +26,15 @@
     <meta name="msapplication-TileImage" content="./img/icon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <script scr="./bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
 
     <title>Stairing is Caring</title>
 
     <!-- Compiled Bootstrap CSS -->
     <link href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -64,7 +67,7 @@
 
                     </li>
                 </ul>
-                <button type="button" class="btn btn-success pull-right">Join us!</button>
+                <button type="button" class="btn btn-success pull-right">Sign up</button>
             </div>
             <!--/.nav-collapse -->
         </div>
@@ -100,26 +103,9 @@
             </div>
             <img class="mascot-ask" src="img/mascot/asking.png" />
             <div class="row text-center">
-                <h2>Total Raised: $90,171</h2>
-                <ul class="list-inline">
-                    <li>
-                        <h3>%N% Charities</h3>
-                    </li>
-                    <li>
-                        <h3>%N% Events</h3>
-                    </li>
-                    <li>
-                        <h3>%N% Teams</h3>
-                    </li>
-                    <li>
-                        <h3>%N% Countries</h3>
-                    </li>
-                    <li>
-                        <h3>%N% Climbers</h3>
-                    </li>
-                    <li>
-                        <h3>%N% Companies</h3>
-                    </li>
+                <h2 id="total-dollars">Total Raised: $90,171</h2>
+                <ul id="home-totals" class="list-inline">
+                    <!--home-toals.json-->
                 </ul>
             </div>
         </div>
@@ -432,15 +418,6 @@
     </div>
     <!-- /container -->
 
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>
-        window.jQuery || document.write('<script src="./bower_components/jquery/dist/jquery.min.js"><\/script>')
-    </script>
-    <script src="./bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
 </body>
 
 </html>

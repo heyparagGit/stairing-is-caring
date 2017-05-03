@@ -1,0 +1,28 @@
+{
+  "homeTotals":[
+    {
+      "object":"Charities",
+      "count":1
+    },
+    {
+      "object":"Events",
+      "count":2
+    },
+    {
+      "object":"Teams",
+      "count":3
+    },
+    {
+      "object":"Charities",
+      "count":4
+    },
+    {
+      "object":"Climbers",
+      "count":5
+    },
+    {
+      "object":"Companies",
+      "count":6
+    }
+  ]
+}

@@ -28,6 +28,7 @@ gulp.task('watch', ['browserSync', 'sass'], function () {
   gulp.watch('./scss/*/*.*',  ['sass'])
   gulp.watch('./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/*.scss', ['sass'])
   gulp.watch('./*.html', browserSync.reload)
+  gulp.watch('./js/*.js', browserSync.reload)
 });
 
 // BrowserSync server

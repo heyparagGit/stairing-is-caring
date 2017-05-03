@@ -1,0 +1,74 @@
+{
+  "events":[
+    {
+      "01":[
+        {
+          "name": "Event Name 1",
+          "event_date": "2017-07-31 00:00:00",
+          "location_id": "location_id",
+          "created_at": "2017-01-31 00:00:00",
+          "updated_at": "2017-01-31 01:00:00",
+          "charity_id": "charity_id",
+          "number_of_stairs": 2500,
+          "donation_url": "charity.org",
+          "address": "Event Address",
+          "city":"Bellevue",
+          "state":"WA",
+          "event_start_time": "17:00:00",
+          "local_currency": "USD"
+        }
+      ],
+      "02":[
+        {
+          "name": "Event Name 2",
+          "event_date": "2017-08-31 00:00:00",
+          "location_id": "location_id",
+          "created_at": "2017-01-31 00:00:00",
+          "updated_at": "2017-01-31 01:00:00",
+          "charity_id": "charity_id",
+          "number_of_stairs": 800,
+          "donation_url": "charity.org%2Ffolder%2Ffolderagain%2Fpage.html",
+          "address": "Event Address Long 9999",
+          "city":"Seattle",
+          "state":"WA",
+          "event_start_time": "16:00:00",
+          "local_currency": "USD"
+        }
+      ],
+      "03":[
+        {
+          "name": "Event Name 3",
+          "event_date": "2017-09-31 00:00:00",
+          "location_id": "location_id",
+          "created_at": "2017-01-31 00:00:00",
+          "updated_at": "2017-01-31 01:00:00",
+          "charity_id": "charity_id",
+          "number_of_stairs": 500,
+          "donation_url": "http:%2F%2Fcharity.org",
+          "address": "Event Address",
+          "city":"Bellevue",
+          "state":"WA",
+          "event_start_time": "17:00:00",
+          "local_currency": "USD"
+        }
+      ],
+      "04":[
+        {
+          "name": "Event Name 4",
+          "event_date": "2017-10-31 00:00:00",
+          "location_id": "location_id",
+          "created_at": "2017-01-31 00:00:00",
+          "updated_at": "2017-01-31 01:00:00",
+          "charity_id": "charity_id",
+          "number_of_stairs": 12500,
+          "donation_url": "charity.org",
+          "address": "Event Address",
+          "city":"Bellevue",
+          "state":"WA",
+          "event_start_time": "17:00:00",
+          "local_currency": "USD"
+        }
+      ]
+    }
+  ]
+}
