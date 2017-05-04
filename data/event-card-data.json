@@ -1,113 +1,120 @@
 {
   "events":[
-    {
-      "01":[
         {
+          "id": 1,
           "name": "Event Name 1",
-          "event_date": "2017-07-31 00:00:00",
-          "location_id": "location_id",
-          "created_at": "2017-01-31 00:00:00",
-          "updated_at": "2017-01-31 01:00:00",
-          "charity": {
-            "id":"01",
-            "name": "Charity Organization Name 1",
-            "sitelink": "charity.org",
-            },
-          "number_of_stairs": 2500,
-          "donation_url": "charity.org",
-          "address": "Event Address",
-          "city":"Bellevue",
-          "state":"WA",
+          "event_date": "2017-07-30",
           "event_start_time": "17:00:00",
           "event_end_time": "19:00:00",
+          "image": "http://lorempixel.com/g/400/300",
           "local_currency": "USD",
+          "created_at": "2017-01-31 00:00:00",
+          "updated_at": "2017-01-31 01:00:00",
+          "location": {
+            "id": 1,
+            "address": "Event Address",
+            "city":"Bellevue",
+            "state":"WA",
+            "stairs_onsite": 2500
+            },
+          "charity": {
+            "id":1,
+            "name": "Charity Organization Name 1",
+            "sitelink": "charity.org",
+            "donation_url": "charity.org"
+            },
           "donation_data":{
             "sum_donation_goal": 25000,
             "sum_donations": 2000,
-            "percent": 0.08
+            "percent": 8
           }
-        }
-      ],
-      "02":[
+        },
         {
+          "id": 2,
           "name": "Event Name 2",
-          "event_date": "2017-08-31 00:00:00",
-          "location_id": "location_id",
+          "event_date": "2017-08-31",
+          "event_start_time": "17:00:00",
+          "event_end_time": "19:00:00",
+          "image": "http://lorempixel.com/g/400/300",
+          "local_currency": "USD",
           "created_at": "2017-01-31 00:00:00",
+          "updated_at": "2017-01-31 01:00:00",
+          "location": {
+            "id": 1,
+            "address": "Event Address",
+            "city":"Seattle",
+            "state":"WA",
+            "stairs_onsite": 2500
+            },
           "charity": {
             "id":"02",
             "name": "Charity Organization Name 2",
             "sitelink": "charity.org%2Ffolder%2Ffolderagain%2Fpage.html",
-          },
-          "number_of_stairs": 800,
-          "donation_url": "charity.org%2Ffolder%2Ffolderagain%2Fpage.html",
-          "address": "Event Address Long 9999",
-          "city":"Seattle",
-          "state":"WA",
-          "event_start_time": "16:00:00",
-          "event_end_time": "20:00:00",
-          "local_currency": "USD",
+            "donation_url": "charity.org%2Ffolder%2Ffolderagain%2Fpage.html"
+            },
           "donation_data":{
             "sum_donation_goal": 35000,
             "sum_donations": 6000,
-            "percent": 0.17
+            "percent": 17
           }
-        }
-      ],
-      "03":[
+        },
         {
+          "id": 3,
           "name": "Event Name 3",
-          "event_date": "2017-09-31 00:00:00",
-          "location_id": "location_id",
+          "event_date": "2017-09-15",
+          "event_start_time": "17:00:00",
+          "event_end_time": "20:00:00",
+          "image": "http://lorempixel.com/g/400/300",
+          "local_currency": "USD",
           "created_at": "2017-01-31 00:00:00",
           "updated_at": "2017-01-31 01:00:00",
+          "location": {
+            "id": 1,
+            "address": "Event Address",
+            "city":"Kirkland",
+            "state":"WA",
+            "stairs_onsite": 500
+            },
           "charity": {
             "id":"03",
             "name": "Charity Organization Name 3",
             "sitelink": "charity.org%2Ffolder%2Ffolderagain%2Fpage.html",
-          },
-          "number_of_stairs": 500,
-          "donation_url": "http:%2F%2Fcharity.org",
-          "address": "Event Address",
-          "city":"Bellevue",
-          "state":"WA",
-          "event_start_time": "17:00:00",
-          "event_end_time": "20:00:00",
-          "local_currency": "USD",
+            "donation_url": "http:%2F%2Fcharity.org"
+            },
           "donation_data":{
             "sum_donation_goal": 2000,
             "sum_donations": 0,
-            "percent": 0.00
+            "percent": 0
           }
-        }
-      ],
-      "04":[
+        },
         {
+          "id": 4,
           "name": "Event Name 4",
-          "event_date": "2017-10-31 00:00:00",
-          "location_id": "location_id",
-          "created_at": "2017-01-31 00:00:00",
-          "updated_at": "2017-01-31 01:00:00",
-          "charity": {
-            "id":"04",
-            "name": "Charity Organization Name 4",
-            "sitelink": "charity.org%2Ffolder%2Ffolderagain%2Fpage.html",
-          },
-          "number_of_stairs": 12500,
-          "donation_url": "charity.org",
-          "address": "Event Address",
-          "city":"Bellevue",
-          "state":"WA",
+          "event_date": "2017-10-30",
           "event_start_time": "17:00:00",
           "event_end_time": "19:30:00",
+          "image": "http://lorempixel.com/g/400/300",
           "local_currency": "USD",
+          "created_at": "2017-01-31 00:00:00",
+          "updated_at": "2017-01-31 01:00:00",
+          "location": {
+            "id": 1,
+            "address": "Event Address",
+            "city":"Issaquah",
+            "state":"WA",
+            "stairs_onsite": 1500
+            },
+          "charity": {
+            "id":"02",
+            "name": "Charity Organization Name 4",
+            "sitelink": "charity.org%2Ffolder%2Ffolderagain%2Fpage.html",
+            "donation_url": "charity.org"
+            },
           "donation_data":{
             "sum_donation_goal": 25000,
             "sum_donations": 21000,
-            "percent": 0.84
+            "percent": 84
           }
         }
-      ]
-    }
   ]
 }

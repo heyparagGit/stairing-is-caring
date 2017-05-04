@@ -11838,7 +11838,8 @@ a:hover {
 
 .thermo-fill {
   background-color: #13bc96;
-  z-index: 90; }
+  z-index: 90;
+  min-width: 22px; }
 
 .thermo-bg {
   background-color: #FFF;

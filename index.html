@@ -27,6 +27,8 @@
     <meta name="theme-color" content="#ffffff">
 
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
+    <script type="text/javascript" src="bower_components/numeral/min/numeral.min.js"></script>
     <script type="text/javascript" src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
 
@@ -60,9 +62,9 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Learn</a></li>
-                    <li><a href="#">Sign up</a></li>
+                    <li><a href="event-list.html">Events</a></li>
+                    <li><a href="learn.html">Learn</a></li>
+                    <li><a href="forms.html">Sign up</a></li>
                     <li>
 
                     </li>
@@ -103,9 +105,9 @@
             </div>
             <img class="mascot-ask" src="img/mascot/asking.png" />
             <div class="row text-center">
-                <h2 id="total-dollars">Total Raised: $90,171</h2>
+                <h2 id="total-dollars"><!--total-dollars.json--></h2>
                 <ul id="home-totals" class="list-inline">
-                    <!--home-toals.json-->
+                    <!--home-totals.json-->
                 </ul>
             </div>
         </div>
@@ -113,41 +115,11 @@
         <!--Upcoming Events panel-->
         <div class="row px">
             <h2 class="text-muted">Upcoming Events</h2>
-            <div class="col-sm-3">
-                <div class="event-card">
-                    <img src="img/unsplash.it-400x300.png" />
-                    <div class="event-card-content">
-                        <a class="h3">%Event Name here can wrap two lines%</a>
-                        <p>%MTH 33 2017%</p>
-                        <p>%Event City%</p>
-                        <h4 class="text-muted uppercase">Benefiting</h4>
-                        <h3>%Charity Name here can wrap two lines%</h3>
-                        <div class="thermometer">
-                            <div class="thermo-border"></div>
-                            <div class="thermo-fill" style="width:33%;"></div>
-                            <div class="thermo-bg"></div>
-                        </div>
-                        <h3 class="thermo-val text-muted">%$999%</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="event-card">
-                    <img src="img/unsplash.it-400x300.png" />
-                    <div class="event-card-content">
-                        <a class="h3">%Event Name here can wrap two lines%</a>
-                        <p>%M D YYYY%</p>
-                        <p>%Event City%</p>
-                        <h4 class="text-muted uppercase">Benefiting</h4>
-                        <h3>%Charity Name here can wrap two lines%</h3>
-                        <div class="thermometer">
-                            <div class="thermo-border"></div>
-                            <div class="thermo-fill" style="width:33%;"></div>
-                            <div class="thermo-bg"></div>
-                        </div>
-                        <h3 class="thermo-val text-muted">%$999%</h3>
-                    </div>
-                </div>
+            <div id="event-card-list">
+
+
+            <!--event-card-data.json-->
+
             </div>
         </div>
         <!-- /Upcoming Events panel-->
@@ -200,6 +172,8 @@
             <div class="col-sm-4">
               <div class="recent-activity-panel">
                 <h3>Recent Activity</h3>
+                <div id="activity-stream">
+
                 <div class="recent-activity">
                   <img class="avatar-small pull-left" src="http://www.radfaces.com/images/avatars/aeon-flux.jpg" />
                   <a class="h3" href="#">%User Namehere%</a>
@@ -208,6 +182,7 @@
                     Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus!
                   </p>
                 </div>
+
                 <div class="recent-activity">
                   <img class="avatar-small pull-left" src="http://www.radfaces.com/images/avatars/april-oneil.jpg" />
                   <a class="h3" href="#">%User Namehere%</a>
@@ -215,6 +190,8 @@
                   <p>
                     Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus!
                   </p>
+                </div>
+
                 </div>
               </div>
             </div>

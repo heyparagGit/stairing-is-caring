@@ -102,6 +102,7 @@ a:hover {
 .thermo-fill {
     background-color: $brand-success;
     z-index: 90;
+    min-width: 22px;
 }
 .thermo-bg {
     background-color: #FFF;
