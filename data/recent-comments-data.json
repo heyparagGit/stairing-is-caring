@@ -46,24 +46,13 @@
     },
     {
       "id":5,
-      "comment": "Nam dapibus nisl vitae elit fringilla rutrum!",
+      "comment": "Dab!",
       "created_at": "2017-05-04 13:39:44",
       "pledge_amount": 15,
       "stairs_guess": 1500,
       "commenter":{
         "name": "User Name E",
         "image" : "http://www.radfaces.com/images/avatars/ickis.jpg"
-      }
-    },
-    {
-      "id":6,
-      "comment": "Dab!",
-      "created_at": "2017-05-03 13:39:44",
-      "pledge_amount": 100,
-      "stairs_guess": 1200,
-      "commenter":{
-        "name": "User Name F",
-        "image" : "http://www.radfaces.com/images/avatars/krumm.jpg"
       }
     }
   ]

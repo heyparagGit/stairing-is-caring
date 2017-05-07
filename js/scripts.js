@@ -7,7 +7,13 @@ var recentCommentFunc = function(){
     var recentCommentsMap = recentCommentData.recentComments.map(function (recentComments){
       var commentDatetime = moment(recentComments.created_at).format('h:m A MMM d YYYY');
       var content =
-      '<div class="recent-activity">test</div>';
+      '<div class="recent-activity"><img class="avatar-small pull-left" src="'
+      + recentComments.commenter.image
+      + '" /> <a class="h3" href="#">' + recentComments.commenter.name
+      + '</a><h6>' + recentComments.created_at
+      + '</h6><p>' + recentComments.comment
+      + '</p><p>' + recentComments.pledge_amount + ', ' + recentComments.stairs_guess
+      '</p></div>';
 
       $('#activity-stream').append(content);
 
