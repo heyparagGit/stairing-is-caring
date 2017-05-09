@@ -36,7 +36,7 @@
 
     <!-- Compiled Bootstrap CSS -->
     <link href="./css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -58,7 +58,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-                <a class="navbar-brand" href="#"><img src="./img/SiC-logo-color.png" alt="Stairing is Caring" /></a>
+                <a class="navbar-brand" href="#"><img src="img/SiC-logo-color.png" alt="Stairing is Caring" /></a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -130,42 +130,41 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="video">
-                            <img src="../img/placeholder.png" width="100%" />
+                            <img src="img/placeholder.png" width="100%" />
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <h2>What is Stairing is Caring?</h2>
                         <p>
-                            It is a way for people to raise money for a good cause in a healthy, competitive, and fun way.
+                            We facilitate stair climbing events to raise money for good causes in a healthy, competitive, and fun way.
                         </p>
                         <h3 class="text-muted">Total Raised</h3>
-                        <h2 class="text-primary">$90,191</h2>
+                        <h2 class="text-primary" id="what-is-donation-total"><!--home-totals.json--></h2>
                     </div>
                 </div>
                 <div class="row px">
                   <div class="col-sm-6">
                     <h2>How does it work?</h2>
                     <p>
-                        It is a way for people to raise money for a good cause in a healthy, competitive, and fun way.
+                        Teams of 2 take turns climbing up and down a set of stairs for 45 minutes.
                     </p>
                     <h3 class="text-muted">Stairs Climbed</h3>
-                    <h2 class="text-primary">1 Billion</h2>
+                    <h2 class="text-primary" id="what-is-stairs-total"><!--home-totals.json--></h2>
                   </div>
                   <div class="col-sm-6">
-                    <img src="../img/placeholder.png" width="100%" />
+                    <img src="img/placeholder.png" width="100%" />
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-sm-6">
-                    <img src="../img/placeholder.png" width="100%" />
+                    <img src="img/placeholder.png" width="100%" />
                   </div>
                   <div class="col-sm-6">
                     <h2>How does it raise money?</h2>
-                    <p>
-                        It is a way for people to raise money for a good cause in a healthy, competitive, and fun way.
-                    </p>
-                    <h3 class="text-muted">Total Raised</h3>
-                    <h2 class="text-primary">$90,191</h2>
+                    <p>Climbers collect guesses on how many stairs their duo will climb.
+Pledgers will donate money for their guess. Charities win!</p>
+                    <h3 class="text-muted">Charities</h3>
+                    <h2 class="text-primary" id="what-is-charity-count"><!--home-totals.json--></h2>
                   </div>
                 </div>
             </div>
@@ -211,19 +210,30 @@
 
           <div class="col-sm-3">
             <div class="top-list photo">
+                <h3>Top Teams &mdash; Donations</h3>
+                <ol>
+                  <div id="top-teams-donations">
 
-              <h3>Top List Thermometer Style</h3>
-              <ol>
+                  <!-- top-team-list.json -->
 
-                <li>
-                  <img class="avatar-small pull-left" src="http://www.radfaces.com/images/avatars/aeon-flux.jpg" />
-                  <a class="" href="">%Climber Name%</a>
-                  <h3 class="text-muted">%999%</h3>
-                </li>
-
-              </ol>
+                  </div>
+                </ol>
             </div>
           </div>
+
+          <div class="col-sm-3">
+            <div class="top-list photo">
+                <h3>Top Teams &mdash; Stairs</h3>
+                <ol>
+                  <div id="top-teams-stairs">
+
+                  <!-- top-team-list.json -->
+
+                  </div>
+                </ol>
+            </div>
+          </div>
+
         </div>
         <!-- /Top Lists panel -->
         <!-- Big Quote panel -->

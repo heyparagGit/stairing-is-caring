@@ -2,23 +2,41 @@
   "homeTotals":[
     {
       "object":"Charities",
-      "count":1
+      "count":123
     },
     {
       "object":"Events",
-      "count":2
+      "count":234
     },
     {
       "object":"Teams",
-      "count":3
+      "count":345
     },
     {
       "object":"Climbers",
-      "count":4
+      "count":456
     },
     {
       "object":"Companies",
-      "count":5
+      "count":567
     }
+  ],
+  "totalDollars":[
+    {
+      "object":"Dollars",
+      "count":90000
+    }
+  ],
+  "totalStairs":[
+    {
+        "object": "Total Stairs",
+        "count": 999999
+      }
+  ],
+  "totalCharities":[
+    {
+        "object": "Charities",
+        "count": 123
+      }
   ]
 }
