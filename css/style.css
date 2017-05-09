@@ -11913,19 +11913,21 @@ hr.heart:after, hr.heart-no-bg:after {
     border-radius: 3px;
     box-shadow: 1px 1px 2px 1px #ccc8c8; }
     .top-lists-panel .top-list h3 {
-      text-align: center; }
+      text-align: center;
+      margin: 11px 15px 32px 15px; }
     .top-lists-panel .top-list ol {
       padding-left: 30px; }
-    .top-lists-panel .top-list a {
-      font-size: 11px;
-      color: #13bc96; }
+    .top-lists-panel .top-list p {
+      font-size: 14px;
+      color: #867e7e;
+      margin: 0 7px 3px 0; }
     .top-lists-panel .top-list a:hover {
       text-decoration: underline; }
   .top-lists-panel .photo li {
-    margin-bottom: 32px; }
+    margin-bottom: 30px; }
     .top-lists-panel .photo li h3 {
       text-align: left;
-      margin-top: 2px; }
+      margin: 2px 0 0 48px; }
   .top-lists-panel .thermo li {
     margin-bottom: 0px; }
     .top-lists-panel .thermo li h3 {
@@ -11934,7 +11936,7 @@ hr.heart:after, hr.heart-no-bg:after {
     margin-left: 0;
     margin-right: 17px; }
   .top-lists-panel .thermo .thermo-val {
-    margin-right: 17px; }
+    margin: 3px 17px 5px 0; }
 
 .big-quote-panel {
   background-image: url("../img/SiC-Stairwell-Pic1.png");

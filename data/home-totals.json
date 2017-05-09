@@ -13,16 +13,12 @@
       "count":3
     },
     {
-      "object":"Charities",
+      "object":"Climbers",
       "count":4
     },
     {
-      "object":"Climbers",
-      "count":5
-    },
-    {
       "object":"Companies",
-      "count":6
+      "count":5
     }
   ]
 }

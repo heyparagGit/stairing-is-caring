@@ -1,0 +1,49 @@
+{
+  "topCompanies":[
+    {
+      "id": 1,
+      "name": "Company Name A",
+      "image": "img/placeholders/company_logo_125x94.png",
+      "avgTeamDonations": 5000,
+      "donationsAsPercentOfLeader": 100,
+      "totalStairs": 10000,
+      "stairsAsPercentOfLeader": 100
+    },
+    {
+      "id": 2,
+      "name": "Company Name B",
+      "image": "img/placeholders/company_logo_125x94.png",
+      "avgTeamDonations": 4000,
+      "donationsAsPercentOfLeader": 80,
+      "totalStairs": 9000,
+      "stairsAsPercentOfLeader": 90
+    },
+    {
+      "id": 3,
+      "name": "Company Name C",
+      "image": "img/placeholders/company_logo_125x94.png",
+      "avgTeamDonations": 3000,
+      "donationsAsPercentOfLeader": 60,
+      "totalStairs": 8000,
+      "stairsAsPercentOfLeader": 80
+    },
+    {
+      "id": 4,
+      "name": "Company Name D",
+      "image": "img/placeholders/company_logo_125x94.png",
+      "avgTeamDonations": 2000,
+      "donationsAsPercentOfLeader": 40,
+      "totalStairs": 7000,
+      "stairsAsPercentOfLeader": 70
+    },
+    {
+      "id": 5,
+      "name": "Company Name E Super Long Name",
+      "image": "img/placeholders/company_logo_125x94.png",
+      "avgTeamDonations": 1000,
+      "donationsAsPercentOfLeader": 20,
+      "totalStairs": 6000,
+      "stairsAsPercentOfLeader": 60
+    }
+  ]
+}

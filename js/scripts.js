@@ -1,5 +1,40 @@
 //Stairing is Caring scripts
 
+var climbingCompaniesFunc = function(){
+  $.getJSON('/data/top-company-list.json', function (climbingCompaniesData){
+    console.log(climbingCompaniesData);
+    var climbingCompaniesMap = climbingCompaniesData.topCompanies.map(function (topCompanies){
+      var content = '<li><img class="avatar-small pull-left" src="'
+      + topCompanies.image
+      + '" /><span>'
+      + topCompanies.name
+      + '</span><h3 class="text-muted">'
+      + topCompanies.totalStairs
+      + '</h3></li>';
+
+      $('#company-stairs').append(content);
+    });
+  });
+};
+
+var avgTeamDonationsFunc = function(){
+  $.getJSON('/data/top-company-list.json', function (avgTeamDonationsData){
+    console.log(avgTeamDonationsData);
+    var avgTeamDonationsMap = avgTeamDonationsData.topCompanies.map(function (topCompanies){
+      var dollars = numeral(topCompanies.avgTeamDonations).format('($0,0)')
+      var content = '<li><p>'
+      + topCompanies.name
+      + '</p><div class="thermometer"><div class="thermo-border"></div><div class="thermo-fill" style="width:'
+      + topCompanies.donationsAsPercentOfLeader
+      + '%;"></div><div class="thermo-bg"></div></div><h3 class="thermo-val text-muted">'
+      + dollars
+      +'</h3></li>';
+
+      $('#avg-team-donations').append(content);
+    });
+  });
+};
+
 var recentCommentFunc = function(){
   $.getJSON('/data/recent-comments-data.json', function (recentCommentData){
     console.log(recentCommentData);
@@ -10,7 +45,7 @@ var recentCommentFunc = function(){
       '<div class="recent-activity"><img class="avatar-small pull-left" src="'
       + recentComments.commenter.image
       + '" /> <a class="h3" href="#">' + recentComments.commenter.name
-      + '</a><h6>' + recentComments.created_at
+      + '</a><h6>' + commentDatetime
       + '</h6><p>' + recentComments.comment
       + '</p><p>' + recentComments.pledge_amount + ', ' + recentComments.stairs_guess
       '</p></div>';
@@ -77,4 +112,6 @@ $(document).ready(function(){
   totalDollarsFunc();
   eventCardFunc();
   recentCommentFunc();
+  avgTeamDonationsFunc();
+  climbingCompaniesFunc();
 });

@@ -1,0 +1,49 @@
+{
+  "topTeams":[
+    {
+      "id": 1,
+      "name": "Team A",
+      "image": "img/placeholders/ph1x400x300.jpeg",
+      "totalDonations": 5000,
+      "donationsAsPercentOfLeader": 100,
+      "totalStairs": 10000,
+      "stairsAsPercentOfLeader": 100
+    },
+    {
+      "id": 2,
+      "name": "Team B",
+      "image": "img/placeholders/ph2x400x300.jpeg",
+      "totalDonations": 4000,
+      "donationsAsPercentOfLeader": 80,
+      "totalStairs": 9000,
+      "stairsAsPercentOfLeader": 90
+    },
+    {
+      "id": 3,
+      "name": "Team C",
+      "image": "img/placeholders/ph3x400x300.jpeg",
+      "totalDonations": 3000,
+      "donationsAsPercentOfLeader": 60,
+      "totalStairs": 8000,
+      "stairsAsPercentOfLeader": 80
+    },
+    {
+      "id": 4,
+      "name": "Team D",
+      "image": "img/placeholders/ph4x400x300.jpeg",
+      "totalDonations": 2000,
+      "donationsAsPercentOfLeader": 40,
+      "totalStairs": 7000,
+      "stairsAsPercentOfLeader": 70
+    },
+    {
+      "id": 5,
+      "name": "Team E Super Long and Funny Name",
+      "image": "img/placeholders/ph5x400x300.jpeg",
+      "totalDonations": 1000,
+      "donationsAsPercentOfLeader": 20,
+      "totalStairs": 6000,
+      "stairsAsPercentOfLeader": 60
+    }
+  ]
+}
