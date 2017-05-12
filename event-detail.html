@@ -34,6 +34,7 @@
     <script type="text/javascript" src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
     <script type="text/javascript" src="js/scripts-event-detail.js"></script><!-- Custom Event Detail scripts -->
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
+    <link href="http://addtocalendar.com/atc/1.5/atc-style-blue.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" /><!-- Compiled Bootstrap CSS -->
 
     <title>Stairing is Caring</title>
@@ -135,7 +136,18 @@
           <div id="event-full-address">
             <!-- eventData.address -->
           </div>
-          <button id="add-to-calendar" class="btn btn-success">Add to Calendar</button>
+          <span class="addtocalendar atc-style-blue">
+            <var class="atc_event">
+                <var class="atc_date_start" id="cal-start-datetime"></var>
+                <var class="atc_date_end" id="cal-end-datetime"></var>
+                <var class="atc_title" id="cal-event-name"></var>
+                <var class="atc_timezone" id="cal-timezone"></var>
+                <var class="atc_description" id="cal-desc">Stairing is Caring charity event.</var>
+                <var class="atc_location" id="cal-address"></var>
+                <var class="atc_organizer" id="cal-organizer">Stairing is Caring Event</var>
+                <var class="atc_organizer_email" id="cal-organizer-email">info@stairingiscaring.org</var>
+            </var>
+          </span>
           <button id="create-team" class="btn btn-default">Create a Team</button>
 
 
@@ -307,6 +319,14 @@
 
     </div>
     <!-- /container -->
+    <script type="text/javascript">(function () {
+            if (window.addtocalendar)if(typeof window.addtocalendar.start == "function")return;
+            if (window.ifaddtocalendar == undefined) { window.ifaddtocalendar = 1;
+                var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+                s.type = 'text/javascript';s.charset = 'UTF-8';s.async = true;
+                s.src = ('https:' == window.location.protocol ? 'https' : 'http')+'://addtocalendar.com/atc/1.5/atc.min.js';
+                var h = d[g]('body')[0];h.appendChild(s); }})();
+    </script>
 </body>
 
 </html>

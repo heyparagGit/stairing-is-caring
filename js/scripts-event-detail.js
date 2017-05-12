@@ -18,10 +18,10 @@ var eventDetailRender = function(){
       $('#donation-goal').html(donations);
       var stairsOnSite = numeral(eventData.location.stairs_onsite).format('(0,0)')
       $('#event-stairs').html(stairsOnSite);
-      var eventDate = moment(eventData.event_date).format('MMMM Do YYYY');
+      var eventDate = moment(eventData.event_date).format('MMMM Do, YYYY');
       $('#event-date').html(eventDate);
-      var start = moment(eventData.event_start_time).format('h:m A');
-      var end = moment(eventData.event_end_time).format('h:m A');
+      var start = moment(eventData.event_start_time).format('h:mm A');
+      var end = moment(eventData.event_end_time).format('h:mm A');
       $('#event-start-time').html(start);
       $('#event-end-time').html(end);
       var rawAddress = eventData.location.address + ' ' + eventData.location.city + ' ' + eventData.location.state;
@@ -29,6 +29,14 @@ var eventDetailRender = function(){
       var address = '<a href="http://maps.google.com/?q=' + queryAddress
       + '" target="_blank"><p>' + eventData.location.address + '<br />' + eventData.location.city + ', ' + eventData.location.state + '</p></a>';
       $('#event-full-address').html(address);
+      // format addtocalendar widget
+      $('#cal-start-datetime').html(eventData.event_start_time);
+      $('#cal-end-datetime').html(eventData.event_end_time);
+      $('#cal-event-name').html(eventData.name);
+      $('#cal-timezone').html(eventData.timezone);
+      var streetAddress = eventData.location.address + ' ' + eventData.location.city + ', ' + eventData.location.state;
+      $('#cal-address').html(streetAddress);
+      
   });
 };
 
