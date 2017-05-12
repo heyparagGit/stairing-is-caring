@@ -1,4 +1,5 @@
-//Stairing is Caring scripts
+//Stairing is Caring
+// index.html script
 
 var topTeamsStairsFunc = function(){
   $.getJSON('../data/top-team-list.json', function (topTeamsData){

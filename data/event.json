@@ -1,0 +1,29 @@
+{
+  "id": 1,
+  "name": "Event Name 1",
+  "event_date": "2017-07-30",
+  "event_start_time": "17:00:00",
+  "event_end_time": "19:00:00",
+  "image": "img/placeholders/ph1x400x300.jpeg",
+  "local_currency": "USD",
+  "created_at": "2017-01-31 00:00:00",
+  "updated_at": "2017-01-31 01:00:00",
+  "location": {
+    "id": 1,
+    "address": "123 Event Address Ave N",
+    "city":"Bellevue",
+    "state":"WA",
+    "stairs_onsite": 2500
+    },
+  "charity": {
+    "id":1,
+    "name": "Charity Organization Name 1",
+    "sitelink": "http://charity.org",
+    "donation_url": "http://charity.org/donate"
+    },
+  "donation_data":{
+    "sum_donation_goal": 25000,
+    "sum_donations": 2000,
+    "percent": 8
+  }
+}
