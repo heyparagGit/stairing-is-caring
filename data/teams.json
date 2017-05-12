@@ -1,0 +1,91 @@
+{
+  "teams":[
+    {
+      "id":1,
+      "name": "Team Name A",
+      "image":"",
+      "motto":"",
+      "owner":{
+        "id":1,
+        "first_name":"Wanna",
+        "last_name":"Climb",
+        "company":"Expedia",
+        "company_logo":"img/placeholders/company_logo_125x94.png",
+        "company_website":"http://expedia.com"
+      },
+      "members":[
+        {
+          "id":1,
+          "first_name":"Wanna",
+          "last_name":"Climb",
+          "company":"Expedia",
+          "company_logo":"img/placeholders/company_logo_125x94.png",
+          "company_website":"http://expedia.com"
+        },
+        {
+          "id":2,
+          "first_name":"Willy",
+          "last_name":"Maykit",
+          "company":"Blueprint Consulting Services",
+          "company_logo":"img/placeholders/company_logo_125x94.png",
+          "company_website":"http://bpcs.com"
+        }
+      ],
+      "event":{
+        "id":1,
+        "name":"Event Name 1",
+        "event_date": "2017-07-30"
+      },
+      "donation_goal":5000,
+      "pledge_total":900,
+      "donation_percent": 18,
+      "stairs_goal":6000,
+      "stairs_climbed":0,
+      "stairs_percent": 0
+    },
+    {
+      "id":2,
+      "name": "Team Name B",
+      "image":"img/placeholders/ph1x400x300.jpeg",
+      "motto":"Lorem ipsum dolor sit amet quam.",
+      "owner":{
+        "id":3,
+        "first_name":"Wydoncha",
+        "last_name":"Steppe",
+        "company":"Superlong Company Name Corportation",
+        "company_logo":"img/placeholders/company_logo_125x94.png",
+        "company_website":"http://example.com"
+      },
+      "members":[
+        {
+          "id":3,
+          "first_name":"Wydoncha",
+          "last_name":"Steppe",
+          "company":"Superlong Company Name Corportation",
+          "company_logo":"img/placeholders/company_logo_125x94.png",
+          "company_website":"http://example.com"
+        },
+        {
+          "id":4,
+          "first_name":"Manuel",
+          "last_name":"Manyfoot",
+          "company":"Expenditia",
+          "company_logo":"img/placeholders/company_logo_125x94.png",
+          "company_website":"http://example.com"
+        }
+      ],
+      "event":{
+        "id":2,
+        "name":"Event Name 2",
+        "event_date": "2017-08-30"
+      },
+      "donation_goal":2000,
+      "pledge_total":1200,
+      "donation_percent": 60,
+      "stairs_goal":10000,
+      "stairs_climbed":133,
+      "stairs_percent": 1
+    }
+
+  ]
+}

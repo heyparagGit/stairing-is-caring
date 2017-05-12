@@ -1,6 +1,15 @@
 //Stairing is Caring
 // event-detail.html script
 
+var eventTeamsRender = function(){
+  $.getJSON('../data/teams.json', function (teamsData){
+    console.log(teamsData);
+
+
+
+  });
+};
+
 var eventDetailRender = function(){
   $.getJSON('../data/event.json', function (eventData){
     console.log(eventData);
@@ -36,11 +45,11 @@ var eventDetailRender = function(){
       $('#cal-timezone').html(eventData.timezone);
       var streetAddress = eventData.location.address + ' ' + eventData.location.city + ', ' + eventData.location.state;
       $('#cal-address').html(streetAddress);
-      
   });
 };
 
 
 $(document).ready(function(){
   eventDetailRender();
+  eventTeamsRender();
 });
