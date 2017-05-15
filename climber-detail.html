@@ -26,21 +26,19 @@
     <meta name="msapplication-TileImage" content="./img/icon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="./bower_components/jquery-ui/jquery-ui.min.js"></script>
-    <script src="./bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/bower_components/jquery/jquery.min.js"></script>
-    <script type="text/javascript" src="/bower_components/moment/min/moment.min.js"></script>
-    <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
-    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
-    <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css" />
+
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
+    <script type="text/javascript" src="bower_components/numeral/min/numeral.min.js"></script>
+    <script type="text/javascript" src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="js/scripts-climber-detail.js"></script><!-- Custom Climber Detail scripts -->
+
     <title>Stairing is Caring</title>
 
-    <!-- Compiled Bootstrap CSS -->
-    <link href="./css/style.css" rel="stylesheet" />
-    <link href="./css/bootstrap-datepicker3.css" rel="stylesheet" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
+    <link href="css/style.css" rel="stylesheet" /><!-- Compiled Bootstrap CSS -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -64,8 +62,8 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Learn</a></li>
+                    <li><a href="event-list.html">Events</a></li>
+                    <li><a href="learn.html">Learn</a></li>
                     <li><a href="#">Sign up</a></li>
                 </ul>
                 <button type="button" class="btn btn-success pull-right">Join us!</button>
@@ -77,7 +75,9 @@
     <div class="container main" role="main">
       <div class="row object-props">
         <div class="col-sm-3 col-sm-offset-1">
-          <img id="profile-pic" src="http://www.radfaces.com/images/avatars/ultimate-warrior.jpg" />
+          <span id="climber-image">
+          <!-- climberData.image -->
+          </span>
           <ul class="list-inline">
             <li id="facebook" class="social">
               <i class="fa fa-thumbs-o-up"></i>
@@ -86,25 +86,25 @@
               <i class="fa fa-twitter"></i>
             </li>
             <li id="mailto" class="social">
-              <i class="glyphicon glyphicon-envelope"></i>
+              <i class="fa fa-envelope"></i>
             </li>
             <li id="linkto" class="social">
-              <i class="glyphicon glyphicon-link"></i>
+              <i class="fa fa-code"></i>
             </li>
           </ul>
         </div>
 
         <div class="col-sm-3">
           <label for="climber-name">Climber</label>
-          <h3 id="climber-name">%Climber Name%</h3>
+          <h3 id="climber-name"><!--climberData.first_name + last_name --></h3>
           <label for="climber-team">Current Team</label>
-          <h3 id="climber-team"><a href="%climber-page-uri%">%Climber Team%</a></h3>
+          <h3><a href="%team-page-uri%"><span id="climber-team"><!--climberData.team.name--></span></a></h3>
           <label for="climber-email">Email</label>
-          <p id="climber-email">%Climber@email.com%</p>
-          <label for="climber-career-stairs">Career Stairs Climbed</label>
-          <h3 class="text-muted" id="climber-career-stairs">%999,999</h3>
-          <label for="climber-career-donations">Career Donations Collected</label>
-          <h3 class="text-muted" id="climber-career-donations">%$999,999%</h3>
+          <p id="climber-email"><!--climberData.email--></p>
+          <label for="career-stairs">Stairs Climbed</label>
+          <h3 class="text-muted" id="career-stairs"><!--climberData.career_stairs--></h3>
+          <label for="career-donations">Donations Collected</label>
+          <h3 class="text-muted" id="career-donations"><!--climberData.career_donations--></h3>
         </div>
 
         <div class="col-sm-3 col-sm-offset-1">
@@ -112,12 +112,14 @@
             <a id="terms" href="legal.html">Terms and conditions</a>
           </p>
           <label for="climber-next-event">Next Event</label>
-          <h3 id="climber-next-event"><a href="%event-page-uri%">%Event Name%</a></h3>
+          <h3 id="climber-next-event"><a href="%event-page-uri%"><!--climberData.team.event.name--></a></h3>
           <label for="event-date">Event Date</label>
-          <p id="event-date">%ddd MMMM Do, YYYY%</p>
+          <p id="event-date"><!--climberData.team.event.event_date--></p>
           <label for="climber-company">Company</label>
-          <p id="climber-company">%Company Name%</p>
-          <img class="company-logo" src="http://placehold.it/125x60" />
+          <p id="climber-company"><!--climberData.company.name--></p>
+          <span id="climber-company-logo">
+            <!--climberData.company.company_logo-->
+          </span>
         </div>
 
       </div><!-- /row 1 -->

@@ -24531,6 +24531,9 @@ button.close {
     background: #9a9898;
     cursor: pointer; }
 
+img.company-logo {
+  margin: 0; }
+
 .climber-history {
   background-color: #FFF;
   padding-bottom: 30px; }
