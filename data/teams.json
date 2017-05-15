@@ -3,8 +3,8 @@
     {
       "id":1,
       "name": "Team Name A",
-      "image":"",
-      "motto":"",
+      "image":"img/placeholders/ph2x400x300.jpeg",
+      "motto":"Lorem ipsum dolor sit amet quam.",
       "owner":{
         "id":1,
         "first_name":"Wanna",
@@ -13,15 +13,7 @@
         "company_logo":"img/placeholders/company_logo_125x94.png",
         "company_website":"http://expedia.com"
       },
-      "members":[
-        {
-          "id":1,
-          "first_name":"Wanna",
-          "last_name":"Climb",
-          "company":"Expedia",
-          "company_logo":"img/placeholders/company_logo_125x94.png",
-          "company_website":"http://expedia.com"
-        },
+      "member":
         {
           "id":2,
           "first_name":"Willy",
@@ -29,8 +21,7 @@
           "company":"Blueprint Consulting Services",
           "company_logo":"img/placeholders/company_logo_125x94.png",
           "company_website":"http://bpcs.com"
-        }
-      ],
+        },
       "event":{
         "id":1,
         "name":"Event Name 1",
@@ -56,15 +47,7 @@
         "company_logo":"img/placeholders/company_logo_125x94.png",
         "company_website":"http://example.com"
       },
-      "members":[
-        {
-          "id":3,
-          "first_name":"Wydoncha",
-          "last_name":"Steppe",
-          "company":"Superlong Company Name Corportation",
-          "company_logo":"img/placeholders/company_logo_125x94.png",
-          "company_website":"http://example.com"
-        },
+      "member":
         {
           "id":4,
           "first_name":"Manuel",
@@ -72,8 +55,7 @@
           "company":"Expenditia",
           "company_logo":"img/placeholders/company_logo_125x94.png",
           "company_website":"http://example.com"
-        }
-      ],
+        },
       "event":{
         "id":2,
         "name":"Event Name 2",

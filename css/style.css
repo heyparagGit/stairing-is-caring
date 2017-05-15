@@ -24556,6 +24556,9 @@ button.close {
 label {
   font-size: 11px; }
 
+table img {
+  width: 60px; }
+
 #create-team {
   margin-top: 32px; }
 

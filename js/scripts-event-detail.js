@@ -5,6 +5,18 @@ var eventTeamsRender = function(){
   $.getJSON('../data/teams.json', function (teamsData){
     console.log(teamsData);
 
+    teamsData.teams.map(function (teamsData){
+      var stairsGoal = numeral(teamsData.stairs_goal).format('(0,0)');
+      var donationGoal = numeral(teamsData.donation_goal).format('($0,0)');
+      var donationPledges = numeral(teamsData.pledge_total).format('($0,0)');
+      var content = '<tr><td><img src="' + teamsData.image + '" /></td><td><a href="%team-page-uri%">'
+      + teamsData.name + '</a></td><td><a href="%climber-page-uri%">' + teamsData.owner.first_name + ' ' + teamsData.owner.last_name
+      +'</a><br /><a href="%climber-page-uri%">' + teamsData.member.first_name + ' ' + teamsData.member.last_name
+      +'</a></td><td>' + teamsData.stairs_goal + '</td><td>' + teamsData.donation_goal + '</td><td>'
+      + teamsData.pledge_total + '</td><td><button id="donate-inline" class="btn btn-primary">Donate</button></td><td><button id="join-team-inline" class="btn btn-default">Join</button></td></tr>';
+
+      $('#teams-table').append(content);
+    });
 
 
   });
@@ -21,11 +33,11 @@ var eventDetailRender = function(){
       $('#charity-name').append(charity);
       var donationThermometer = '<div class="thermo-fill" style="'+eventData.donation_data.percent+'%"></div>';
       $('#donation-thermometer').append(donationThermometer);
-      var pledged = numeral(eventData.donation_data.sum_donations).format('($0,0)')
+      var pledged = numeral(eventData.donation_data.sum_donations).format('($0,0)');
       $('#donation-pledged').html(pledged);
-      var donations = numeral(eventData.donation_data.sum_donation_goal).format('($0,0)')
+      var donations = numeral(eventData.donation_data.sum_donation_goal).format('($0,0)');
       $('#donation-goal').html(donations);
-      var stairsOnSite = numeral(eventData.location.stairs_onsite).format('(0,0)')
+      var stairsOnSite = numeral(eventData.location.stairs_onsite).format('(0,0)');
       $('#event-stairs').html(stairsOnSite);
       var eventDate = moment(eventData.event_date).format('MMMM Do, YYYY');
       $('#event-date').html(eventDate);
