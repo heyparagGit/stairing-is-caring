@@ -39,7 +39,24 @@ var eventRender = function(){
   });
 };
 
+var commentsRender = function(){
+  $.getJSON('data/recent-comments-data.json', function (commentsData){
+    console.log(commentsData);
+
+    commentsData.recentComments.map(function (commentsData){
+      var commentDatetime = moment(commentsData.created_at).format('h:mm A MMMM D, YYYY');
+      var pledge = numeral(commentsData.pledge_amount).format('($0,0)');
+      var stairs = numeral(commentsData.stairs_guess).format('(0,0)');
+      var content = '<div class="activity-entry"><div class="col-sm-7"><div class="recent-activity"><img class="avatar-small pull-left" src="'+commentsData.commenter.image+'" /><a class="h3" href="#">'+commentsData.commenter.name+'</a><h6>'+ commentDatetime +'</h6><p>'+commentsData.comment+'</p></div></div><div class="col-sm-2"><h3 class="pledge-val">'+ pledge +'</h3></div><div class="col-sm-2"><h3 class="stairs-guess-val">'+ stairs +'</h3></div></div>';
+
+      $('#activity-stream').append(content);
+
+    });
+  });
+};
+
 $(document).ready(function(){
   teamRender();
   eventRender();
+  commentsRender();
 });
