@@ -26,21 +26,18 @@
     <meta name="msapplication-TileImage" content="./img/icon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="./bower_components/jquery-ui/jquery-ui.min.js"></script>
-    <script src="./bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/bower_components/jquery/jquery.min.js"></script>
-    <script type="text/javascript" src="/bower_components/moment/min/moment.min.js"></script>
-    <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
-    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
-    <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css" />
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
+    <script type="text/javascript" src="bower_components/numeral/min/numeral.min.js"></script>
+    <script type="text/javascript" src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="js/scripts-team-detail.js"></script><!-- Custom Event Detail scripts -->
+
     <title>Stairing is Caring</title>
 
-    <!-- Compiled Bootstrap CSS -->
-    <link href="./css/style.css" rel="stylesheet" />
-    <link href="./css/bootstrap-datepicker3.css" rel="stylesheet" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
+    <link href="css/style.css" rel="stylesheet" /><!-- Compiled Bootstrap CSS -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -60,12 +57,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-                <a class="navbar-brand" href="#"><img src="./img/SiC-logo-color.png" alt="Stairing is Caring" /></a>
+                <a class="navbar-brand" href="index.html"><img src="./img/SiC-logo-color.png" alt="Stairing is Caring" /></a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Learn</a></li>
+                    <li><a href="event-list.html">Events</a></li>
+                    <li><a href="learn.html">Learn</a></li>
                     <li><a href="#">Sign up</a></li>
                 </ul>
                 <button type="button" class="btn btn-success pull-right">Sign up</button>
@@ -85,7 +82,10 @@
           </div>
         </div>
         <div class="col-sm-3 col-sm-offset-1">
-          <img id="event-image" src="http://placehold.it/300x300" />
+          <span id="team-image">
+          <!-- teamData.image -->
+          </span>
+
           <ul class="list-inline">
             <li id="facebook" class="social">
               <i class="fa fa-thumbs-o-up"></i>
@@ -104,56 +104,52 @@
 
         <div class="col-sm-4">
           <label for="team-name">Team</label>
-          <h3 id="team-name">%Team Name%</h3>
+          <h3 id="team-name"><!-- teamData.name --></h3>
           <label for="team-moto">Moto</label>
-          <div id="team-moto">%Clever team moto%</div>
+          <div id="team-motto"><!-- teamData.motto --></div>
           <label for="team-members">Team Members</label>
           <div id="team-members" class="row">
             <div class="col-sm-6">
-              <a class="climber-name" href="%climber-page-uri">%Climber Name%</a>
-              <img src="http://placehold.it/125x50" />
-              <p>
-                %Company Name%
-              </p>
+
+              <span id="team-owner"><!-- teamData.owner --></span>
+
             </div>
             <div class="col-sm-6">
-              <a class="climber-name" href="%climber-page-uri">%Climber Name%</a>
-              <img src="http://placehold.it/125x50" />
-              <p>
-                %Company Name%
-              </p>
+
+              <span id="team-member"><!-- teamData.member --></span>
+
             </div>
           </div>
 
 
 
           <label for="event-stairs">Stairs at Event Location</label>
-          <h3 class="text-muted" id="event-stairs">%9,999%</h3>
+          <h3 class="text-muted" id="event-stairs"><!-- eventData.location.staris_onsite --></h3>
 
         </div>
 
         <div class="col-sm-3">
           <label for="event-name">Event</label>
-          <h3 id="climber-next-event"><a href="%event-page-uri%">%Event Name%</a></h3>
+          <h3 id="event-name"><!-- eventData.name --></h3>
           <label for="event-date">Event Date</label>
-          <p id="event-date">%ddd MMMM Do, YYYY%</p>
+          <p id="event-date"><!-- eventData.event_date --></p>
 
           <label for="donation-goal-row">Donations</label>
           <div id="donation-goal-row" class="row">
             <div class="col-sm-12">
               <div class="thermometer">
                   <div class="thermo-border"></div>
-                  <div class="thermo-fill" style="width:33%;"></div>
+                  <span id="donation-thermometer"><!--teamData.donation_percent--></span>
                   <div class="thermo-bg"></div>
               </div>
             </div>
             <div class="col-sm-6">
               <label for="donation-pledged">Pledged</label>
-              <h3 class="text-muted" id="donation-pledged">%$9,999</h3>
+              <h3 class="text-muted" id="pledge-total"><!--teamData.pledge_total--></h3>
             </div>
             <div class="col-sm-6">
               <label for="donation-goal">Goal</label>
-              <h3 class="thermo-val text-muted" id="donation-goal">%$999%</h3>
+              <h3 class="thermo-val text-muted" id="donation-goal"><!--teamData.donation_goal--></h3>
             </div>
           </div>
 
@@ -162,17 +158,17 @@
             <div class="col-sm-12">
               <div class="thermometer">
                   <div class="thermo-border"></div>
-                  <div class="thermo-fill" style="width:33%;"></div>
+                  <span id="stairs-thermometer"><!--teamData.stairs_percent--></span>
                   <div class="thermo-bg"></div>
               </div>
             </div>
             <div class="col-sm-6">
               <label for="stairs-climbed">Climbed</label>
-              <h3 class="text-muted" id="donation-pledged">%9,999%</h3>
+              <h3 class="text-muted" id="stairs-climbed"><!--teamData.stairs_climbed--></h3>
             </div>
             <div class="col-sm-6">
               <label for="stairs-goal">Goal</label>
-              <h3 class="thermo-val text-muted" id="donation-goal">%999%</h3>
+              <h3 class="thermo-val text-muted" id="stairs-goal"><!--teamData.stairs_goal--></h3>
             </div>
           </div>
           <button class="btn btn-primary">Donate</button>

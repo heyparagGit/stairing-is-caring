@@ -1,0 +1,35 @@
+{
+  "id":1,
+  "name": "Team Name A",
+  "image":"img/placeholders/ph2x400x300.jpeg",
+  "motto":"Lorem ipsum dolor sit amet quam.",
+  "owner":
+  {
+    "id":1,
+    "first_name":"Wanna",
+    "last_name":"Climb",
+    "company":"Expedia",
+    "company_logo":"img/placeholders/company_logo_125x94.png",
+    "company_website":"http://expedia.com"
+  },
+  "member":
+    {
+      "id":2,
+      "first_name":"Willy",
+      "last_name":"Maykit",
+      "company":"Blueprint Consulting Services",
+      "company_logo":"img/placeholders/company_logo_125x94.png",
+      "company_website":"http://bpcs.com"
+    },
+  "event":{
+    "id":1,
+    "name":"Event Name 1",
+    "event_date": "2017-07-30"
+  },
+  "donation_goal":5000,
+  "pledge_total":900,
+  "donation_percent": 18,
+  "stairs_goal":6000,
+  "stairs_climbed":0,
+  "stairs_percent": 0
+}
