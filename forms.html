@@ -26,63 +26,24 @@
     <meta name="msapplication-TileImage" content="./img/icon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="./bower_components/jquery-ui/jquery-ui.min.js"></script>
-    <script src="./bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/bower_components/jquery/jquery.min.js"></script>
-    <script type="text/javascript" src="/bower_components/moment/min/moment.min.js"></script>
-    <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
-    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
-    <title>Stairing is Caring</title>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
+    <script type="text/javascript" src="bower_components/numeral/min/numeral.min.js"></script>
+    <script type="text/javascript" src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="js/scripts-forms.js"></script><!-- Custom Event Detail scripts -->
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
+    <link href="http://addtocalendar.com/atc/1.5/atc-style-blue.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" /><!-- Compiled Bootstrap CSS -->
 
-    <!-- Compiled Bootstrap CSS -->
-    <link href="./css/style.css" rel="stylesheet" />
-    <link href="./css/bootstrap-datepicker3.css" rel="stylesheet" />
+    <title>Stairing is Caring</title>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $("#new-company").click(function() {
-              $("#new-company-group, #existing-company-group").toggle();
-            });
-            $("#x-new-company").click(function() {
-              $("#new-company-group, #existing-company-group").toggle();
-            });
-        });
-        $("#company").autocomplete({
-            source: ["%Company R%", "%Company S%", "%Company T%", "%Company S%", "%Company E%", "Expedia", "Blueprint Consulting Services"]
-        });
-    </script>
-
-    <!-- Date Time script -->
-    <script type="text/javascript">
-      $(function () {
-        $('#event-date-picker').datetimepicker({
-          format: 'D/M/YYYY'
-        });
-      });
-    </script>
-    <script type="text/javascript">
-      $(function () {
-        $('#event-start-time-picker').datetimepicker({
-          format: 'h A'
-        });
-      });
-    </script>
-    <script type="text/javascript">
-      $(function () {
-        $('#event-end-time-picker').datetimepicker({
-          format: 'h A'
-        });
-      });
-    </script>
-    <!-- /Date Time script -->
 </head>
 
 <body>
@@ -132,7 +93,7 @@
                     </div>
                 </form>
             </div>
-            
+
         </div>
         <!-- /Sign-in Form -->
 <hr />
@@ -312,7 +273,7 @@
                           <label for="event-date">Event Date</label><br />
                           <div class="input-group date" id="event-date-picker">
                             <input type="text" class="form-control" id="event-date" placeholder="" />
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                           </div>
                         </div>
                     </div>
@@ -321,7 +282,7 @@
                         <label for="event-start-time">Start Time</label>
                         <div class="input-group date" id="event-start-time-picker">
                           <input type="text" class="form-control" id="event-start-time" placeholder="" />
-                          <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+                          <span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
                         </div>
                       </div>
                     </div>
@@ -330,7 +291,7 @@
                             <label for="event-end-time">End Time</label>
                             <div class="input-group date" id="event-end-time-picker">
                               <input type="text" class="form-control" id="event-end-time" placeholder="" />
-                              <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+                              <span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
                             </div>
                           </div>
                     </div>
