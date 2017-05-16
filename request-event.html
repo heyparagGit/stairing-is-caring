@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Stairing is Caring">
+    <meta name="author" content="Blueprint Consulting Services">
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./img/icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/icon/favicon-16x16.png">
+    <link rel="manifest" href="./img/icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./img/icon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
+    <script type="text/javascript" src="bower_components/numeral/min/numeral.min.js"></script>
+    <script type="text/javascript" src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="js/scripts-forms.js"></script><!-- Custom scripts link -->
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
+    <link href="http://addtocalendar.com/atc/1.5/atc-style-blue.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" /><!-- Compiled Bootstrap CSS -->
+
+    <title>Stairing is Caring</title>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+              <a class="navbar-brand" href="#"><img src="./img/SiC-logo-color.png" alt="Stairing is Caring" /></a>
+          </div>
+          <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                  <li><a href="#">Events</a></li>
+                  <li><a href="#">Learn</a></li>
+                  <li><a href="#">Sign up</a></li>
+              </ul>
+              <button type="button" class="btn btn-success pull-right">Join us!</button>
+          </div>
+          <!--/.nav-collapse -->
+      </div>
+  </nav>
+
+  <div class="container main" role="main">
+
+    <!-- Event Request -->
+    <div class="row ">
+        <div class="col-sm-2">
+        </div>
+        <div class="sic-form event-request col-sm-8">
+            <h2 class="text-muted">Event Request</h2>
+            <form class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="event-name">Event Name</label>
+                        <input type="text" class="form-control" id="event-name" placeholder="" />
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="event-date">Event Date</label><br />
+                      <div class="input-group date" id="event-date-picker">
+                        <input type="text" class="form-control" id="event-date" placeholder="" />
+                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-sm-offset-6">
+                  <div class="dropdown">
+                    <label for="event-start-time">Start Time</label>
+                    <div class="input-group date" id="event-start-time-picker">
+                      <input type="text" class="form-control" id="event-start-time" placeholder="" />
+                      <span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label for="event-end-time">End Time</label>
+                        <div class="input-group date" id="event-end-time-picker">
+                          <input type="text" class="form-control" id="event-end-time" placeholder="" />
+                          <span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                      <label for="event-city">City</label>
+                      <input type="text" class="form-control" id="event-city" placeholder="" />
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                      <label for="event-state">State</label>
+                      <select class="form-control" id="event-state" name="event-state">
+                            <option value="AK">Alaska</option>
+                            <option value="AL">Alabama</option>
+                            <option value="AR">Arkansas</option>
+                            <option value="AZ">Arizona</option>
+                            <option value="CA">California</option>
+                            <option value="CO">Colorado</option>
+                            <option value="CT">Connecticut</option>
+                            <option value="DC">District of Columbia</option>
+                            <option value="DE">Delaware</option>
+                            <option value="FL">Florida</option>
+                            <option value="GA">Georgia</option>
+                            <option value="HI">Hawaii</option>
+                            <option value="IA">Iowa</option>
+                            <option value="ID">Idaho</option>
+                            <option value="IL">Illinois</option>
+                            <option value="IN">Indiana</option>
+                            <option value="KS">Kansas</option>
+                            <option value="KY">Kentucky</option>
+                            <option value="LA">Louisiana</option>
+                            <option value="MA">Massachusetts</option>
+                            <option value="MD">Maryland</option>
+                            <option value="ME">Maine</option>
+                            <option value="MI">Michigan</option>
+                            <option value="MN">Minnesota</option>
+                            <option value="MO">Missouri</option>
+                            <option value="MS">Mississippi</option>
+                            <option value="MT">Montana</option>
+                            <option value="NC">North Carolina</option>
+                            <option value="ND">North Dakota</option>
+                            <option value="NE">Nebraska</option>
+                            <option value="NH">New Hampshire</option>
+                            <option value="NJ">New Jersey</option>
+                            <option value="NM">New Mexico</option>
+                            <option value="NV">Nevada</option>
+                            <option value="NY">New York</option>
+                            <option value="OH">Ohio</option>
+                            <option value="OK">Oklahoma</option>
+                            <option value="OR">Oregon</option>
+                            <option value="PA">Pennsylvania</option>
+                            <option value="PR">Puerto Rico</option>
+                            <option value="RI">Rhode Island</option>
+                            <option value="SC">South Carolina</option>
+                            <option value="SD">South Dakota</option>
+                            <option value="TN">Tennessee</option>
+                            <option value="TX">Texas</option>
+                            <option value="UT">Utah</option>
+                            <option value="VA">Virginia</option>
+                            <option value="VT">Vermont</option>
+                            <option value="WA">Washington</option>
+                            <option value="WI">Wisconsin</option>
+                            <option value="WV">West Virginia</option>
+                            <option value="WY">Wyoming</option>
+                          </select>
+                      </div>
+                </div>
+
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label for="event-address">Address</label>
+                        <input type="text" class="form-control" id="event-address" placeholder="" />
+                    </div>
+                </div>
+                <div class="col-sm-3 col-sm-offset-6">
+                    <div class="dropdown">
+                      <label for="event-currency">Currency</label>
+                      <button class="btn btn-default dropdown-toggle" type="button" id="event-currency" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <span id="event-currency-selected">USD</span>
+                        <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li id="event-currency-usd">USD</li>
+                      </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label for="event-site-stairs">Stairs on site</label>
+                        <input type="text" class="form-control" id="event-site-stairs" placeholder="" />
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="charity-name">Charity Name</label>
+                        <input type="text" class="form-control" id="charity-name" placeholder="" />
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="charity-website">Charity Website</label>
+                        <input type="text" class="form-control" id="charity-website" placeholder="" />
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="requester-name">Your Name</label>
+                        <input type="text" class="form-control" id="requester-name" placeholder="" />
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="requester-email">Your Email</label>
+                        <input type="text" class="form-control" id="requester-email" placeholder="" />
+                    </div>
+                </div>
+                <div class="col-sm-12 text-right">
+                    <button type="submit" class="btn btn-lg btn-success">Request Event</button>
+                </div>
+                <div class="col-sm-6 col-sm-offset-6 text-left">
+                  <p class="help-block">
+                    We will send you a confirmation when your event request is approved.
+                  </p>
+                  <p>Thank you for caring!
+                  </p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /Event Request -->
+
+  </div>
+
+
+</body>
