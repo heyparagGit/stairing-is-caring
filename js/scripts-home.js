@@ -105,6 +105,7 @@ var eventCardFunc = function(){
 
     eventCardData.events.map(function (events){
       var eventDate = moment(events.event_date).format('MMM Do, YYYY');
+      var sumDonations = numeral(events.donation_data.sum_donations).format('($,0)');
       var content =
         '<div class="col-sm-3"><div class="event-card"><img src="'
         + events.image + '" /><div class="event-card-content"><a class="h3">'
@@ -113,7 +114,7 @@ var eventCardFunc = function(){
          + events.location.city + ', ' + events.location.state + '</p><h4 class="text-muted uppercase">Benefiting</h4><h3>'
          + events.charity.name + '</h3><div class="thermometer"><div class="thermo-border"></div><div class="thermo-fill" style="width:'
          + events.donation_data.percent + '%;"></div><div class="thermo-bg"></div></div><h3 class="thermo-val text-muted">'
-         + events.donation_data.sum_donations
+         + sumDonations
          + '</h3></div></div></div>';
 
       $('#event-card-list').append(content);

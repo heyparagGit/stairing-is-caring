@@ -19,6 +19,22 @@ var climberRender = function(){
   });
 };
 
+var eventHistoryRender = function(){
+  $.getJSON('data/event-history.json', function(eventsHistoryData){
+    console.log(eventsHistoryData);
+
+    eventsHistoryData.eventHistory.map(function(eventsHistoryData){
+      var eventDate = moment(eventsHistoryData.event.event_date).format('MMM D, YYYY');
+      var stairs = numeral(eventsHistoryData.stairs_climbed).format('(0,0)');
+      var donations = numeral(eventsHistoryData.pledge_total).format('($0,0)');
+      var content = '<tr><td>' + eventsHistoryData.event.name + '</td><td>' + eventDate + '</td><td>'+ stairs +'</td><td>'+donations+'</td></tr>';
+
+      $('#climber-history').append(content);
+    });
+  });
+};
+
 $(document).ready(function(){
   climberRender();
+  eventHistoryRender();
 });

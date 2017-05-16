@@ -1,0 +1,40 @@
+{
+  "eventHistory":[
+    {
+      "event":{
+        "id":1,
+        "name": "Event Name 1",
+        "event_date": "2017-07-30 00:00:00"
+      },
+      "pledge_total":300,
+      "stairs_climbed":1234
+    },
+    {
+      "event":{
+        "id":2,
+        "name": "Event Name 2",
+        "event_date": "2017-07-30 00:00:00"
+      },
+      "pledge_total":180,
+      "stairs_climbed":1534
+    },
+    {
+      "event":{
+        "id":3,
+        "name": "Event Name 3",
+        "event_date": "2017-07-30 00:00:00"
+      },
+      "pledge_total":55,
+      "stairs_climbed":1994
+    },
+    {
+      "event":{
+        "id":4,
+        "name": "Event Name 4",
+        "event_date": "2017-08-30 00:00:00"
+      },
+      "pledge_total":500,
+      "stairs_climbed":1780
+    }
+  ]
+}
