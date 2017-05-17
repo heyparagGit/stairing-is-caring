@@ -27,7 +27,7 @@
     i {margin-left: 4px;}
   }
 }
-.social {
+.fb-like {
 	width: 46px;
 	height: 46px;
 	border-radius: 50%;
@@ -38,37 +38,7 @@
   margin-top: 13px;
   padding-top: 5px;
 }
-#facebook {
-  background: #3365A0;
-  img {
-    height: 32px;
-    padding-top: 7px;
-  }
-  &:hover {
-    background: lighten(#3365A0, 8%);
-    cursor: pointer;
-  }
-}
 
-#twitter {
-  background: #49C1E2;
-  &:hover {
-    background: darken(#49C1E2, 5%);
-    cursor: pointer;}
-}
-#mailto {
-  background: $brand-success;
-  &:hover {
-    background: lighten($brand-success, 5%);
-    cursor: pointer;}
-}
-
-#linkto {
-  background: #A7A5A5;
-  &:hover {
-    background: darken(#A7A5A5, 5%);
-    cursor: pointer;}
-}
 //Climber
 img.company-logo{
   margin: 0;

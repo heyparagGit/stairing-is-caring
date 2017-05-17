@@ -24493,7 +24493,7 @@ button.close {
   .iterator-nav #next i {
     margin-left: 4px; }
 
-.social {
+.fb-like {
   width: 46px;
   height: 46px;
   border-radius: 50%;
@@ -24503,33 +24503,6 @@ button.close {
   font-size: 24px;
   margin-top: 13px;
   padding-top: 5px; }
-
-#facebook {
-  background: #3365A0; }
-  #facebook img {
-    height: 32px;
-    padding-top: 7px; }
-  #facebook:hover {
-    background: #3d79bf;
-    cursor: pointer; }
-
-#twitter {
-  background: #49C1E2; }
-  #twitter:hover {
-    background: #33bade;
-    cursor: pointer; }
-
-#mailto {
-  background: #13bc96; }
-  #mailto:hover {
-    background: #15d3a8;
-    cursor: pointer; }
-
-#linkto {
-  background: #A7A5A5; }
-  #linkto:hover {
-    background: #9a9898;
-    cursor: pointer; }
 
 img.company-logo {
   margin: 0; }
