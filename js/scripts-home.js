@@ -1,8 +1,22 @@
 //Stairing is Caring
 // index.html script
 
+//Event Handlers
+var buttonHandlers = function(){
+  $('#signUpBtn').click(function(){
+    console.log('Sign up button clicked.');
+    window.location = 'sign-up.html';
+  });
+
+
+
+};
+
+
+//Render Functions
+
 var topTeamsStairsFunc = function(){
-  $.getJSON('../data/top-team-list.json', function (topTeamsData){
+  $.getJSON('data/top-team-list.json', function (topTeamsData){
     console.log(topTeamsData);
     topTeamsData.topTeams.map(function (topTeams){
       var stairs = numeral(topTeams.totalStairs).format('(0,0)')
@@ -162,4 +176,5 @@ $(document).ready(function(){
   climbingCompaniesFunc();
   topTeamsDonationsFunc();
   topTeamsStairsFunc();
+  buttonHandlers();
 });
