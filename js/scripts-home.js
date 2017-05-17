@@ -100,11 +100,11 @@ var recentCommentFunc = function(){
 };
 
 var eventCardFunc = function(){
-  $.getJSON('../data/event-card-data.json', function (eventCardData){
-    console.log(eventCardData);
+  $.getJSON('../data/events.json', function (eventsData){
+    console.log(eventsData);
 
-    eventCardData.events.map(function (events){
-      var eventDate = moment(events.event_date).format('MMM Do, YYYY');
+    eventsData.events.map(function (events){
+      var eventDate = moment(events.event_date).format('MMM D, YYYY');
       var sumDonations = numeral(events.donation_data.sum_donations).format('($,0)');
       var content =
         '<div class="col-sm-3"><div class="event-card"><img src="'
@@ -137,7 +137,7 @@ var homeTotalsFunc = function(){
     homeTotalsData.totalDollars.map(function (totalDollars){
        var dollars = numeral(totalDollars.count).format('($0,0)')
        $('#total-dollars').html('Total Raised: ' + dollars);
-       $('#what-is-donation-total').html(dollars);
+       $('#donation-total').html(dollars);
      });
 
      homeTotalsData.totalStairs.map(function (totalStairs){

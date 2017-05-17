@@ -3,9 +3,9 @@
     {
       "id": 1,
       "name": "Event Name 1",
-      "event_date": "2017-07-30",
-      "event_start_time": "2017-07-30 17:00:00",
-      "event_end_time": "2017-07-30 19:00:00",
+      "event_date": "2017-07-22",
+      "event_start_time": "2017-07-22 17:00:00",
+      "event_end_time": "2017-07-22 19:00:00",
       "timezone": "America/Los_Angeles",
       "image": "img/placeholders/ph1x400x300.jpeg",
       "local_currency": "USD",
@@ -28,37 +28,39 @@
         "sum_donation_goal": 25000,
         "sum_donations": 2000,
         "percent": 8
-      }
+      },
+      "team_count": 10
     },
     {
       "id": 2,
       "name": "Event Name 2",
-      "event_date": "2017-06-31 00:00:00",
+      "event_date": "2017-06-15 00:00:00",
       "event_start_time": "2017-08-30 16:00:00",
       "event_end_time": "2017-08-30 18:30:00",
       "timezone": "America/Los_Angeles",
-      "image": "img/placeholders/ph1x400x300.jpeg",
+      "image": "img/placeholders/ph2x400x300.jpeg",
       "local_currency": "USD",
       "created_at": "2017-01-31 00:00:00",
       "updated_at": "2017-01-31 01:00:00",
       "location": {
-        "id": 1,
+        "id": 2,
         "address": "Safeco Field",
         "city":"Seattle",
         "state":"WA",
-        "stairs_onsite": 1500
+        "stairs_onsite": 2500
         },
       "charity": {
-        "id":1,
-        "name": "Charity Organization Name 1",
+        "id":2,
+        "name": "Charity Organization Name 2",
         "sitelink": "http://charity.org",
         "donation_url": "http://charity.org/donate"
         },
       "donation_data":{
-        "sum_donation_goal": 25000,
-        "sum_donations": 2000,
-        "percent": 8
-      }
+        "sum_donation_goal": 5000,
+        "sum_donations": 1000,
+        "percent": 20
+      },
+      "team_count": 12
     },
     {
       "id": 3,
@@ -67,57 +69,59 @@
       "event_start_time": "2017-08-30 16:00:00",
       "event_end_time": "2017-08-30 18:30:00",
       "timezone": "America/Los_Angeles",
-      "image": "img/placeholders/ph1x400x300.jpeg",
+      "image": "img/placeholders/ph3x400x300.jpeg",
       "local_currency": "USD",
       "created_at": "2017-01-31 00:00:00",
       "updated_at": "2017-01-31 01:00:00",
       "location": {
-        "id": 1,
+        "id": 3,
         "address": "345 Avenue N",
         "city":"Seattle",
         "state":"WA",
         "stairs_onsite": 580
         },
       "charity": {
-        "id":1,
-        "name": "Charity Organization Name 1",
+        "id":3,
+        "name": "Charity Organization Name 3",
         "sitelink": "http://charity.org",
         "donation_url": "http://charity.org/donate"
         },
       "donation_data":{
-        "sum_donation_goal": 25000,
-        "sum_donations": 2000,
+        "sum_donation_goal": 2000,
+        "sum_donations": 0,
         "percent": 8
-      }
+      },
+      "team_count": 8
     },{
       "id": 4,
       "name": "Event Name 4",
-      "event_date": "2017-20-15 00:00:00",
+      "event_date": "2017-02-15 00:00:00",
       "event_start_time": "2017-11-30 16:00:00",
       "event_end_time": "2017-11-30 18:30:00",
       "timezone": "America/Los_Angeles",
-      "image": "img/placeholders/ph1x400x300.jpeg",
+      "image": "img/placeholders/ph4x400x300.jpeg",
       "local_currency": "USD",
       "created_at": "2017-01-31 00:00:00",
       "updated_at": "2017-01-31 01:00:00",
       "location": {
-        "id": 1,
+        "id": 4,
         "address": "345 Avenue N",
         "city":"Seattle",
         "state":"WA",
         "stairs_onsite": 1740
         },
       "charity": {
-        "id":1,
-        "name": "Charity Organization Name 1",
+        "id":4,
+        "name": "Charity Organization Name 4",
         "sitelink": "http://charity.org",
         "donation_url": "http://charity.org/donate"
         },
       "donation_data":{
-        "sum_donation_goal": 25000,
-        "sum_donations": 2000,
-        "percent": 8
-      }
+        "sum_donation_goal": 2500,
+        "sum_donations": 2100,
+        "percent": 84
+      },
+      "team_count": 22
     }
   ]
 }

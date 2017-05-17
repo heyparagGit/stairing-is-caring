@@ -26,21 +26,20 @@
     <meta name="msapplication-TileImage" content="./img/icon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="./bower_components/jquery-ui/jquery-ui.min.js"></script>
-    <script src="./bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/bower_components/jquery/jquery.min.js"></script>
-    <script type="text/javascript" src="/bower_components/moment/min/moment.min.js"></script>
-    <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
-    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
-    <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css" />
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
+    <script type="text/javascript" src="bower_components/numeral/min/numeral.min.js"></script>
+    <script type="text/javascript" src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="js/scripts-event-list.js"></script><!-- Custom Events scripts link -->
+    <script type="text/javascript" src="js/scripts-home.js"></script><!-- Custom Home scripts link -->
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
+    <link href="http://addtocalendar.com/atc/1.5/atc-style-blue.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" /><!-- Compiled Bootstrap CSS -->
+
     <title>Stairing is Caring</title>
 
-    <!-- Compiled Bootstrap CSS -->
-    <link href="./css/style.css" rel="stylesheet" />
-    <link href="./css/bootstrap-datepicker3.css" rel="stylesheet" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -64,9 +63,9 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Learn</a></li>
-                    <li><a href="#">Sign up</a></li>
+                    <li><a href="event-list.html">Events</a></li>
+                    <li><a href="learn.html">Learn</a></li>
+                    <li><a href="sign-up.html">Sign up</a></li>
                 </ul>
                 <button type="button" class="btn btn-success pull-right">Join us!</button>
             </div>
@@ -76,45 +75,15 @@
 
     <div class="container main" role="main">
       <!-- row 1 -->
-      <div class="row event-list">
+      <div class="row px event-list">
 
         <h2 class="text-muted">Upcoming Events</h2>
         <button class="btn btn-default pull-right">Create Event</button>
-        <div class="col-sm-3">
-            <div id="event-card-1" class="event-card">
-                <img src="img/unsplash.it-400x300.png" />
-                <div class="event-card-content">
-                    <a class="h3">%Event Name here can wrap two lines%</a>
-                    <p>%M D YYYY%</p>
-                    <p>%Event City%</p>
-                    <h4 class="text-muted uppercase">Benefiting</h4>
-                    <h3>%Charity Name here can wrap two lines%</h3>
-                    <div class="thermometer">
-                        <div class="thermo-border"></div>
-                        <div class="thermo-fill" style="width:33%;"></div>
-                        <div class="thermo-bg"></div>
-                    </div>
-                    <h3 class="thermo-val text-muted">%$999%</h3>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <div id="event-card-2" class="event-card">
-                <img src="img/unsplash.it-400x300.png" />
-                <div class="event-card-content">
-                    <a class="h3">%Event Name here can wrap two lines%</a>
-                    <p class="event-date">%M D YYYY%</p>
-                    <p class="event-city">%Event City%</p>
-                    <h4 class="text-muted uppercase">Benefiting</h4>
-                    <h3>%Charity Name here can wrap two lines%</h3>
-                    <div class="thermometer">
-                        <div class="thermo-border"></div>
-                        <div class="thermo-fill" style="width:33%;"></div>
-                        <div class="thermo-bg"></div>
-                    </div>
-                    <h3 class="thermo-val text-muted">%$999%</h3>
-                </div>
-            </div>
+        <div id="event-card-list">
+
+
+        <!--event-card-data.json-->
+
         </div>
 
       </div><!-- /row 1 -->
@@ -146,69 +115,9 @@
               </th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td>
-                <img src="http://placehold.it/50x50" />
-              </td>
-              <td>
-                <a href="%event-page-uri%">%Event Name%</a>
-              </td>
-              <td>
-                <span>%MMMM D, YYYY%</span><br />
-                <span>%h:m A%</span>&nbsp;&ndash;&nbsp;<span>%h:m A%</span>
-              </td>
-              <td>
-                %Charity Name%
-              </td>
-              <td>
-                %City%, %ST%
-              </td>
-              <td>
-                <div class="thermometer">
-                    <div class="thermo-border"></div>
-                    <div class="thermo-fill" style="width:33%;"></div>
-                    <div class="thermo-bg"></div>
-                </div>
-                <h3 class="thermo-val text-muted">%$999%</h3>
-              </td>
-              <td>
-                <h3>
-                  %15%
-                </h3>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <img src="http://placehold.it/50x50" />
-              </td>
-              <td>
-                <a href="%event-page-uri%">%Event Name%</a>
-              </td>
-              <td>
-                <span>%MMMM D, YYYY%</span><br />
-                <span>%h:m A%</span>&nbsp;&ndash;&nbsp;<span>%h:m A%</span>
-              </td>
-              <td>
-                %Charity Name%
-              </td>
-              <td>
-                %City%, %ST%
-              </td>
-              <td>
-                <div class="thermometer">
-                    <div class="thermo-border"></div>
-                    <div class="thermo-fill" style="width:33%;"></div>
-                    <div class="thermo-bg"></div>
-                </div>
-                <h3 class="thermo-val text-muted">%$999%</h3>
-              </td>
-              <td>
-                <h3>
-                  %15%
-                </h3>
-              </td>
-            </tr>
+          <tbody id="event-table">
+
+            <!-- events.json -->
 
           </tbody>
         </table>
@@ -220,7 +129,8 @@
     <div class="row pre-footer text-center">
       <div>
         <h3 class="text-muted">Total Raised</h3>
-        <h2 class="text-primary">$90,191</h2>
+        <h2 class="text-primary" id="donation-total"><!--home-totals.json--></h2>
+
       </div>
     </div>
     <!-- /Pre-footer -->
