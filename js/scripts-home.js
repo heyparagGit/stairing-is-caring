@@ -4,10 +4,17 @@
 //Event Handlers
 var buttonHandlers = function(){
   $('#signUpBtn').click(function(){
-    console.log('Sign up button clicked.');
     window.location = 'sign-up.html';
   });
-
+  $('#pledge-btn').click(function(){
+    window.location = 'pledge-form.html';
+  });
+  $('#join-btn').click(function(){
+    window.location = 'event-list.html';
+  });
+  $('#create-event-btn').click(function(){
+    window.location = 'request-event.html';
+  });
 
 
 };
