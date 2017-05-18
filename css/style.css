@@ -11907,7 +11907,7 @@ hr.heart:after, hr.heart-no-bg:after {
 .top-lists-panel {
   padding-bottom: 30px; }
   .top-lists-panel .top-list {
-    padding-bottom: 7px;
+    padding: 0 7px 7px 0;
     background-color: #FFF;
     border: 1px solid #a7a1a1;
     border-radius: 3px;
