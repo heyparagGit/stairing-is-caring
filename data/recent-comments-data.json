@@ -7,6 +7,7 @@
       "pledge_amount": 25,
       "stairs_guess": 500,
       "commenter":{
+        "id": 1,
         "name": "User Name A",
         "image" : "http://www.radfaces.com/images/avatars/aeon-flux.jpg"
       }
@@ -18,6 +19,7 @@
       "pledge_amount": 10,
       "stairs_guess": 999,
       "commenter":{
+        "id": 2,
         "name": "User Name B",
         "image" : "http://www.radfaces.com/images/avatars/bobby-budnick.jpg"
       }
@@ -29,6 +31,7 @@
       "pledge_amount": 50,
       "stairs_guess": 1969,
       "commenter":{
+        "id": 3,
         "name": "User Name C",
         "image" : "http://www.radfaces.com/images/avatars/casey-jones.jpg"
       }
@@ -40,6 +43,7 @@
       "pledge_amount": 25,
       "stairs_guess": 555,
       "commenter":{
+        "id": 4,
         "name": "User Name D",
         "image" : "http://www.radfaces.com/images/avatars/april-oneil.jpg"
       }
@@ -51,6 +55,7 @@
       "pledge_amount": 15,
       "stairs_guess": 1500,
       "commenter":{
+        "id": 5,
         "name": "User Name E",
         "image" : "http://www.radfaces.com/images/avatars/ickis.jpg"
       }

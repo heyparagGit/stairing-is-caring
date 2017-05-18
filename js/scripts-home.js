@@ -107,7 +107,7 @@ var recentCommentFunc = function(){
       var content =
       '<div class="recent-activity"><img class="avatar-small pull-left" src="'
       + recentComments.commenter.image
-      + '" /> <a class="h3" href="#">' + recentComments.commenter.name
+      + '" /> <a class="h3" href="/climber/' + recentComments.commenter.id + '">' + recentComments.commenter.name
       + '</a><h6>' + commentDatetime
       + '</h6><p>' + recentComments.comment
       + '</p><p>' + recentComments.pledge_amount + ', ' + recentComments.stairs_guess
@@ -129,7 +129,7 @@ var eventCardFunc = function(){
       var sumDonations = numeral(events.donation_data.sum_donations).format('($,0)');
       var content =
         '<div class="col-sm-3"><div class="event-card"><img src="'
-        + events.image + '" /><div class="event-card-content"><a class="h3">'
+        + events.image + '" /><div class="event-card-content"><a class="h3" href="/event/' + events.id + '">'
          + events.name + '</a><p>'
          + eventDate + '<br />'
          + events.location.city + ', ' + events.location.state + '</p><h4 class="text-muted uppercase">Benefiting</h4><h3>'
