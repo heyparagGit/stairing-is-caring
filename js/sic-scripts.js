@@ -18,8 +18,9 @@ var buttonHandlers = function(){
   $('#createTeamBtn').click(function(){
     window.location = 'create-team.html';
   });
-
-
+  $('#createTeamBtn').click(function(){
+    alert('Create Team button clicked.');
+  });
 };
 
 
@@ -193,6 +194,9 @@ var eventTeamsRender = function(){
       +'</a><br /><a href="/climber/' + teamsData.member.id + '">' + teamsData.member.first_name + ' ' + teamsData.member.last_name
       +'</a></td><td>' + teamsData.stairs_goal + '</td><td>' + teamsData.donation_goal + '</td><td>'
       + teamsData.pledge_total + '</td><td><button id="donate-inline" class="btn btn-primary">Donate</button></td><td><button id="join-team-inline" class="btn btn-default">Join</button></td></tr>';
+
+      //To-do: Hide JOIN button for teams with Members
+      //To-do: Do not render teamsData.member Name when empty
 
       $('#teams-table').append(content);
     });
@@ -402,5 +406,167 @@ $(document).ready(function(){
   commentsRender();
   newCompanyHandler();
 });
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
 
 //# sourceMappingURL=sic-scripts.js.map

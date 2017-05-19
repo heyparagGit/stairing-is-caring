@@ -53,7 +53,8 @@ gulp.task('concat-scripts', function(){
         .pipe(maps.init())
         .pipe(concat('sic-scripts.js'))
         .pipe(maps.write('./'))
-        .pipe(gulp.dest('js'));
+        .pipe(gulp.dest('js'))
+        .pipe(browserSync.stream());
 });
 // `gulp minify-scripts` will run concat-scripts first
 gulp.task('minify-scripts',['concat-scripts'], function(){
@@ -70,7 +71,7 @@ gulp.task('watch', ['browserSync', 'compile-scss'], function () {
   gulp.watch('./scss/*/*.scss',  ['minify-css'])
   gulp.watch('./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/*.scss', ['minify-css'])
   gulp.watch('./*.html', browserSync.reload)
-  gulp.watch('./js/*.js',['minify-scripts'], browserSync.reload)
+  gulp.watch('./js/*.js',['minify-scripts'])
 });
 
 // BrowserSync server
