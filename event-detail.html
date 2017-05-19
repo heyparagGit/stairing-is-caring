@@ -32,7 +32,7 @@
     <script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
     <script type="text/javascript" src="bower_components/numeral/min/numeral.min.js"></script>
     <script type="text/javascript" src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
-    <script type="text/javascript" src="js/scripts-event-detail.js"></script><!-- Custom Event Detail scripts -->
+    <script type="text/javascript" src="js/sic-scripts.js"></script><!-- Custom scripts -->
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
     <link href="http://addtocalendar.com/atc/1.5/atc-style-blue.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" /><!-- Compiled Bootstrap CSS -->
@@ -75,7 +75,7 @@
               <li><a href="learn.html">Learn</a></li>
               <li><a href="sign-up.html">Sign up</a></li>
                 </ul>
-                <button type="button" class="btn btn-success pull-right">Sign up</button>
+                <button id="signUpBtn" type="button" class="btn btn-success pull-right">Sign up</button>
             </div>
             <!--/.nav-collapse -->
         </div>
@@ -92,7 +92,7 @@
 
         <div class="col-sm-3">
           <label for="event-name">Event</label>
-          <h3 id="event-name"><!-- eventData.name --> </h3>
+          <h3 id="event-name"><!-- eventData.name --></h3>
           <label for="charity-name">Charity</label>
           <h3 id="charity-name">
           <!-- eventData.charity -->
@@ -145,7 +145,7 @@
                 <var class="atc_organizer_email" id="cal-organizer-email">info@stairingiscaring.org</var>
             </var>
           </span>
-          <button id="create-team" class="btn btn-default">Create a Team</button>
+          <button id="createTeamBtn" class="btn btn-default">Create a Team</button>
 
 
         </div>

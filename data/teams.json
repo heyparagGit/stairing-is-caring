@@ -13,14 +13,13 @@
         "company_logo":"img/placeholders/company_logo_125x94.png",
         "company_website":"http://expedia.com"
       },
-      "member":
-        {
-          "id":2,
-          "first_name":"Willy",
-          "last_name":"Maykit",
-          "company":"Blueprint Consulting Services",
-          "company_logo":"img/placeholders/company_logo_125x94.png",
-          "company_website":"http://bpcs.com"
+      "member":{
+        "id":2,
+        "first_name":"Willy",
+        "last_name":"Maykit",
+        "company":"Blueprint Consulting Services",
+        "company_logo":"img/placeholders/company_logo_125x94.png",
+        "company_website":"http://bpcs.com"
         },
       "event":{
         "id":1,
