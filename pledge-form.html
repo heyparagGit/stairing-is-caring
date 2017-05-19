@@ -34,7 +34,6 @@
     <script type="text/javascript" src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
     <script type="text/javascript" src="js/sic-scripts.js"></script>
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
-    <link href="http://addtocalendar.com/atc/1.5/atc-style-blue.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" /><!-- Compiled Bootstrap CSS -->
 
     <title>Stairing is Caring</title>
@@ -65,7 +64,7 @@
             <li><a href="learn.html">Learn</a></li>
             <li><a href="sign-up.html">Sign up</a></li>
               </ul>
-              <button type="button" class="btn btn-success pull-right">Join us!</button>
+              <button id="signUpBtn" type="button" class="btn btn-success pull-right">Join us!</button>
           </div>
           <!--/.nav-collapse -->
       </div>
@@ -120,7 +119,7 @@
                     </div>
                 </div>
                 <div class="col-sm-6 text-right">
-                    <button type="submit" class="btn btn-lg btn-success">Post Comment</button>
+                    <button id="submitCommentBtn" type="submit" class="btn btn-lg btn-success">Post Comment</button>
                     <p class="help-block">
                         This will post your comment and open<br />
                         <a href="" id="charity-site">https://charity-site.org</a><br />
@@ -131,26 +130,6 @@
         </div>
     </div>
     <!-- /Donation Form -->
-    <!-- Donation Confirm -->
-    <div class="row ">
-        <div class="col-sm-2">
-        </div>
-        <div class="sic-form pledge-no-api-confirm col-sm-8">
-            <h2 class="text-muted">Thank you for supporting</h2>
-            <h2 id="team-name" class="text-brand-primary">%Team Name%</h2>
-            <form class="row">
-                <div class="col-sm-12 text-center">
-                    <p>
-                      Be sure to complete your donation at<br />
-                      <a href="" id="charity-site">https://charity-site.org</a>
-                    </p>
-                    <button class="btn btn-default">Yes, I donated to the charity</button>
-                </div>
-            </form>
-        </div>
-    </div>
-    <!-- /Donation Confirm -->
   </div>
-
 
 </body>

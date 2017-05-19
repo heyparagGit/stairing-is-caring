@@ -18,8 +18,24 @@ var buttonHandlers = function(){
   $('#createTeamBtn').click(function(){
     window.location = 'create-team.html';
   });
-  $('#createTeamBtn').click(function(){
-    alert('Create Team button clicked.');
+  $('#submitTeamBtn').click(function(){
+    alert('POST Team form submit.');
+  });
+  $('#signInBtn').click(function(){
+    alert('POST Auth form submit.');
+    window.location = 'index.html';
+  });
+  $('#submitClimberBtn').click(function(){
+    alert('POST Climber form submit.');
+  });
+  $('#sumbitEventRequest').click(function(){
+    alert('POST Event form submit.');
+  });
+  $('#submitCommentBtn').click(function(){
+    alert('POST Event form submit.');
+  });
+  $('#donationConfirm').click(function(){
+    window.location = 'index.html';
   });
 };
 
@@ -406,6 +422,34 @@ $(document).ready(function(){
   commentsRender();
   newCompanyHandler();
 });
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
 
 //# sourceMappingURL=sic-scripts.js.map
 
