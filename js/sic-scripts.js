@@ -402,3 +402,5 @@ $(document).ready(function(){
   commentsRender();
   newCompanyHandler();
 });
+
+//# sourceMappingURL=sic-scripts.js.map
