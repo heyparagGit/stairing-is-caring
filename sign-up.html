@@ -133,9 +133,11 @@
                         <div class="form-group" id="new-company-group">
                             <label for="company-name">Company Name</label>
                             <input type="text" class="form-control" id="company-name" placeholder="" />
-                            <img class="company-logo" src="http://placehold.it/125x60" />
-                            <button class="btn btn-default btn-sm">Upload logo image</button>
-                            <button id="x-new-company" class="btn btn-default btn-sm">Cancel</button>
+                            <div class="logo-upload">
+                              <img class="company-logo" src="http://placehold.it/125x60" />
+                              <button class="btn btn-default btn-sm">Upload logo image</button>
+                              <button id="x-new-company" class="btn btn-default btn-sm">Cancel</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -154,6 +156,7 @@
       $(document).ready(function(){
         buttonHandlers();
         formHandlers();
+        newCompanyHandler();
       });
     </script>
 

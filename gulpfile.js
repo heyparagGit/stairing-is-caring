@@ -21,28 +21,24 @@ gulp.task('default', ['browserSync', 'watch']);
 
 // Styles
 gulp.task('compile-scss', function () {
-  return gulp.src('scss/*')
-    //.pipe(maps.init())
+  return gulp.src('scss/*/*.*')
     .pipe(sass({
       includePaths: [config.bootstrapDir + '/assets/stylesheets'],
     }).on('error', sass.logError))
-    //.pipe(maps.write('./'))
     .pipe(gulp.dest(config.publicDir + '/css'))
     .pipe(browserSync.stream());
 });
 
 gulp.task('concat-css',['compile-scss'], function(){
-    return gulp.src(['css/*.css'])
+    return gulp.src(['css/*/*.css'])
         .pipe(concat('style.css')) // concat into file name
         .pipe(gulp.dest('css'));    // send that file to the css directory
 });
 
 gulp.task('minify-css',['concat-css'], function(){
     return gulp.src('css/style.css')
-      //  .pipe(maps.init({loadMaps:true}))   // create maps from scss *sourcemaps* not the css
         .pipe(cleanCSS())
         .pipe(rename('style.min.css'))
-      //  .pipe(maps.write('./'))
         .pipe(gulp.dest('css'));
 });
 
@@ -50,19 +46,17 @@ gulp.task('minify-css',['concat-css'], function(){
 gulp.task('concat-scripts', function(){
     return gulp.src([                       // specify all source JS file paths
             'js/sic-scripts.js'])
-        .pipe(maps.init())
         .pipe(concat('sic-scripts.js'))
-        .pipe(maps.write('./'))
         .pipe(gulp.dest('js'))
         .pipe(browserSync.stream());
 });
 // `gulp minify-scripts` will run concat-scripts first
 gulp.task('minify-scripts',['concat-scripts'], function(){
     return gulp.src('js/sic-scripts.js')
-        .pipe(maps.init({loadmaps:true}))
+    //    .pipe(maps.init({loadmaps:true}))
         .pipe(uglify())
         .pipe(rename('sic-scripts.min.js'))
-        .pipe(maps.write('./'))
+      //  .pipe(maps.write('./'))
         .pipe(gulp.dest('js'));
 });
 
