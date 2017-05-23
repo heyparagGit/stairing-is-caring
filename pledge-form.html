@@ -32,6 +32,7 @@
     <script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
     <script type="text/javascript" src="bower_components/numeral/min/numeral.min.js"></script>
     <script type="text/javascript" src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="bower_components/jquery-form-validator/form-validator/jquery.form-validator.min.js"></script>
     <script type="text/javascript" src="js/sic-scripts.js"></script>
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
     <link href="css/style.css" rel="stylesheet" /><!-- Compiled Bootstrap CSS -->
@@ -76,55 +77,42 @@
         <div class="col-sm-2">
         </div>
         <div class="sic-form pledge-no-api col-sm-8">
-            <h2 class="text-muted">Pledge support for</h2>
-            <h2 id="team-name" class="text-brand-primary">%Team Name%</h2>
-            <form class="row">
+            <h2 class="text-muted">Pledge your support for
+            </h2><span id="team-name" class="h2 text-brand-primary">%Team Name%</span>
+            <form id="pledge-form" class="row">
                 <div class="col-sm-6">
-                    <div class="form-group">
+                    <div id="post-name-input-group" class="form-group">
                         <label for="post-name">Your Name</label>
-                        <input type="text" class="form-control" id="post-name" placeholder="" />
+                        <input type="text" class="form-control" id="post-name" data-validation="length alphanumeric" data-validation-length="1-100" required="required" />
                     </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="form-group">
-                        <label for="post-email">Email (will not be made public)</label>
-                        <input type="text" class="form-control" id="post-email" placeholder="" />
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="form-group">
+                    <div id="post-comment-input-group" class="form-group">
                         <label for="post-comment">Comment</label>
-                        <textarea type="text" class="form-control" id="post-comment" placeholder=""></textarea>
+                        <textarea type="text" class="form-control" id="post-comment" data-validation="length alphanumeric" data-validation-length="1-255" required="required"></textarea>
                     </div>
+
                 </div>
                 <div class="col-sm-6">
-                    <div class="form-group">
-                        <label for="pledge-amount">Pledge Amount</label>
-                        <div class="input-group">
-                          <div class="input-group-addon">$</div>
-                          <input type="text" class="form-control" id="pledge-amount" placeholder="USD">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="form-group">
-                        <label for="stairs-guess">Stairs Guess</label>
-                        <input type="text" class="form-control" id="stairs-guess" placeholder="" />
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="form-group">
-                        <label for="captcha">Captcha</label>
-                        <input type="text" class="form-control" id="captcha" placeholder="" />
-                    </div>
-                </div>
-                <div class="col-sm-6 text-right">
-                    <button id="submitCommentBtn" type="submit" class="btn btn-lg btn-success">Post Comment</button>
-                    <p class="help-block">
-                        This will post your comment and open<br />
-                        <a href="" id="charity-site">https://charity-site.org</a><br />
-                        <span>Be sure to complete your donation on the charity’s site!</span>
-                    </p>
+                  <div id="post-email-input-group" class="form-group">
+                      <label for="post-email">Email (will not be made public)</label>
+                      <input type="email" class="form-control" id="post-email" data-validation="email" required="required" />
+                  </div>
+                  <div id="pledge-amount-input-group" class="form-group">
+                      <label for="pledge-amount">Pledge Amount</label>
+                      <div class="input-group">
+                        <div class="input-group-addon">$</div>
+                        <input type="number" class="form-control" id="pledge-amount" placeholder="USD" data-validation="number" required="required">
+                      </div>
+                  </div>
+                  <div id="stairs-guess-input-group" class="form-group">
+                      <label for="stairs-guess">Stairs Guess</label>
+                      <input type="number" class="form-control" id="stairs-guess" data-validation="number" required="required" />
+                  </div>
+                  <button id="submitCommentBtn" type="submit" class="btn btn-lg btn-success">Post Comment</button>
+                  <p class="help-block">
+                      This will post your comment and open<br />
+                      <a href="" id="charity-site">https://charity-site.org</a><br />
+                      <span>Be sure to complete your donation on the charity’s site!</span>
+                  </p>
                 </div>
             </form>
         </div>

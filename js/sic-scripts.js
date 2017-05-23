@@ -26,23 +26,33 @@ var buttonHandlers = function(){
 //Form Event Handlers
 var formHandlers = function(){
 
-  var validateTeam = function(){
+  var validateForm = function(){
     $.validate({
-      form: '#create-team-form',
+      form: '#create-team-form, #pledge-form',
       modules: 'html5'
     });
   };
 
-  $('#team-name-input, #donation-goal-input, #stairs-goal-input, #teammate-first-name-input, #teammate-last-name-input, #teammate-email-input').focusout(function(){
-    validateTeam();
+  $('#team-name-input, #donation-goal-input, #stairs-goal-input, #teammate-first-name-input, #teammate-last-name-input, #teammate-email-input, #post-name, #post-comment, #post-email, #pledge-amount, #stairs-guess').focusout(function(){
+    validateForm();
   });
-  $('#submitTeamBtn').click(function(){
-    $('#create-team-form').submit(function(event){
-      alert('Handler for #create-team-form .submit() called.');
-      validateTeam();
+
+  $('#submitCommentBtn').click(function(){
+    $('#pledge-form').submit(function(event){
+      alert('Handler for #pledge-form .submit() called.');
+      validateForm();
       event.preventDefault();
     });
   });
+
+  $('#submitTeamBtn').click(function(){
+    $('#create-team-form').submit(function(event){
+      alert('Handler for #create-team-form .submit() called.');
+      validateForm();
+      event.preventDefault();
+    });
+  });
+
   $('#signInBtn').click(function(){
     alert('POST Auth form submit.');
     window.location = 'index.html';
@@ -51,9 +61,6 @@ var formHandlers = function(){
     alert('POST Climber form submit.');
   });
   $('#sumbitEventRequest').click(function(){
-    alert('POST Event form submit.');
-  });
-  $('#submitCommentBtn').click(function(){
     alert('POST Event form submit.');
   });
 };
@@ -349,7 +356,7 @@ var teamRender = function(){
     var goal = numeral(teamData.donation_goal).format('($0,0)');
     $('#donation-goal').html(goal);
 
-    $('#stiars-thermometer').html('<div class="thermo-fill" style="width:'+teamData.stairs_percent+'%;"></div>')
+    $('#stairs-thermometer').html('<div class="thermo-fill" style="width:'+teamData.stairs_percent+'%;"></div>')
     var climbed = numeral(teamData.stairs_climbed).format('(0,0)');
     $('#stairs-climbed').html(climbed);
     var stairsGoal = numeral(teamData.stairs_goal).format('(0,0)');
@@ -441,60 +448,6 @@ $(document).ready(function(){
   newCompanyHandler();
   formHandlers();
 });
-
-//# sourceMappingURL=sic-scripts.js.map
-
-//# sourceMappingURL=sic-scripts.js.map
-
-//# sourceMappingURL=sic-scripts.js.map
-
-//# sourceMappingURL=sic-scripts.js.map
-
-//# sourceMappingURL=sic-scripts.js.map
-
-//# sourceMappingURL=sic-scripts.js.map
-
-//# sourceMappingURL=sic-scripts.js.map
-
-//# sourceMappingURL=sic-scripts.js.map
-
-//# sourceMappingURL=sic-scripts.js.map
-
-//# sourceMappingURL=sic-scripts.js.map
-
-//# sourceMappingURL=sic-scripts.js.map
-
-//# sourceMappingURL=sic-scripts.js.map
-
-//# sourceMappingURL=sic-scripts.js.map
-
-//# sourceMappingURL=sic-scripts.js.map
-
-//# sourceMappingURL=sic-scripts.js.map
-
-//# sourceMappingURL=sic-scripts.js.map
-
-//# sourceMappingURL=sic-scripts.js.map
-
-//# sourceMappingURL=sic-scripts.js.map
-
-//# sourceMappingURL=sic-scripts.js.map
-
-//# sourceMappingURL=sic-scripts.js.map
-
-//# sourceMappingURL=sic-scripts.js.map
-
-//# sourceMappingURL=sic-scripts.js.map
-
-//# sourceMappingURL=sic-scripts.js.map
-
-//# sourceMappingURL=sic-scripts.js.map
-
-//# sourceMappingURL=sic-scripts.js.map
-
-//# sourceMappingURL=sic-scripts.js.map
-
-//# sourceMappingURL=sic-scripts.js.map
 
 //# sourceMappingURL=sic-scripts.js.map
 
