@@ -32,6 +32,7 @@
     <script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
     <script type="text/javascript" src="bower_components/numeral/min/numeral.min.js"></script>
     <script type="text/javascript" src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="bower_components/jquery-form-validator/form-validator/jquery.form-validator.min.js"></script>
     <script type="text/javascript" src="js/sic-scripts.js"></script>
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/style.css" /><!-- Compiled Bootstrap CSS -->
@@ -64,7 +65,7 @@
             <li><a href="learn.html">Learn</a></li>
             <li><a href="sign-up.html">Sign up</a></li>
               </ul>
-              <button id="signUpBtn" type="button" class="btn btn-success pull-right">Join us!</button>
+              <button id="signInBtn" type="button" class="btn btn-default pull-right">Sign In</button>
           </div>
           <!--/.nav-collapse -->
       </div>
@@ -76,17 +77,17 @@
 
           <div class="sic-form sign-in col-sm-8 col-sm-offset-2">
               <h2 class="text-muted">Sign In</h2>
-              <form>
+              <form id="sign-in-form">
                   <div class="form-group form-group-lg">
                       <label for="sign-in-email">Email</label>
-                      <input type="text" class="form-control" id="sign-in-email" placeholder="you@example.com" />
+                      <input type="text" class="form-control" id="sign-in-email" placeholder="you@example.com" data-validation="email" required />
                   </div>
                   <div class="form-group form-group-lg">
                       <label for="sign-in-password">Password</label>
-                      <input type="password" class="form-control" id="sign-in-password" />
+                      <input type="password" class="form-control" id="sign-in-password" data-validation="length" data-validation-length="min8" required />
                   </div>
                   <div class="text-right">
-                      <button id="signInBtn" type="submit" class="btn btn-lg btn-success">Sign in</button>
+                      <button id="signInFormBtn" type="submit" class="btn btn-lg btn-success">Sign in</button>
                   </div>
               </form>
           </div>
@@ -94,6 +95,11 @@
       </div>
       <!-- /Sign-in Form -->
     </div>
-
+    <script type="text/javascript">
+      $(document).ready(function(){
+        buttonHandlers();
+        formHandlers();
+      });
+    </script>
 
 </body>

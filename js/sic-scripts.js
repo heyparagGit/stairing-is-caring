@@ -28,14 +28,10 @@ var formHandlers = function(){
 
   var validateForm = function(){
     $.validate({
-      form: '#create-team-form, #pledge-form',
-      modules: 'html5, date'
+      form: '#create-team-form, #pledge-form, #sign-in-form, #event-request-form',
+      modules: 'html5, date, security'
     });
   };
-
-  // $('#team-name-input, #donation-goal-input, #stairs-goal-input, #teammate-first-name-input, #teammate-last-name-input, #teammate-email-input, #post-name, #post-comment, #post-email, #pledge-amount, #stairs-guess, #event-name, #event-city, #event-state, #event-address, #requester-name, #requester-email, #event-date').focusout(function(){
-  //   validateForm();
-  // });
 
   $('#submitCommentBtn').click(function(){
     $('#pledge-form').submit(function(event){
@@ -56,9 +52,13 @@ var formHandlers = function(){
     });
   });
 
-  $('#signInBtn').click(function(){
-    alert('POST Auth form submit.');
-    window.location = 'index.html';
+  $('#signInFormBtn').click(function(){
+    $('#sign-in-form').submit(function(event){
+      validateForm();
+      alert('Handler for #sign-in-form .submit() called.');
+      event.preventDefault();
+    });
+  //SUCCESS  window.location = 'index.html';
   });
 
   $('#submitClimberBtn').click(function(){
@@ -468,6 +468,38 @@ var newCompanyHandler = function() {
 
 // SIGN-UP
 //   newCompanyHandler();
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
 
 //# sourceMappingURL=sic-scripts.js.map
 
