@@ -53,10 +53,8 @@ gulp.task('concat-scripts', function(){
 // `gulp minify-scripts` will run concat-scripts first
 gulp.task('minify-scripts',['concat-scripts'], function(){
     return gulp.src('js/sic-scripts.js')
-    //    .pipe(maps.init({loadmaps:true}))
         .pipe(uglify())
         .pipe(rename('sic-scripts.min.js'))
-      //  .pipe(maps.write('./'))
         .pipe(gulp.dest('js'));
 });
 

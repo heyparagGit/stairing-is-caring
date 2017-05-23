@@ -78,41 +78,41 @@
         </div>
         <div class="sic-form sign-up col-sm-8">
             <h2 class="text-muted">Sign Up</h2>
-            <form class="row">
+            <form id="sign-up-form" class="row">
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label for="first-name">First Name</label>
-                        <input type="text" class="form-control" id="first-name" placeholder="" />
+                        <input type="text" class="form-control" id="first-name"  data-validation="length alphanumeric" data-validation-length="1-100" required />
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label for="last-name">Last Name</label>
-                        <input type="text" class="form-control" id="last-name" placeholder="" />
+                        <input type="text" class="form-control" id="last-name" data-validation="length alphanumeric" data-validation-length="1-100" required />
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="text" class="form-control" id="email" placeholder="" />
+                        <input type="text" class="form-control" id="email" data-validation="email" name="email_confirmation" required/>
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label for="confirm-email">Confirm Email</label>
-                        <input type="text" class="form-control" id="confirm-email" placeholder="" />
+                        <input type="text" class="form-control" id="confirm-email" name="email" data-validation="email" required />
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label for="password">Password</label>
-                        <input type="password" class="form-control" id="password" placeholder="" />
+                        <input type="password" class="form-control" id="password" name="pass_confirmation" data-validation="length" data-validation-length="min8" required />
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label for="confirm-password">Confirm Password</label>
-                        <input type="password" class="form-control" id="confirm-password" placeholder="" />
+                        <input type="password" class="form-control" id="confirm-password"  name="pass" data-validation="length" data-validation-length="min8" required />
                     </div>
                 </div>
                 <div class="col-sm-6">
@@ -127,14 +127,13 @@
                     <div class="form-group">
                         <div id="existing-company-group">
                             <label for="company">Company</label>
-                            <input type="text" class="form-control" id="company" placeholder="Type to search" />
-                            <a class="new-company" id="new-company">New company</a>
+                            <input type="text" class="form-control" id="company" placeholder="Type to search" data-validation="length alphanumeric" data-validation-length="1-100" />
                         </div>
                         <div class="form-group" id="new-company-group">
                             <label for="company-name">Company Name</label>
-                            <input type="text" class="form-control" id="company-name" placeholder="" />
+                            <input type="text" class="form-control" id="company-name" data-validation="length alphanumeric" data-validation-length="1-100" />
                             <div class="logo-upload">
-                              <img class="company-logo" src="http://placehold.it/125x60" />
+                              <span id="company-logo-upload"><img class="company-logo" src="http://placehold.it/125x60" /></span>
                               <button class="btn btn-default btn-sm">Upload logo image</button>
                               <button id="x-new-company" class="btn btn-default btn-sm">Cancel</button>
                             </div>
@@ -144,7 +143,7 @@
                 <div class="col-sm-6 text-right">
                     <button id="submitClimberBtn" type="submit" class="btn btn-lg btn-success">Sign up</button>
                     <p class="help-block">
-                        By clicking &quot;Sign up&quot; you agree to <a href="">terms and conditions</a>.
+                        By clicking &quot;Sign up&quot; you agree to <a href="legal.html">terms and conditions</a>.
                     </p>
                 </div>
             </form>
