@@ -41,6 +41,9 @@ var formHandlers = function(){
     $('#pledge-form').submit(function(event){
       alert('Handler for #pledge-form .submit() called.');
       validateForm();
+      $.getJSON('data/event.json', function (eventData){
+        window.location = eventData.charity.donation_url;
+      });
       event.preventDefault();
     });
   });
@@ -394,7 +397,16 @@ var commentsRender = function(){
 
 //Stairing is Caring
 //Scripts for all form pages
-
+var pledgeFormRender = function(){
+  $.getJSON('data/team.json', function (teamData){
+    console.log(teamData);
+    $('#team-name').html(teamData.name);
+  });
+  $.getJSON('data/event.json', function (eventData){
+    console.log(eventData);
+    $('#donation-link').html('<a href="'+eventData.charity.donation_url+'" target="_blank">'+eventData.charity.name+'</a>');
+  });
+};
 
 
 var newCompanyHandler = function() {
@@ -459,8 +471,27 @@ var newCompanyHandler = function() {
 //   eventRender();
 //   commentsRender();
 
+// PLEDGE-FORM functions:
+// pledgeFormRender();
+
 // SIGN-UP
 //   newCompanyHandler();
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
 
 //# sourceMappingURL=sic-scripts.js.map
 
