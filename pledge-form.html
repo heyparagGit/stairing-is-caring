@@ -110,7 +110,7 @@
                   <button id="submitCommentBtn" type="submit" class="btn btn-lg btn-success">Post Comment</button>
                   <p class="help-block">
                       This will post your comment and open<br />
-                      <a href="" id="charity-site">https://charity-site.org</a><br />
+                      <span id="donation-link"><a href="">https://charity-site.org</a></span><br />
                       <span>Be sure to complete your donation on the charity’s site!</span>
                   </p>
                 </div>
@@ -119,5 +119,11 @@
     </div>
     <!-- /Donation Form -->
   </div>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      buttonHandlers();
+      formHandlers();
+    });
+  </script>
 
 </body>

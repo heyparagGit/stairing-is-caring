@@ -298,6 +298,13 @@
                 s.src = ('https:' == window.location.protocol ? 'https' : 'http')+'://addtocalendar.com/atc/1.5/atc.min.js';
                 var h = d[g]('body')[0];h.appendChild(s); }})();
     </script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        buttonHandlers();
+        eventDetailRender();
+        eventTeamsRender();
+      });
+    </script>
 </body>
 
 </html>

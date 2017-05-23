@@ -22,11 +22,11 @@ gulp.task('default', ['browserSync', 'watch']);
 // Styles
 gulp.task('compile-scss', function () {
   return gulp.src('./scss/*.scss')
-    .pipe(maps.init())
+    //.pipe(maps.init())
     .pipe(sass({
       includePaths: [config.bootstrapDir + '/assets/stylesheets'],
     }).on('error', sass.logError))
-    .pipe(maps.write('./'))
+    //.pipe(maps.write('./'))
     .pipe(gulp.dest(config.publicDir + '/css'))
     .pipe(browserSync.stream());
 });
@@ -39,10 +39,10 @@ gulp.task('concat-css',['compile-scss'], function(){
 
 gulp.task('minify-css',['concat-css'], function(){
     return gulp.src('css/style.css')
-        .pipe(maps.init({loadMaps:true}))   // create maps from scss *sourcemaps* not the css
+      //  .pipe(maps.init({loadMaps:true}))   // create maps from scss *sourcemaps* not the css
         .pipe(cleanCSS())
         .pipe(rename('style.min.css'))
-        .pipe(maps.write('./'))
+      //  .pipe(maps.write('./'))
         .pipe(gulp.dest('css'));
 });
 

@@ -362,7 +362,6 @@ var teamRender = function(){
     var stairsGoal = numeral(teamData.stairs_goal).format('(0,0)');
     $('#stairs-goal').html(stairsGoal);
 
-
   });
 };
 
@@ -396,6 +395,8 @@ var commentsRender = function(){
 //Stairing is Caring
 //Scripts for all form pages
 
+
+
 var newCompanyHandler = function() {
         $("#new-company").click(function() {
           $("#new-company-group, #existing-company-group").toggle();
@@ -427,27 +428,45 @@ var newCompanyHandler = function() {
       });
     //end Date Time script
 
+// COMMON functions:
+//   buttonHandlers(); -- all pages
+//   formHandlers(); -- all forms
 
-$(document).ready(function(){
-  homeTotalsFunc();
-  eventCardFunc();
-  recentCommentFunc();
-  avgTeamDonationsFunc();
-  climbingCompaniesFunc();
-  topTeamsDonationsFunc();
-  topTeamsStairsFunc();
-  eventDetailRender();
-  eventTeamsRender();
-  eventTableRender();
-  buttonHandlers();
-  climberRender();
-  eventHistoryRender();
-  teamRender();
-  eventRender();
-  commentsRender();
-  newCompanyHandler();
-  formHandlers();
-});
+// INDEX functions:
+//   homeTotalsFunc();
+//   eventCardFunc();
+//   recentCommentFunc();
+//   avgTeamDonationsFunc();
+//   climbingCompaniesFunc();
+//   topTeamsDonationsFunc();
+//   topTeamsStairsFunc();
+
+// EVENT-DETAIL functions:
+//   eventDetailRender();
+//   eventTeamsRender();
+
+// EVENT-LIST functions:
+//   eventCardFunc();
+//   eventTableRender();
+//   homeTotalsFunc();
+
+// CLIMBER-DETAIL functions:
+//   climberRender();
+//   eventHistoryRender();
+
+// TEAM-DETAIL functions:
+//   teamRender();
+//   eventRender();
+//   commentsRender();
+
+// SIGN-UP
+//   newCompanyHandler();
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
 
 //# sourceMappingURL=sic-scripts.js.map
 
