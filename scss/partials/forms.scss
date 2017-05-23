@@ -67,7 +67,11 @@ img.company-logo {
 
 //Create Team
 .create-team {
- img {max-width: 100%;}
+ img {
+   border: 1px solid $brand-success;
+   border-radius: $border-radius-base;
+   max-width: 80%;
+ }
  textarea {
    min-width: 100%;
    max-width: 100%;

@@ -32,9 +32,9 @@
     <script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
     <script type="text/javascript" src="bower_components/numeral/min/numeral.min.js"></script>
     <script type="text/javascript" src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="bower_components/jquery-form-validator/form-validator/jquery.form-validator.min.js"></script>
     <script type="text/javascript" src="js/sic-scripts.js"></script><!-- Custom scripts link -->
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
-    <link href="http://addtocalendar.com/atc/1.5/atc-style-blue.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" /><!-- Compiled Bootstrap CSS -->
 
     <title>Stairing is Caring</title>
@@ -65,7 +65,7 @@
             <li><a href="learn.html">Learn</a></li>
             <li><a href="sign-up.html">Sign up</a></li>
               </ul>
-              <button type="button" class="btn btn-success pull-right">Join us!</button>
+              <button id="signUpBtn" type="button" class="btn btn-success pull-right">Join us!</button>
           </div>
           <!--/.nav-collapse -->
       </div>
@@ -76,62 +76,63 @@
     <div class="row">
         <div class="sic-form create-team col-sm-8 col-sm-offset-2">
             <h2 class="text-muted">Create Team</h2>
-            <form class="row">
+            <form id="create-team-form" class="row">
                 <div class="col-sm-6">
-                    <div class="form-group">
-                        <label for="team-name">Team Name</label>
-                        <input type="text" class="form-control" id="team-name" placeholder="" />
+                    <div id="team-name-form-group" class="form-group">
+                        <label class="control-label" for="team-name-input">Team Name</label>
+                        <input type="text" class="form-control" id="team-name-input" data-validation="length alphanumeric" data-validation-length="1-100" required="required" />
+                    </div>
+                    <div id="team-motto-form-group" class="form-group">
+                        <label class="control-label" for="team-motto-input">Motto</label>
+                        <textarea type="text" class="form-control" id="team-motto-input" ></textarea>
+                    </div>
+                    <div id="team-image-form-group" class="form-group">
+                        <label class="control-label" for="team-profile-pic">Team Image</label><br />
+                        <img id="team-profile-pic" src="http://www.radfaces.com/images/avatars/ultimate-warrior.jpg" /><br />
+                        <button id="randomImg" class="btn btn-default btn-sm">New random image</button>
+                        <button id="uploadImg" class="btn btn-default btn-sm">Upload custom image</button>
                     </div>
                 </div>
                 <div class="col-sm-6">
-                    <div class="form-group">
-                        <label for="charity-name">Charity Name</label>
-                        <input type="text" class="form-control" id="charity-name" placeholder="" disabled="true" />
+                    <div id="event-name-form-group" class="form-group">
+                        <label class="control-label" for="event-name-input">Event Name</label>
+                        <input type="text" class="form-control" id="event-name-input" placeholder="" disabled="true" />
                     </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="form-group">
-                      <label for="team-moto">Moto</label>
-                      <textarea type="text" class="form-control" id="team-moto" placeholder=""></textarea>
-                  </div>
-                  <div class="form-group">
-                      <label for="profile-pic">Team Image</label><br />
-                      <img id="profile-pic" src="http://www.radfaces.com/images/avatars/ultimate-warrior.jpg" /><br />
-                      <button class="btn btn-default btn-sm">New random image</button>
-                      <button class="btn btn-default btn-sm">Upload custom image</button>
-                  </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label for="donation-goal">Donation Goal</label>
-                        <input type="text" class="form-control" id="donation-goal" placeholder="" />
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div id="donation-goal-form-group" class="form-group">
+                            <label class="control-label" for="donation-goal-input">Donation Goal</label>
+                            <span class="input-group"><span class="input-group-addon">$</span>
+                            <input type="number" class="form-control" id="donation-goal-input" required="required"/></span>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                          <div id="stairs-goal-form-group" class="form-group">
+                              <label class="control-label" for="stairs-goal-input">Stairs Goal</label>
+                              <input type="number" class="form-control" id="stairs-goal-input" required="required"/>
+                          </div>
+                      </div>
                     </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label for="stairs-goal">Stairs Goal</label>
-                        <input type="text" class="form-control" id="stairs-goal" placeholder="" />
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="form-group">
+                    <div id="teammate-first-name-form-group" class="form-group">
                         <h4>Teammate Info (optional)</h4>
-                        <label for="teammate-first-name">Teammate First Name</label>
-                        <input type="text" class="form-control" id="teammate-first-name" placeholder="Optional" />
+                        <label class="control-label" for="teammate-first-name-input">Teammate First Name</label>
+                        <input type="text" class="form-control" id="teammate-first-name-input" placeholder="Optional" data-validation="length alphanumeric" data-validation-length="1-100" data-validation-optional="true" />
                     </div>
-                    <div class="form-group">
-                        <label for="teammate-last-name">Teammate Last Name</label>
-                        <input type="text" class="form-control" id="teammate-last-name" placeholder="Not necessary" />
+                    <div id="teammate-last-name-form-group" class="form-group">
+                        <label class="control-label" for="teammate-last-name-input">Teammate Last Name</label>
+                        <input type="text" class="form-control" id="teammate-last-name-input" placeholder="Not necessary" data-validation="length alphanumeric" data-validation-length="1-100" data-validation-optional="true" />
                     </div>
-                    <div class="form-group">
-                        <label for="teammate-email">Teammate Email</label>
-                        <input type="text" class="form-control" id="teammate-email" placeholder="Unrequired" />
+                    <div id="teammate-email-form-group" class="form-group">
+                        <label class="control-label" for="teammate-email-input">Teammate Email</label>
+                        <input type="email" class="form-control" id="teammate-email-input" placeholder="Unrequired" data-validation="email" data-validation-optional="true" />
                         <help-block>An email invitation will be sent.</help-block>
                     </div>
+                    <div class="text-right">
+                        <button id="submitTeamBtn" type="submit" class="btn btn-lg btn-success">Create Team</button>
+                    </div>
                 </div>
-                <div class="col-sm-6 text-right">
-                    <button id="submitTeamBtn" type="submit" class="btn btn-lg btn-success">Create Team</button>
-                </div>
+
+
             </form>
         </div>
     </div>
