@@ -17840,6 +17840,9 @@ button.close {
   .sic-form select {
     border-radius: 22px; }
 
+span.help-block.form-error {
+  font-size: 11px; }
+
 .sign-up img {
   max-width: 100%; }
 

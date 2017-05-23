@@ -9,6 +9,10 @@ padding-bottom: 15px;
   select {border-radius: $border-radius-large;}
 }
 
+span.help-block.form-error {
+  font-size: 11px;
+}
+
 //Sign-in form
 .sign-in {}
 
