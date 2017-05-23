@@ -29,13 +29,13 @@ var formHandlers = function(){
   var validateForm = function(){
     $.validate({
       form: '#create-team-form, #pledge-form',
-      modules: 'html5'
+      modules: 'html5, date'
     });
   };
 
-  $('#team-name-input, #donation-goal-input, #stairs-goal-input, #teammate-first-name-input, #teammate-last-name-input, #teammate-email-input, #post-name, #post-comment, #post-email, #pledge-amount, #stairs-guess').focusout(function(){
-    validateForm();
-  });
+  // $('#team-name-input, #donation-goal-input, #stairs-goal-input, #teammate-first-name-input, #teammate-last-name-input, #teammate-email-input, #post-name, #post-comment, #post-email, #pledge-amount, #stairs-guess, #event-name, #event-city, #event-state, #event-address, #requester-name, #requester-email, #event-date').focusout(function(){
+  //   validateForm();
+  // });
 
   $('#submitCommentBtn').click(function(){
     $('#pledge-form').submit(function(event){
@@ -60,11 +60,17 @@ var formHandlers = function(){
     alert('POST Auth form submit.');
     window.location = 'index.html';
   });
+
   $('#submitClimberBtn').click(function(){
     alert('POST Climber form submit.');
   });
+
   $('#sumbitEventRequest').click(function(){
-    alert('POST Event form submit.');
+    $('#event-request-form').submit(function(event){
+      alert('Handler for #event-request-form .submit() called.');
+      validateForm();
+      event.preventDefault();
+    });
   });
 };
 
@@ -409,6 +415,7 @@ var pledgeFormRender = function(){
 };
 
 
+
 var newCompanyHandler = function() {
         $("#new-company").click(function() {
           $("#new-company-group, #existing-company-group").toggle();
@@ -416,29 +423,14 @@ var newCompanyHandler = function() {
         $("#x-new-company").click(function() {
           $("#new-company-group, #existing-company-group").toggle();
         });
+        $("#company").autocomplete({
+            source: ["%Company R%", "%Company S%", "%Company T%", "%Company S%", "%Company E%", "Expedia", "Blueprint Consulting Services"]
+        });
     };
 
-    $("#company").autocomplete({
-        source: ["%Company R%", "%Company S%", "%Company T%", "%Company S%", "%Company E%", "Expedia", "Blueprint Consulting Services"]
-    });
 
-    // begin Date Time script
-      $(function () {
-        $('#event-date-picker').datetimepicker({
-          format: 'D/M/YYYY'
-        });
-      });
-      $(function () {
-        $('#event-start-time-picker').datetimepicker({
-          format: 'h A'
-        });
-      });
-      $(function () {
-        $('#event-end-time-picker').datetimepicker({
-          format: 'h A'
-        });
-      });
-    //end Date Time script
+
+
 
 // COMMON functions:
 //   buttonHandlers(); -- all pages
@@ -476,6 +468,28 @@ var newCompanyHandler = function() {
 
 // SIGN-UP
 //   newCompanyHandler();
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
 
 //# sourceMappingURL=sic-scripts.js.map
 

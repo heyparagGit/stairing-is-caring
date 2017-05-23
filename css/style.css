@@ -3,21 +3,25 @@
 @import url("https://fonts.googleapis.com/css?family=Baloo");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Baloo");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Baloo");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Baloo");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Baloo");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@font-face {
+  font-family: 'glyphicons-halflings-regular';
+  src: url("bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"); }
+
 /* Custom Bootstrap SASS */
 /* #2E2B2B */
 /* #F5EDED */
-@import url("https://fonts.googleapis.com/css?family=Baloo");
-@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
-@import url("https://fonts.googleapis.com/css?family=Baloo");
-@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
-@import url("https://fonts.googleapis.com/css?family=Baloo");
-@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
-@import url("https://fonts.googleapis.com/css?family=Baloo");
-@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 .text-brand-offwhite {
   color: #f5eded; }
 
@@ -301,8 +305,8 @@ th {
 
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("../bower_components/boostrap-sass/assets/fonts/bootstrap/../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.eot");
-  src: url("../bower_components/boostrap-sass/assets/fonts/bootstrap/../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../bower_components/boostrap-sass/assets/fonts/bootstrap/../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("../bower_components/boostrap-sass/assets/fonts/bootstrap/../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../bower_components/boostrap-sass/assets/fonts/bootstrap/../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../bower_components/boostrap-sass/assets/fonts/bootstrap/../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.svg#../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular") format("svg"); }
+  src: url("../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.eot");
+  src: url("../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons-halflings-regular") format("svg"); }
 
 .glyphicon {
   position: relative;
@@ -5886,6 +5890,10 @@ button.close {
     display: none !important; } }
 
 /* Stairing Brand Fonts */
+@font-face {
+  font-family: 'glyphicons-halflings-regular';
+  src: url("bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"); }
+
 /* Custom Bootstrap SASS */
 /* #2E2B2B */
 /* #F5EDED */
@@ -6172,8 +6180,8 @@ th {
 
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("../bower_components/boostrap-sass/assets/fonts/bootstrap/../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.eot");
-  src: url("../bower_components/boostrap-sass/assets/fonts/bootstrap/../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../bower_components/boostrap-sass/assets/fonts/bootstrap/../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("../bower_components/boostrap-sass/assets/fonts/bootstrap/../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../bower_components/boostrap-sass/assets/fonts/bootstrap/../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../bower_components/boostrap-sass/assets/fonts/bootstrap/../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.svg#../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular") format("svg"); }
+  src: url("../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.eot");
+  src: url("../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons-halflings-regular") format("svg"); }
 
 .glyphicon {
   position: relative;
@@ -11964,6 +11972,10 @@ hr.heart:after, hr.heart-no-bg:after {
   margin-bottom: 15px; }
 
 /* Stairing Brand Fonts */
+@font-face {
+  font-family: 'glyphicons-halflings-regular';
+  src: url("bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"); }
+
 /* Custom Bootstrap SASS */
 /* #2E2B2B */
 /* #F5EDED */
@@ -12250,8 +12262,8 @@ th {
 
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("../bower_components/boostrap-sass/assets/fonts/bootstrap/../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.eot");
-  src: url("../bower_components/boostrap-sass/assets/fonts/bootstrap/../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../bower_components/boostrap-sass/assets/fonts/bootstrap/../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("../bower_components/boostrap-sass/assets/fonts/bootstrap/../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../bower_components/boostrap-sass/assets/fonts/bootstrap/../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../bower_components/boostrap-sass/assets/fonts/bootstrap/../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.svg#../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular") format("svg"); }
+  src: url("../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.eot");
+  src: url("../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons-halflings-regular") format("svg"); }
 
 .glyphicon {
   position: relative;
@@ -18599,6 +18611,10 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.focus {
 
 /*# sourceMappingURL=bootstrap-datepicker3.css.map */
 /* Stairing Brand Fonts */
+@font-face {
+  font-family: 'glyphicons-halflings-regular';
+  src: url("bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"); }
+
 /* Custom Bootstrap SASS */
 /* #2E2B2B */
 /* #F5EDED */
@@ -18885,8 +18901,8 @@ th {
 
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("../bower_components/boostrap-sass/assets/fonts/bootstrap/../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.eot");
-  src: url("../bower_components/boostrap-sass/assets/fonts/bootstrap/../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../bower_components/boostrap-sass/assets/fonts/bootstrap/../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("../bower_components/boostrap-sass/assets/fonts/bootstrap/../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../bower_components/boostrap-sass/assets/fonts/bootstrap/../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../bower_components/boostrap-sass/assets/fonts/bootstrap/../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.svg#../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular") format("svg"); }
+  src: url("../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.eot");
+  src: url("../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons-halflings-regular") format("svg"); }
 
 .glyphicon {
   position: relative;
@@ -24558,6 +24574,10 @@ table img {
     border: none; }
 
 /* Stairing Brand Fonts */
+@font-face {
+  font-family: 'glyphicons-halflings-regular';
+  src: url("bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"); }
+
 /* Custom Bootstrap SASS */
 /* #2E2B2B */
 /* #F5EDED */
@@ -24844,8 +24864,8 @@ th {
 
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("../bower_components/boostrap-sass/assets/fonts/bootstrap/../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.eot");
-  src: url("../bower_components/boostrap-sass/assets/fonts/bootstrap/../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../bower_components/boostrap-sass/assets/fonts/bootstrap/../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("../bower_components/boostrap-sass/assets/fonts/bootstrap/../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../bower_components/boostrap-sass/assets/fonts/bootstrap/../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../bower_components/boostrap-sass/assets/fonts/bootstrap/../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.svg#../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular") format("svg"); }
+  src: url("../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.eot");
+  src: url("../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons-halflings-regular") format("svg"); }
 
 .glyphicon {
   position: relative;

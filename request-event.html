@@ -32,6 +32,7 @@
     <script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
     <script type="text/javascript" src="bower_components/numeral/min/numeral.min.js"></script>
     <script type="text/javascript" src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="bower_components/jquery-form-validator/form-validator/jquery.form-validator.min.js"></script>
     <script type="text/javascript" src="js/sic-scripts.js"></script>
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
     <link href="css/atc-style-blue.css" rel="stylesheet" type="text/css">
@@ -76,53 +77,26 @@
     <!-- Event Request -->
     <div class="row ">
         <div class="col-sm-2">
-        </div>
+      </div>
         <div class="sic-form event-request col-sm-8">
             <h2 class="text-muted">Event Request</h2>
-            <form class="row">
+            <form id="event-request-form" class="row">
                 <div class="col-sm-6">
-                    <div class="form-group">
-                        <label for="event-name">Event Name</label>
-                        <input type="text" class="form-control" id="event-name" placeholder="" />
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="form-group">
-                      <label for="event-date">Event Date</label><br />
-                      <div class="input-group date" id="event-date-picker">
-                        <input type="text" class="form-control" id="event-date" placeholder="" />
-                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                      </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 col-sm-offset-6">
-                  <div class="dropdown">
-                    <label for="event-start-time">Start Time</label>
-                    <div class="input-group date" id="event-start-time-picker">
-                      <input type="text" class="form-control" id="event-start-time" placeholder="" />
-                      <span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
-                    </div>
+                  <div class="form-group">
+                    <label for="event-name">Event Name</label>
+                    <input type="text" class="form-control" id="event-name" data-validation="length alphanumeric" data-validation-length="1-100" required/>
                   </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label for="event-end-time">End Time</label>
-                        <div class="input-group date" id="event-end-time-picker">
-                          <input type="text" class="form-control" id="event-end-time" placeholder="" />
-                          <span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-sm-6">
+                  <div class="form-group">
+                      <label for="event-address">Address</label>
+                      <input type="text" class="form-control" id="event-address" data-validation="length alphanumeric" data-validation-length="1-255" required/>
+                  </div>
                   <div class="form-group">
                       <label for="event-city">City</label>
-                      <input type="text" class="form-control" id="event-city" placeholder="" />
+                      <input type="text" class="form-control" id="event-city" data-validation="length" data-validation-length="1-255" required />
                   </div>
-                </div>
-                <div class="col-sm-6">
                   <div class="form-group">
                       <label for="event-state">State</label>
-                      <select class="form-control" id="event-state" name="event-state">
+                      <select class="form-control" id="event-state" name="event-state" required>
                             <option value="AK">Alaska</option>
                             <option value="AL">Alabama</option>
                             <option value="AR">Arkansas</option>
@@ -177,56 +151,58 @@
                             <option value="WY">Wyoming</option>
                           </select>
                       </div>
+
+                      <div class="form-group">
+                          <label for="requester-name">Your Name</label>
+                          <input type="text" class="form-control" id="requester-name" data-validation="length" data-validation-length="1-255" required/>
+                      </div>
+                      <div class="form-group">
+                          <label for="requester-email">Your Email</label>
+                          <input type="email" class="form-control" id="requester-email" required/>
+                      </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="event-date">Event Date</label><br />
+                    <div class="input-group date" id="event-date-picker">
+                      <input type="text" class="form-control" id="event-date"  data-validation-format="mm/dd/yyyy" required/>
+                      <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="dropdown">
+                        <label for="event-start-time">Start Time</label>
+                        <div class="input-group date" id="event-start-time-picker">
+                          <input type="text" class="form-control" id="event-start-time" data-validation="time" required />
+                          <span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="event-end-time">End Time</label>
+                        <div class="input-group date" id="event-end-time-picker">
+                          <input type="text" class="form-control" id="event-end-time" data-validation="time" required />
+                          <span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                      <label for="event-site-stairs">Stairs on site</label>
+                      <input type="number" class="form-control" id="event-site-stairs" required/>
+                  </div>
+                  <div class="form-group">
+                      <label for="charity-name">Charity Name</label>
+                      <input type="text" class="form-control" id="charity-name" data-validation="length" data-validation-length="1-100" required/>
+                  </div>
+                  <div class="form-group">
+                      <label for="charity-website">Charity's Donation Page</label>
+                      <input type="text" class="form-control" id="charity-website" data-validation="url" required />
+                  </div>
                 </div>
 
-                <div class="col-sm-12">
-                    <div class="form-group">
-                        <label for="event-address">Address</label>
-                        <input type="text" class="form-control" id="event-address" placeholder="" />
-                    </div>
-                </div>
-                <div class="col-sm-3 col-sm-offset-6">
-                    <div class="dropdown">
-                      <label for="event-currency">Currency</label>
-                      <button class="btn btn-default dropdown-toggle" type="button" id="event-currency" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                        <span id="event-currency-selected">USD</span>
-                        <span class="caret"></span>
-                      </button>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li id="event-currency-usd">USD</li>
-                      </ul>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label for="event-site-stairs">Stairs on site</label>
-                        <input type="text" class="form-control" id="event-site-stairs" placeholder="" />
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="form-group">
-                        <label for="charity-name">Charity Name</label>
-                        <input type="text" class="form-control" id="charity-name" placeholder="" />
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="form-group">
-                        <label for="charity-website">Charity Website</label>
-                        <input type="text" class="form-control" id="charity-website" placeholder="" />
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="form-group">
-                        <label for="requester-name">Your Name</label>
-                        <input type="text" class="form-control" id="requester-name" placeholder="" />
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="form-group">
-                        <label for="requester-email">Your Email</label>
-                        <input type="text" class="form-control" id="requester-email" placeholder="" />
-                    </div>
-                </div>
                 <div class="col-sm-12 text-right">
                     <button id="sumbitEventRequest" type="submit" class="btn btn-lg btn-success">Request Event</button>
                 </div>
@@ -243,6 +219,28 @@
     <!-- /Event Request -->
 
   </div>
-
+  <script type="text/javascript">
+    $(document).ready(function(){
+      buttonHandlers();
+      formHandlers();
+      // begin Date Time script
+        $(function () {
+          $('#event-date-picker').datetimepicker({
+            format: 'L'
+          });
+        });
+        $(function () {
+          $('#event-start-time-picker').datetimepicker({
+            format: 'h A'
+          });
+        });
+        $(function () {
+          $('#event-end-time-picker').datetimepicker({
+            format: 'h A'
+          });
+        });
+      //end Date Time script
+    });
+  </script>
 
 </body>

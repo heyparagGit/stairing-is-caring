@@ -21,7 +21,7 @@ gulp.task('default', ['browserSync', 'watch']);
 
 // Styles
 gulp.task('compile-scss', function () {
-  return gulp.src('./scss/*.scss')
+  return gulp.src('scss/*')
     //.pipe(maps.init())
     .pipe(sass({
       includePaths: [config.bootstrapDir + '/assets/stylesheets'],
