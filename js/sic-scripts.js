@@ -33,6 +33,10 @@ var formHandlers = function(){
     });
   };
 
+  $('#sign-in-email, #sign-in-password').focusout(function(){
+    validateForm();
+  });
+
   $('#submitCommentBtn').click(function(){
     $('#pledge-form').submit(function(event){
       alert('Handler for #pledge-form .submit() called.');
@@ -468,6 +472,10 @@ var newCompanyHandler = function() {
 
 // SIGN-UP
 //   newCompanyHandler();
+
+//# sourceMappingURL=sic-scripts.js.map
+
+//# sourceMappingURL=sic-scripts.js.map
 
 //# sourceMappingURL=sic-scripts.js.map
 

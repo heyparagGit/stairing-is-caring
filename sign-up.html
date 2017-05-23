@@ -34,7 +34,7 @@
     <script type="text/javascript" src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
     <script type="text/javascript" src="js/sic-scripts.js"></script>
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
-    <link href="http://addtocalendar.com/atc/1.5/atc-style-blue.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="bower_components/jquery-form-validator/form-validator/jquery.form-validator.min.js"></script>
     <link href="css/style.css" rel="stylesheet" /><!-- Compiled Bootstrap CSS -->
 
     <title>Stairing is Caring</title>
@@ -150,6 +150,11 @@
     </div>
     <!-- /Sign-up Form -->
     </div>
-
+    <script type="text/javascript">
+      $(document).ready(function(){
+        buttonHandlers();
+        formHandlers();
+      });
+    </script>
 
 </body>
