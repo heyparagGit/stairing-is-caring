@@ -67,8 +67,9 @@ var formHandlers = function(){
 
   $('#submitClimberBtn').click(function(){
     $('#sign-up-form').submit(function(event){
-      alert('Handler for #sign-up-form .submit() called.');
       validateForm();
+      //alert('Handler for #sign-up-form .submit() called.');
+
       event.preventDefault();
     });
   });
@@ -425,20 +426,18 @@ var pledgeFormRender = function(){
 
 // Sign Up Form
 var newCompanyHandler = function() {
-    $("#new-company").click(function() {
-      $("#new-company-group, #existing-company-group").toggle();
+    $("#new-company-anchor").click(function() {
+      $('#company-label').html('New Company Name');
+      $('#new-company-group, #new-company-anchor').toggle();
     });
-    $("#x-new-company").click(function() {
-      $("#new-company-group, #existing-company-group").toggle();
+    $('#x-new-company').click(function() {
+      $('#company-label').html('Company Name');
+      $('#new-company-group, #new-company-anchor').toggle();
     });
-    $("#company").autocomplete({
+    $('#company-input').autocomplete({
         source: ["%Company R%", "%Company S%", "%Company T%", "%Company S%", "%Company E%", "Expedia", "Blueprint Consulting Services"]
     });
 };
-
-
-
-
 
 // COMMON functions:
 //   buttonHandlers(); -- all pages

@@ -38,6 +38,16 @@ a.new-company {
 #new-company-group{
   display: none;
 }
+#company-logo-upload{
+  width: 125px;
+  height: 60px;
+  text-align: center;
+  padding-top: 20px;
+  font-style: italic;
+  color: $gray-light;
+  border: 1px solid $brand-info;
+  background-color: #FFF;
+}
 
 //Pledge No API
 .pledge-no-api {
@@ -90,6 +100,3 @@ a.new-company {
  .help-block {text-align: left;}
  button {margin-top:12px;}
 }
-
-//Dev tools
-hr {border-top: 1px solid $gray;}

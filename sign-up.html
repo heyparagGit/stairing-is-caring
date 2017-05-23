@@ -35,6 +35,8 @@
     <script type="text/javascript" src="js/sic-scripts.js"></script>
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
     <script type="text/javascript" src="bower_components/jquery-form-validator/form-validator/jquery.form-validator.min.js"></script>
+<link rel="stylesheet" href="bower_components/jquery-ui/themes/base/jquery-ui.min.css"/>
+    <link rel="stylesheet" href="bower_components/jquery-ui/themes/base/autocomplete.css" />
     <link href="css/style.css" rel="stylesheet" /><!-- Compiled Bootstrap CSS -->
 
     <title>Stairing is Caring</title>
@@ -82,7 +84,7 @@
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label for="first-name">First Name</label>
-                        <input type="text" class="form-control" id="first-name"  data-validation="length alphanumeric" data-validation-length="1-100" required />
+                        <input class="form-control" id="first-name" type="text"  data-validation="length alphanumeric" data-validation-length="1-100" required />
                     </div>
                 </div>
                 <div class="col-sm-6">
@@ -112,7 +114,7 @@
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label for="confirm-password">Confirm Password</label>
-                        <input type="password" class="form-control" id="confirm-password"  name="pass" data-validation="length" data-validation-length="min8" required />
+                        <input type="password" class="form-control" id="confirm-password" name="pass" data-validation="length" data-validation-length="min8" required />
                     </div>
                 </div>
                 <div class="col-sm-6">
@@ -126,14 +128,15 @@
                 <div class="col-sm-6">
                     <div class="form-group">
                         <div id="existing-company-group">
-                            <label for="company">Company</label>
-                            <input type="text" class="form-control" id="company" placeholder="Type to search" data-validation="length alphanumeric" data-validation-length="1-100" />
+                            <label id="company-label" for="company">Select Company</label>
+                            <input type="text" class="form-control" id="company-input" placeholder="Type to search" data-validation="length alphanumeric" data-validation-length="1-100" required />
+                            <a class="new-company" id="new-company-anchor">Add my company</a>
                         </div>
                         <div class="form-group" id="new-company-group">
-                            <label for="company-name">Company Name</label>
-                            <input type="text" class="form-control" id="company-name" data-validation="length alphanumeric" data-validation-length="1-100" />
                             <div class="logo-upload">
-                              <span id="company-logo-upload"><img class="company-logo" src="http://placehold.it/125x60" /></span>
+                              <div id="company-logo-upload">
+                                <span>Your Logo Here</span>
+                              </div>
                               <button class="btn btn-default btn-sm">Upload logo image</button>
                               <button id="x-new-company" class="btn btn-default btn-sm">Cancel</button>
                             </div>
