@@ -1,9 +1,9 @@
 # Stairing is Caring
 
-<span style="color:green">#### In progress</span>
+#### In progress
 - [ ] Mobile CSS
 
-<span style="color:orange">#### Backlog</span>
+#### Backlog
 
 - [ ] Write API atop stored procs
 - [ ] Replace static JSON files with API calls
@@ -11,7 +11,7 @@
 - [ ] Authentication
 - [ ] Admin UI (enables an admin to create/edit/delete any object)
 
-<span style="color:blue">#### Complete</span>
+#### Complete
 - [x] Client-side form validation
 - [x] UX Design
 - [x] HTML built using static content
