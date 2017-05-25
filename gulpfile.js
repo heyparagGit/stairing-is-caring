@@ -21,7 +21,7 @@ gulp.task('default', ['browserSync', 'watch']);
 
 // Styles
 gulp.task('compile-scss', function () {
-  return gulp.src('scss/*/*.*')
+  return gulp.src('scss/**/*.scss')
     .pipe(sass({
       includePaths: [config.bootstrapDir + '/assets/stylesheets'],
     }).on('error', sass.logError))
@@ -30,7 +30,7 @@ gulp.task('compile-scss', function () {
 });
 
 gulp.task('concat-css',['compile-scss'], function(){
-    return gulp.src(['css/*/*.css'])
+    return gulp.src(['css/**/*.css'])
         .pipe(concat('style.css')) // concat into file name
         .pipe(gulp.dest('css'));    // send that file to the css directory
 });
@@ -60,7 +60,7 @@ gulp.task('minify-scripts',['concat-scripts'], function(){
 
 // Watch
 gulp.task('watch', ['browserSync', 'compile-scss'], function () {
-  gulp.watch('./scss/*/*.scss',  ['minify-css'])
+  gulp.watch('./scss/**/*.scss',  ['minify-css'])
   gulp.watch('./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/*.scss', ['minify-css'])
   gulp.watch('./*.html', browserSync.reload)
   gulp.watch('./js/*.js',['minify-scripts'])
