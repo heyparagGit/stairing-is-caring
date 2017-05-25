@@ -21,12 +21,10 @@ img.mascot-ask {
     border-radius: $border-radius-large;
     padding: 15px;
     min-height: 222px;
-
     h1,
     h3 {
         color: $brand-offwhite;
     }
-
     h1 {
         font-size: 5.5vw;
     }
@@ -137,7 +135,7 @@ hr.heart:after, hr.heart-no-bg:after {
 // What is Stairing is Caring panel
 .what-is {
     padding: 30px 0;
-    h2 {font-size: 3vw;}
+    h2 {font-size: 6vw;}
     h2.text-primary {margin-top: 0px;}
     .row {margin-bottom: 30px;}
 }
@@ -169,7 +167,7 @@ hr.heart:after, hr.heart-no-bg:after {
     h6,
     p {
         margin-left: 47px;
-        font-size: $font-size-small;
+        font-size: $font-size-base;
         padding-right: 15px;
     }
 
@@ -186,6 +184,7 @@ hr.heart:after, hr.heart-no-bg:after {
 
     .top-list {
         padding: 0 7px 7px 0;
+        margin-bottom: 16px;
         background-color: #FFF;
         border: 1px solid $gray-light;
         border-radius: $border-radius-small;

@@ -5983,7 +5983,7 @@ hr.heart:after, hr.heart-no-bg:after {
 .what-is {
   padding: 30px 0; }
   .what-is h2 {
-    font-size: 3vw; }
+    font-size: 6vw; }
   .what-is h2.text-primary {
     margin-top: 0px; }
   .what-is .row {
@@ -6007,7 +6007,7 @@ hr.heart:after, hr.heart-no-bg:after {
   .recent-activity h6,
   .recent-activity p {
     margin-left: 47px;
-    font-size: 11px;
+    font-size: 14px;
     padding-right: 15px; }
 
 .avatar-small {
@@ -6019,6 +6019,7 @@ hr.heart:after, hr.heart-no-bg:after {
   padding-bottom: 30px; }
   .top-lists-panel .top-list {
     padding: 0 7px 7px 0;
+    margin-bottom: 16px;
     background-color: #FFF;
     border: 1px solid #a7a1a1;
     border-radius: 3px;

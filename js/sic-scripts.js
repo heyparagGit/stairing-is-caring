@@ -191,7 +191,7 @@ var eventCardFunc = function(){
       var eventDate = moment(events.event_date).format('MMM D, YYYY');
       var sumDonations = numeral(events.donation_data.sum_donations).format('($,0)');
       var content =
-        '<div class="col-sm-3"><div class="event-card"><img src="'
+        '<div class="col-sm-3 col-xs-6"><div class="event-card"><img src="'
         + events.image + '" /><div class="event-card-content"><a class="h3" href="/event/' + events.id + '">'
          + events.name + '</a><p>'
          + eventDate + '<br />'
@@ -227,6 +227,7 @@ var homeTotalsFunc = function(){
      homeTotalsData.totalStairs.map(function (totalStairs){
         var stairs = numeral(totalStairs.count).format('(0,0)')
         $('#what-is-stairs-total').html(stairs);
+        $('#what-is-stairs-total-m').html(stairs);
       });
 
     homeTotalsData.totalCharities.map(function (totalCharities){
