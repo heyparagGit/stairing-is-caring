@@ -28,7 +28,7 @@
   font-family: "Roboto Slab", serif; }
 
 .navbar button {
-  margin: 26px 0 7px; }
+  margin: 26px 0px 7px 0px; }
 
 .navbar-brand img {
   height: auto;
@@ -5902,7 +5902,7 @@ img.mascot-ask {
 .cta-panel.brand-info {
   background-color: rgba(34, 146, 164, 0.62); }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .cta-panel h1 {
     font-size: 63px; } }
 

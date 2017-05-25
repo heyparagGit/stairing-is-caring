@@ -43,7 +43,7 @@ img.mascot-ask {
 .cta-panel.brand-info {
     background-color: rgba($brand-info, .62);
 }
-@media (max-width: $screen-sm) {
+@media (max-width: $screen-xs) {
     .cta-panel h1 {
         font-size: $font-size-h1;
     }

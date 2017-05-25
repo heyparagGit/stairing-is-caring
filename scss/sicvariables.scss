@@ -222,7 +222,7 @@ $navbar-default-toggle-icon-bar-bg: rgb(136, 136, 136);
 $navbar-default-toggle-border-color: $brand-primary;
 .navbar a {font-family: $roboto-slab;}
 .navbar button {
-  margin:26px 0 7px;
+  margin:26px 0px 7px 0px;
 }
 .navbar-brand img{
   height: auto;
@@ -231,7 +231,7 @@ $navbar-default-toggle-border-color: $brand-primary;
   min-width: 182px;
   max-height: 34px;
 }
-//XS mobile viewport breakpoint 480px
+//XS mobile viewport breakpoint <768px
 @media (max-width: $screen-xs) {
   .navbar-brand img{
     width: 181px;

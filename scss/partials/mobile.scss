@@ -1,0 +1,25 @@
+@import "scss/sicvariables";
+@import "bootstrap";
+
+// Stairing is Caring
+// RESPONSIVE STYLES
+
+// 768px Breakpoint
+
+@media (max-width: $screen-sm){
+  button.navbar-toggle.collapsed {
+    margin-right: 16px;
+    border-color: $brand-info;
+    }
+  ul.nav.navbar-nav {
+    text-align: right;
+    padding-right: 16px;
+  }
+  #signInBtn {
+    margin: 0px 0px 16px 0px;
+  }
+  .cta-panel {
+    min-height: 156px;
+    margin-bottom: 16px;
+  }
+}

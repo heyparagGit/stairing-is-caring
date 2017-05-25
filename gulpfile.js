@@ -26,7 +26,7 @@ gulp.task('compile-scss', function () {
       includePaths: [config.bootstrapDir + '/assets/stylesheets'],
     }).on('error', sass.logError))
     .pipe(gulp.dest(config.publicDir + '/css'))
-    .pipe(browserSync.stream());
+    .pipe(browserSync.reload({stream: true}));
 });
 
 gulp.task('concat-css',['compile-scss'], function(){

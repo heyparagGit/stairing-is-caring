@@ -5872,34 +5872,15 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
-.learn {
-  padding: 30px 0; }
-
-.learn-list {
-  list-style: none;
-  line-height: 1.68em; }
-  .learn-list li {
-    padding-left: 1.3em; }
-  .learn-list li:before {
-    content: "\f02e";
-    color: #ed1416;
-    font-family: FontAwesome;
-    display: inline-block;
-    margin-left: -1.3em;
-    width: 1.3em; }
-
-.learn-list ul {
-  list-style: none; }
-  .learn-list ul li {
-    margin-left: -2.8em; }
-  .learn-list ul li:before {
-    content: none; }
-
-h4.text-capitalize {
-  color: #2e2b2b; }
-
-.list-indent {
-  padding-left: 39px; }
-
-.denominator {
-  border-top: 1px solid #867e7e; }
+@media (max-width: 768px) {
+  button.navbar-toggle.collapsed {
+    margin-right: 16px;
+    border-color: #2292a4; }
+  ul.nav.navbar-nav {
+    text-align: right;
+    padding-right: 16px; }
+  #signInBtn {
+    margin: 0px 0px 16px 0px; }
+  .cta-panel {
+    min-height: 156px;
+    margin-bottom: 16px; } }
