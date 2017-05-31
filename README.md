@@ -19,11 +19,11 @@
 - [ ] Custom or random images for objects
 - [ ] Type to Search Company list from JSON
 - [ ] Add Heart Guy to other pages
-- [ ] Site Footer
 - [ ] Teams list: Handle Donate and Join buttons
 - [ ] All Comments page?
 
 #### Complete
+- [x] Site Footer
 - [x] Readme.md To-do list
 - [x] S3 hosting
 - [x] Client-side form validation

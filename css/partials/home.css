@@ -6085,3 +6085,6 @@ hr.heart:after, hr.heart-no-bg:after {
   .site-footer-panel p {
     text-align: center;
     color: #FFF; }
+
+.row {
+  margin: 30px; }
