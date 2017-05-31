@@ -6059,13 +6059,20 @@ hr.heart:after, hr.heart-no-bg:after {
   .big-quote-panel h3 {
     text-align: right; }
 
+.pre-footer {
+  padding-top: 27px;
+  margin-bottom: 15px; }
+
 .site-footer-panel {
   background-color: #2292a4;
   padding: 30px 15px;
   box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.8); }
+  .site-footer-panel ul {
+    padding-left: 0px; }
   .site-footer-panel ul li {
     list-style: none;
-    color: #FFF; }
+    color: #FFF;
+    margin-bottom: 7px; }
   .site-footer-panel h3 {
     color: #2e2b2b;
     font-weight: bold;
@@ -6075,7 +6082,6 @@ hr.heart:after, hr.heart-no-bg:after {
     cursor: pointer; }
   .site-footer-panel a:hover {
     text-decoration: underline; }
-
-.pre-footer {
-  padding-top: 27px;
-  margin-bottom: 15px; }
+  .site-footer-panel p {
+    text-align: center;
+    color: #FFF; }
