@@ -60,7 +60,7 @@ gulp.task('minify-scripts',['concat-scripts'], function(){
 
 // Watch
 gulp.task('watch', ['browserSync', 'compile-scss'], function () {
-  gulp.watch('./scss/**/*.scss',  ['minify-css'])
+  gulp.watch('./scss/**/*.scss',  ['compile-scss'])
   gulp.watch('./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/*.scss', ['minify-css'])
   gulp.watch('./*.html', browserSync.reload)
   gulp.watch('./js/*.js',['minify-scripts'])

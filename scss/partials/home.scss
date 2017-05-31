@@ -256,7 +256,9 @@ hr.heart:after, hr.heart-no-bg:after {
     background-color: $brand-info;
     padding: 30px 15px;
     box-shadow: 0px 5px 10px 5px rgba(0,0,0,.8);
-    ul {padding-left: 0px;}
+    margin-top: 0px;
+
+    ul {padding: 0px 0px 11px 0px;}
     ul li {
       list-style: none;
       color: #FFF;
@@ -268,11 +270,13 @@ hr.heart:after, hr.heart-no-bg:after {
     a {
       color: #FFF; cursor: pointer;}
     a:hover {
-      text-decoration: underline;}
-    p {text-align: center; color: #FFF;}
+      text-decoration: underline;
+    color: #FFF;}
+    p {color: #FFF;}
 }
 
-//Legal Page Styles
-.row {
+//Legal Page Style
+.legal {
   margin: 30px;
+  p{line-height: 1.62em;}
 }

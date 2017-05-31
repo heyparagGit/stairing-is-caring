@@ -20,6 +20,7 @@
 - [ ] Type to Search Company list from JSON
 - [ ] Add Heart Guy to other pages
 - [ ] Teams list: Handle Donate and Join buttons
+- [ ] Update Team workflow
 - [ ] All Comments page?
 
 #### Complete

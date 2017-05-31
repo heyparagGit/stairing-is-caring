@@ -6066,9 +6066,10 @@ hr.heart:after, hr.heart-no-bg:after {
 .site-footer-panel {
   background-color: #2292a4;
   padding: 30px 15px;
-  box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.8); }
+  box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.8);
+  margin-top: 0px; }
   .site-footer-panel ul {
-    padding-left: 0px; }
+    padding: 0px 0px 11px 0px; }
   .site-footer-panel ul li {
     list-style: none;
     color: #FFF;
@@ -6081,10 +6082,12 @@ hr.heart:after, hr.heart-no-bg:after {
     color: #FFF;
     cursor: pointer; }
   .site-footer-panel a:hover {
-    text-decoration: underline; }
+    text-decoration: underline;
+    color: #FFF; }
   .site-footer-panel p {
-    text-align: center;
     color: #FFF; }
 
-.row {
+.legal {
   margin: 30px; }
+  .legal p {
+    line-height: 1.62em; }
