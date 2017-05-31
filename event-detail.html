@@ -83,14 +83,14 @@
 
     <div class="container main" role="main">
       <div class="row object-props">
-        <div class="col-sm-3 col-sm-offset-1">
+        <div class="col-sm-3 col-sm-offset-1 col-xs-6">
           <span id="event-image">
           <!-- eventData.image -->
           </span>
           <div class="fb-like" data-href="https://www.facebook.com/stairingiscaring/" data-layout="button_count" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div>
         </div>
 
-        <div class="col-sm-3">
+        <div class="col-sm-3 col-xs-6">
           <label for="event-name">Event</label>
           <h3 id="event-name"><!-- eventData.name --></h3>
           <label for="charity-name">Charity</label>
@@ -98,29 +98,23 @@
           <!-- eventData.charity -->
           </h3>
           <label for="donation-goal-row">Donations</label>
-          <div id="donation-goal-row" class="row">
-            <div class="col-sm-12">
+          <div id="donation-goal-row">
               <div class="thermometer">
                   <div class="thermo-border"></div>
                   <span id="donation-thermometer"><!-- eventData.donation_data --></span>
                   <div class="thermo-bg"></div>
               </div>
-            </div>
-            <div class="col-sm-6">
               <label for="donation-pledged">Pledged</label>
               <h3 class="text-muted" id="donation-pledged"><!--event.donation_data.sum_donations--></h3>
-            </div>
-            <div class="col-sm-6">
               <label for="donation-goal">Goal</label>
               <h3 class="thermo-val text-muted" id="donation-goal"><!--eventData.donation_data.sum_donation_goal--></h3>
-            </div>
           </div>
 
           <label for="event-stairs">Stairs at Event Location</label>
           <h3 class="text-muted" id="event-stairs"><!--eventData.location.stairs_onsite--></h3>
         </div>
 
-        <div class="col-sm-3 col-sm-offset-1">
+        <div class="col-sm-3 col-sm-offset-1 col-xs-6 col-xs-offset-6">
           <label for="event-date">Event Date</label>
           <p id="event-date"><!--eventData.event_date--></p>
           <label for="event-time">Event Time</label>
@@ -156,7 +150,7 @@
       <div class="row event-teams">
         <div class="col-sm-11 col-sm-offset-1">
           <h2 class="text-muted">Teams</h2>
-          <table class="table">
+          <div class="table-responsive"><table class="table">
             <thead>
               <tr>
                 <th>
@@ -189,7 +183,7 @@
               <!--teams.json-->
 
             </tbody>
-          </table>
+          </table></div>
 
         </div>
       </div>

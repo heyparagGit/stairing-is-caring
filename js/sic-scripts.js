@@ -249,7 +249,7 @@ var eventTeamsRender = function(){
       var stairsGoal = numeral(teamsData.stairs_goal).format('(0,0)');
       var donationGoal = numeral(teamsData.donation_goal).format('($0,0)');
       var donationPledges = numeral(teamsData.pledge_total).format('($0,0)');
-      var content = '<tr><td><img src="' + teamsData.image + '" /></td><td><a href="%team-page-uri%">'
+      var content = '<tr><td><img src="' + teamsData.image + '" /></td><td><a href="/team/' + teamsData.id + '">'
       + teamsData.name + '</a></td><td><a href="/climber/'+ teamsData.owner.id +'">' + teamsData.owner.first_name + ' ' + teamsData.owner.last_name
       +'</a><br /><a href="/climber/' + teamsData.member.id + '">' + teamsData.member.first_name + ' ' + teamsData.member.last_name
       +'</a></td><td>' + teamsData.stairs_goal + '</td><td>' + teamsData.donation_goal + '</td><td>'
