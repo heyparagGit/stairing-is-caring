@@ -139,6 +139,9 @@ hr.heart:after, hr.heart-no-bg:after {
     h2.text-primary {margin-top: 0px;}
     .row {margin-bottom: 30px;}
 }
+@media (min-width: $screen-sm) {
+  .what-is h2 {font-size: 4vw;}
+}
 
 .video {}
 // Herring Background
@@ -168,8 +171,8 @@ hr.heart:after, hr.heart-no-bg:after {
     p {
         margin-left: 47px;
         font-size: $font-size-base;
-        padding-right: 15px;
     }
+    .row {margin-bottom: 0px;}
 
 }
 

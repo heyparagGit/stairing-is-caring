@@ -167,14 +167,11 @@ var recentCommentFunc = function(){
 
     recentCommentData.recentComments.map(function (recentComments){
       var commentDatetime = moment(recentComments.created_at).format('h:m A MMM d YYYY');
+      var pledge = numeral(recentComments.pledge_amount).format('($0,0)');
+      var stairs = numeral(recentComments.stairs_guess).format('(0,0)');
+
       var content =
-      '<div class="recent-activity"><img class="avatar-small pull-left" src="'
-      + recentComments.commenter.image
-      + '" /> <a class="h3" href="/climber/' + recentComments.commenter.id + '">' + recentComments.commenter.name
-      + '</a><h6>' + commentDatetime
-      + '</h6><p>' + recentComments.comment
-      + '</p><p>' + recentComments.pledge_amount + ', ' + recentComments.stairs_guess
-      '</p></div>';
+      '<div class="recent-activity"><img class="avatar-small pull-left" src="' + recentComments.commenter.image + '" /> <p>' + recentComments.commenter.name + '</p><h6>' + commentDatetime + '</h6><p>' + recentComments.comment + '</p><div class="row"><div class="col-xs-4 col-xs-offset-2"><label>Pledge</label><h3>' + pledge + '</h3></div><div class="col-xs-6"><label>Stairs Guess</label><h3>' + stairs + '</h3></div></div></div>';
 
       $('#activity-stream').append(content);
 
@@ -402,7 +399,7 @@ var commentsRender = function(){
       var commentDatetime = moment(commentsData.created_at).format('h:mm A MMMM D, YYYY');
       var pledge = numeral(commentsData.pledge_amount).format('($0,0)');
       var stairs = numeral(commentsData.stairs_guess).format('(0,0)');
-      var content = '<div class="activity-entry"><div class="col-sm-7"><div class="recent-activity"><img class="avatar-small pull-left" src="'+commentsData.commenter.image+'" /><a class="h3" href="#">'+commentsData.commenter.name+'</a><h6>'+ commentDatetime +'</h6><p>'+commentsData.comment+'</p></div></div><div class="col-sm-2"><h3 class="pledge-val">'+ pledge +'</h3></div><div class="col-sm-2"><h3 class="stairs-guess-val">'+ stairs +'</h3></div></div>';
+      var content = '<div class="activity-entry"><div class="col-xs-7"><div class="recent-activity"><img class="avatar-small pull-left" src="'+commentsData.commenter.image+'" /><a class="h3" href="#">'+commentsData.commenter.name+'</a><h6>'+ commentDatetime +'</h6><p>'+commentsData.comment+'</p></div></div><div class="col-xs-2"><label>Pledge</label><h3 class="pledge-val">'+ pledge +'</h3></div><div class="col-xs-3"><label>Stairs Guess</label><h3 class="stairs-guess-val">'+ stairs +'</h3></div></div>';
 
       $('#activity-stream').append(content);
 

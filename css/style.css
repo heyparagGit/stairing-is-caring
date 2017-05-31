@@ -11874,6 +11874,10 @@ hr.heart:after, hr.heart-no-bg:after {
   .what-is .row {
     margin-bottom: 30px; }
 
+@media (min-width: 768px) {
+  .what-is h2 {
+    font-size: 4vw; } }
+
 .herring {
   background-image: url("../img/herring-stairs-pattern.png"); }
 
@@ -11892,8 +11896,9 @@ hr.heart:after, hr.heart-no-bg:after {
   .recent-activity h6,
   .recent-activity p {
     margin-left: 47px;
-    font-size: 14px;
-    padding-right: 15px; }
+    font-size: 14px; }
+  .recent-activity .row {
+    margin-bottom: 0px; }
 
 .avatar-small {
   height: 40px;
