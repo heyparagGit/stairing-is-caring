@@ -47,6 +47,16 @@
 </head>
 
 <body>
+  <!-- Facebook SDK -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  <!-- /Facebook SDK -->
     <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -89,7 +99,8 @@
       <!-- row 2 -->
       <div class="row all-events">
         <h2 class="text-muted">All Events</h2>
-        <table class="table no-border">
+        <div class="table-responsive">
+          <table class="table no-border">
           <thead>
             <tr>
               <th></th>
@@ -119,6 +130,7 @@
 
           </tbody>
         </table>
+      </div>
 
       </div>
       <!-- /row 2-->
