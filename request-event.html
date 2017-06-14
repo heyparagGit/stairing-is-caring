@@ -32,10 +32,11 @@
     <script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
     <script type="text/javascript" src="bower_components/numeral/min/numeral.min.js"></script>
     <script type="text/javascript" src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
-    <script type="text/javascript" src="bower_components/jquery-form-validator/form-validator/jquery.form-validator.min.js"></script>
     <script type="text/javascript" src="js/sic-scripts.js"></script>
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
-    <link href="css/atc-style-blue.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="bower_components/jquery-form-validator/form-validator/jquery.form-validator.min.js"></script>
+    <link rel="stylesheet" href="bower_components/jquery-ui/themes/base/jquery-ui.min.css"/>
+    <link rel="stylesheet" href="bower_components/jquery-ui/themes/base/autocomplete.css" />
     <link href="css/style.css" rel="stylesheet" /><!-- Compiled Bootstrap CSS -->
 
     <title>Stairing is Caring</title>
@@ -84,19 +85,27 @@
                 <div class="col-sm-6">
                   <div class="form-group">
                     <label for="event-name">Event Name</label>
-                    <input type="text" class="form-control" id="event-name" data-validation="length alphanumeric" data-validation-length="1-100" required/>
+                    <input type="text" class="form-control" id="event-name" data-validation="length alphanumeric" data-validation-length="1-100"/>
                   </div>
-                  <div class="form-group">
-                      <label for="event-address">Address</label>
-                      <input type="text" class="form-control" id="event-address" data-validation="length alphanumeric" data-validation-length="1-255" required/>
+                  <span id="existing-location-form-group">
+                      <div class="form-group">
+                        <label for="location-lookup">Location</label>
+                        <input type="text" class="form-control" name="location-lookup" id="location-lookup" placeholder="Search locations" data-validation="length alphanumeric" data-validation-length="1-255"/>
+                        <a class="new-location" id="new-location-anchor">Create new location</a>
+                      </div>
+                  </span>
+                  <span id="new-location-form-group">
+                    <div class="form-group">
+                      <label for="event-address">Location Address</label>
+                      <input type="text" class="form-control" id="event-address" data-validation="length alphanumeric" data-validation-length="1-255"/>
                   </div>
                   <div class="form-group">
                       <label for="event-city">City</label>
-                      <input type="text" class="form-control" id="event-city" data-validation="length" data-validation-length="1-255" required />
+                      <input type="text" class="form-control" id="event-city" data-validation="length" data-validation-length="1-255" />
                   </div>
                   <div class="form-group">
                       <label for="event-state">State</label>
-                      <select class="form-control" id="event-state" name="event-state" required>
+                      <select class="form-control" id="event-state" name="event-state">
                             <option value="AK">Alaska</option>
                             <option value="AL">Alabama</option>
                             <option value="AR">Arkansas</option>
@@ -151,6 +160,8 @@
                             <option value="WY">Wyoming</option>
                           </select>
                       </div>
+                      <button id="x-new-location" class="btn btn-default btn-sm">Search existing locations</button>
+                    </span>
 
                       <div class="form-group">
                           <label for="requester-name">Your Name</label>
@@ -223,6 +234,7 @@
     $(document).ready(function(){
       buttonHandlers();
       formHandlers();
+      newLocationHandler();
       // begin Date Time script
         $(function () {
           $('#event-date-picker').datetimepicker({

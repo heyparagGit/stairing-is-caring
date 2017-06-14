@@ -445,11 +445,18 @@ var newTeammateHandler = function() {
     $('#new-climber-anchor, #x-new-climber').click(function() {
       $('#new-teammate-form-group, #existing-climber-form-group').toggle();
     });
-    $('#').click(function() {
-      $('#new-teammate-form-group, #existing-climber-form-group').toggle();
-    });
     $('#existing-climber-input').autocomplete({
         source: ["%Climber Name 1%", "%Climber Name 2%", "%Climber Name 3%", "%Climber Name 4%", "%Climber Name 5%"]
+    });
+};
+
+// Request Event Form
+var newLocationHandler = function() {
+    $('#new-location-anchor, #x-new-location').click(function() {
+      $('#new-location-form-group, #existing-location-form-group').toggle();
+    });
+    $('#location-lookup').autocomplete({
+        source: ["%Location Name 1%", "%Location Name 2%", "%Location Name 3%", "%Location Name 4%", "%Location Name 5%"]
     });
 };
 
