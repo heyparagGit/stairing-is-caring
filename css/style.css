@@ -17872,7 +17872,7 @@ span.help-block.form-error {
 .sign-up p {
   text-align: left; }
 
-a.new-company, a.new-climber, a.new-location {
+a.new-company, a.new-climber, a.new-location, a.new-charity {
   display: block;
   margin: 7px 0 13px 11px;
   cursor: pointer; }
@@ -17880,7 +17880,7 @@ a.new-company, a.new-climber, a.new-location {
 .logo-upload {
   margin-top: 11px; }
 
-#new-company-group, #new-teammate-form-group, #new-location-form-group {
+#new-company-group, #new-teammate-form-group {
   display: none; }
 
 #company-logo-upload {

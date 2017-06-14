@@ -452,11 +452,13 @@ var newTeammateHandler = function() {
 
 // Request Event Form
 var newLocationHandler = function() {
-    $('#new-location-anchor, #x-new-location').click(function() {
-      $('#new-location-form-group, #existing-location-form-group').toggle();
-    });
     $('#location-lookup').autocomplete({
         source: ["%Location Name 1%", "%Location Name 2%", "%Location Name 3%", "%Location Name 4%", "%Location Name 5%"]
+    });
+};
+var newCharityHandler = function() {
+    $('#charity-name').autocomplete({
+        source: ["%Charity Name 1%", "%Charity Name 2%", "%Charity Name 3%", "%Charity Name 4%", "%Charity Name 5%"]
     });
 };
 
