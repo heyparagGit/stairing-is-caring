@@ -437,6 +437,19 @@ var newCompanyHandler = function() {
     });
 };
 
+// Create Team
+var newTeammateHandler = function() {
+    $('#new-climber-anchor, #x-new-climber').click(function() {
+      $('#new-teammate-form-group, #existing-climber-form-group').toggle();
+    });
+    $('#').click(function() {
+      $('#new-teammate-form-group, #existing-climber-form-group').toggle();
+    });
+    $('#existing-climber-input').autocomplete({
+        source: ["%Climber Name 1%", "%Climber Name 2%", "%Climber Name 3%", "%Climber Name 4%", "%Climber Name 5%"]
+    });
+};
+
 // COMMON functions:
 //   buttonHandlers(); -- all pages
 //   formHandlers(); -- all forms

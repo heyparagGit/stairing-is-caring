@@ -32,9 +32,11 @@
     <script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
     <script type="text/javascript" src="bower_components/numeral/min/numeral.min.js"></script>
     <script type="text/javascript" src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
-    <script type="text/javascript" src="bower_components/jquery-form-validator/form-validator/jquery.form-validator.min.js"></script>
-    <script type="text/javascript" src="js/sic-scripts.js"></script><!-- Custom scripts link -->
+    <script type="text/javascript" src="js/sic-scripts.js"></script>
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
+    <script type="text/javascript" src="bower_components/jquery-form-validator/form-validator/jquery.form-validator.min.js"></script>
+    <link rel="stylesheet" href="bower_components/jquery-ui/themes/base/jquery-ui.min.css"/>
+    <link rel="stylesheet" href="bower_components/jquery-ui/themes/base/autocomplete.css" />
     <link href="css/style.css" rel="stylesheet" /><!-- Compiled Bootstrap CSS -->
 
     <title>Stairing is Caring</title>
@@ -113,19 +115,27 @@
                           </div>
                       </div>
                     </div>
-                    <div id="teammate-first-name-form-group" class="form-group">
+                    <div id="existing-climber-form-group">
+                        <label id="existing-climber-label" for="existing-climber-input">Select a Climber</label>
+                        <input type="text" class="form-control" id="existing-climber-input" placeholder="Search existing climbers" data-validation="length alphanumeric" data-validation-length="1-100" />
+                        <a class="new-climber" id="new-climber-anchor">Invite a new climber</a>
+                    </div>
+                    <div id="new-teammate-form-group">
+                      <div id="teammate-first-name-form-group" class="form-group">
                         <h4>Teammate Info (optional)</h4>
                         <label class="control-label" for="teammate-first-name-input">Teammate First Name</label>
-                        <input type="text" class="form-control" id="teammate-first-name-input" placeholder="Optional" data-validation="length alphanumeric" data-validation-length="1-100" data-validation-optional="true" />
-                    </div>
-                    <div id="teammate-last-name-form-group" class="form-group">
-                        <label class="control-label" for="teammate-last-name-input">Teammate Last Name</label>
-                        <input type="text" class="form-control" id="teammate-last-name-input" placeholder="Not necessary" data-validation="length alphanumeric" data-validation-length="1-100" data-validation-optional="true" />
-                    </div>
-                    <div id="teammate-email-form-group" class="form-group">
-                        <label class="control-label" for="teammate-email-input">Teammate Email</label>
-                        <input type="email" class="form-control" id="teammate-email-input" placeholder="Unrequired" data-validation="email" data-validation-optional="true" />
-                        <help-block>An email invitation will be sent.</help-block>
+                        <input type="text" class="form-control" id="teammate-first-name-input" placeholder="" data-validation="length alphanumeric" data-validation-length="1-100" data-validation-optional="true" required/>
+                      </div>
+                      <div id="teammate-last-name-form-group" class="form-group">
+                          <label class="control-label" for="teammate-last-name-input">Teammate Last Name</label>
+                          <input type="text" class="form-control" id="teammate-last-name-input" placeholder="" data-validation="length alphanumeric" data-validation-length="1-100" data-validation-optional="true" required />
+                      </div>
+                      <div id="teammate-email-form-group" class="form-group">
+                          <label class="control-label" for="teammate-email-input">Teammate Email</label>
+                          <input type="email" class="form-control" id="teammate-email-input" placeholder="" data-validation="email" data-validation-optional="true" required/>
+                          <help-block>An email invitation will be sent.</help-block>
+                      </div>
+                      <button id="x-new-climber" class="btn btn-default btn-sm">Search existing users</button>
                     </div>
                     <div class="text-right">
                         <button id="submitTeamBtn" type="submit" class="btn btn-lg btn-success">Create Team</button>
@@ -142,6 +152,7 @@
       $(document).ready(function(){
         buttonHandlers();
         formHandlers();
+        newTeammateHandler();
       });
     </script>
 

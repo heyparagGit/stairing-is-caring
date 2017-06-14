@@ -1,6 +1,9 @@
 # Stairing is Caring
 
-#### UAT Goal Date: 6/9/2017
+Jira Project
+https://blueprintconsultingservices.atlassian.net/secure/RapidBoard.jspa?rapidView=12
+
+#### UAT Goal Date: TBD
 
 ### In progress
 - [ ] Custom or random images for objects
