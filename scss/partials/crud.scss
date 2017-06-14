@@ -39,6 +39,9 @@
   margin-top: 13px;
   padding-top: 5px;
 }
+.owner-admin {
+  display: none;
+}
 
 //Climber
 img.company-logo{
@@ -59,6 +62,9 @@ img.company-logo{
   border-radius: $border-radius-base;
   font-style: italic;
   margin-bottom: 9px;
+}
+#edit-this-team{
+  margin: 80px 0 0 -55px;
 }
 .climber-name {
   display: block;

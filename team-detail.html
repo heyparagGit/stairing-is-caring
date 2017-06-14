@@ -97,11 +97,15 @@
           </span>
 
           <div class="fb-like" data-href="https://www.facebook.com/stairingiscaring/" data-layout="button_count" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div>
+          <span class="owner-admin">
+            <button id="edit-this-team" class="btn btn-default btn-sm">Edit Team</button>
+          </span>
         </div>
 
         <div class="col-sm-4 col-xs-6">
           <label for="team-name">Team</label>
           <h3 id="team-name"><!-- teamData.name --></h3>
+
           <label for="team-moto">Moto</label>
           <div id="team-motto"><!-- teamData.motto --></div>
           <label for="team-members">Team Members</label>
@@ -114,7 +118,9 @@
             <div class="col-sm-6">
 
               <span id="team-member"><!-- teamData.member --></span>
-
+              <span class="owner-admin">
+                <button id="remove-teammate" class="btn btn-default btn-sm">Remove Climber</button>
+              </span>
             </div>
           </div>
 

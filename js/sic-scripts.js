@@ -21,6 +21,9 @@ var buttonHandlers = function(){
   $('#donationConfirm').click(function(){
     window.location = 'index.html';
   });
+  $('#edit-this-team').click(function(){
+    window.location = 'create-team.html';
+  });
 };
 
 //Form Event Handlers
@@ -408,8 +411,8 @@ var commentsRender = function(){
 };
 
 
-//Stairing is Caring
-//Scripts for all form pages
+//Scripts for all Form pages
+//Pledge form
 var pledgeFormRender = function(){
   $.getJSON('data/team.json', function (teamData){
     console.log(teamData);
@@ -437,7 +440,7 @@ var newCompanyHandler = function() {
     });
 };
 
-// Create Team
+// Create Team Form
 var newTeammateHandler = function() {
     $('#new-climber-anchor, #x-new-climber').click(function() {
       $('#new-teammate-form-group, #existing-climber-form-group').toggle();
