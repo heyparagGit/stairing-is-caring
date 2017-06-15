@@ -15,7 +15,7 @@ var buttonHandlers = function(){
   $('#createEventBtn').click(function(){
     window.location = 'request-event.html';
   });
-  $('#createTeamBtn').click(function(){
+  $('#createTeamBtn, #addTeamToEventBtn').click(function(){
     window.location = 'create-team.html';
   });
   $('#donationConfirm').click(function(){
@@ -350,7 +350,7 @@ var eventHistoryRender = function(){
       var donations = numeral(eventsHistoryData.pledge_total).format('($0,0)');
       var content = '<tr><td>' + eventsHistoryData.event.name + '</td><td>' + eventDate + '</td><td>'+ stairs +'</td><td>'+donations+'</td></tr>';
 
-      $('#climber-history').append(content);
+      $('#event-history').append(content);
     });
   });
 };

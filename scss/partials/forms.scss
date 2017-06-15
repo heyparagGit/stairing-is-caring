@@ -15,7 +15,12 @@ span.help-block.form-error {
 }
 
 //Sign-in form
-.sign-in {}
+.sign-in {
+  a {
+    display: block;
+    margin-top: 7px;
+  }
+}
 
 //Sign-up form
 .sign-up {

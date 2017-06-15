@@ -97,18 +97,19 @@
           </span>
 
           <div class="fb-like" data-href="https://www.facebook.com/stairingiscaring/" data-layout="button_count" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div>
-          <span class="owner-admin">
-            <button id="edit-this-team" class="btn btn-default btn-sm">Edit Team</button>
-          </span>
         </div>
 
         <div class="col-sm-4 col-xs-6">
           <label for="team-name">Team</label>
           <h3 id="team-name"><!-- teamData.name --></h3>
-
-          <label for="team-moto">Moto</label>
+          <span class="owner-admin">
+            <p>
+              <a id="edit-this-team" href="create-team.html">Edit Team info</a>
+            </p>
+          </span>
+          <label for="team-motto">Moto</label>
           <div id="team-motto"><!-- teamData.motto --></div>
-          <label for="team-members">Team Members</label>
+          <label for="team-members">Current Team Members</label>
           <div id="team-members" class="row">
             <div class="col-sm-6">
 
@@ -122,13 +123,9 @@
                 <button id="remove-teammate" class="btn btn-default btn-sm">Remove Climber</button>
               </span>
             </div>
+
           </div>
-
-
-
-          <label for="event-stairs">Stairs at Event Location</label>
-          <h3 class="text-muted" id="event-stairs"><!-- eventData.location.staris_onsite --></h3>
-
+          <button class="btn btn-primary">Donate</button>
         </div>
 
         <div class="col-sm-3 col-sm-offset-1 col-xs-6 col-xs-offset-6">
@@ -136,7 +133,8 @@
           <h3 id="event-name"><!-- eventData.name --></h3>
           <label for="event-date">Event Date</label>
           <p id="event-date"><!-- eventData.event_date --></p>
-
+          <label for="event-stairs">Stairs at Event Location</label>
+          <h3 class="text-muted" id="event-stairs"><!-- eventData.location.staris_onsite --></h3>
           <label for="donation-goal-row">Donations</label>
           <div id="donation-goal-row" class="row">
             <div class="col-sm-12">
@@ -174,7 +172,7 @@
               <h3 class="text-muted" id="stairs-goal"><!--teamData.stairs_goal--></h3>
             </div>
           </div>
-          <button class="btn btn-primary">Donate</button>
+
 
         </div>
 
@@ -188,6 +186,35 @@
         </div>
       </div>
       <!-- /row-->
+
+      <div class="row event-history">
+        <div class="col-sm-11 col-sm-offset-1">
+          <h2 class="text-muted">Event History</h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>
+                  Event
+                </th>
+                <th>
+                  Event Date
+                </th>
+                <th>
+                  Stairs Climbed
+                </th>
+                <th>
+                  Donations
+                </th>
+              </tr>
+            </thead>
+            <tbody id="event-history">
+              <!-- event-history.json -->
+            </tbody>
+          </table>
+          </ul>
+        </div>
+      </div>
+
       <!-- Site Footer panel -->
       <div class="row site-footer-panel">
         <div class="col-sm-4">
@@ -253,6 +280,7 @@
         eventRender();
         teamRender();
         commentsRender();
+        eventHistoryRender();
       });
     </script>
 </body>

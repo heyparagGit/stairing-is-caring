@@ -17861,6 +17861,10 @@ button.close {
 span.help-block.form-error {
   font-size: 11px; }
 
+.sign-in a {
+  display: block;
+  margin-top: 7px; }
+
 .sign-up #profile-pic {
   border: 1px solid #13bc96;
   border-radius: 16px;
@@ -24536,10 +24540,11 @@ button.close {
 img.company-logo {
   margin: 0; }
 
-.climber-history {
+.event-history {
   background-color: #FFF;
   padding: 0px 0px 30px 0px;
-  margin: 0px; }
+  margin: 0px;
+  border-top: 1px solid #a7a1a1; }
 
 #donation-goal {
   text-align: left; }
@@ -24568,7 +24573,7 @@ label {
 table img {
   width: 60px; }
 
-#createTeamBtn {
+#createTeamBtn, #addTeamToEventBtn {
   margin-top: 32px; }
 
 .event-teams {
