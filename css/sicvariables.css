@@ -29,18 +29,6 @@
 .navbar button {
   margin: 26px 0px 7px 0px; }
 
-.navbar-brand img {
-  height: auto;
-  width: auto;
-  max-width: 358px;
-  min-width: 182px;
-  max-height: 34px; }
-
-@media (max-width: 480px) {
-  .navbar-brand img {
-    width: 181px;
-    height: auto; } }
-
 .label {
   font-family: "Open Sans", sans-serif;
   text-transform: capitalize; }

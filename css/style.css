@@ -45,18 +45,6 @@
 .navbar button {
   margin: 26px 0px 7px 0px; }
 
-.navbar-brand img {
-  height: auto;
-  width: auto;
-  max-width: 358px;
-  min-width: 182px;
-  max-height: 34px; }
-
-@media (max-width: 480px) {
-  .navbar-brand img {
-    width: 181px;
-    height: auto; } }
-
 .label {
   font-family: "Open Sans", sans-serif;
   text-transform: capitalize; }
@@ -3619,7 +3607,7 @@ tbody.collapse.in {
     .nav > li > a {
       position: relative;
       display: block;
-      padding: 10px 15px; }
+      padding: 10px 1vw; }
       .nav > li > a:hover, .nav > li > a:focus {
         text-decoration: none;
         background-color: white; }
@@ -5915,18 +5903,6 @@ button.close {
 .navbar button {
   margin: 26px 0px 7px 0px; }
 
-.navbar-brand img {
-  height: auto;
-  width: auto;
-  max-width: 358px;
-  min-width: 182px;
-  max-height: 34px; }
-
-@media (max-width: 480px) {
-  .navbar-brand img {
-    width: 181px;
-    height: auto; } }
-
 .label {
   font-family: "Open Sans", sans-serif;
   text-transform: capitalize; }
@@ -9489,7 +9465,7 @@ tbody.collapse.in {
     .nav > li > a {
       position: relative;
       display: block;
-      padding: 10px 15px; }
+      padding: 10px 1vw; }
       .nav > li > a:hover, .nav > li > a:focus {
         text-decoration: none;
         background-color: white; }
@@ -11756,6 +11732,16 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+
+a.navbar-brand {
+  height: auto;
+  max-width: 40vw;
+  min-width: 260px;
+  padding: 24px 15px;
+  height: 100%; }
+
+.navbar-brand > img {
+  width: 100%; }
 
 img.mascot-ask {
   max-height: 108px;
@@ -12010,18 +11996,6 @@ hr.heart:after, hr.heart-no-bg:after {
 .navbar button {
   margin: 26px 0px 7px 0px; }
 
-.navbar-brand img {
-  height: auto;
-  width: auto;
-  max-width: 358px;
-  min-width: 182px;
-  max-height: 34px; }
-
-@media (max-width: 480px) {
-  .navbar-brand img {
-    width: 181px;
-    height: auto; } }
-
 .label {
   font-family: "Open Sans", sans-serif;
   text-transform: capitalize; }
@@ -15584,7 +15558,7 @@ tbody.collapse.in {
     .nav > li > a {
       position: relative;
       display: block;
-      padding: 10px 15px; }
+      padding: 10px 1vw; }
       .nav > li > a:hover, .nav > li > a:focus {
         text-decoration: none;
         background-color: white; }
@@ -17876,7 +17850,7 @@ span.help-block.form-error {
 .sign-up p {
   text-align: left; }
 
-a.new-company, a.new-climber, a.new-location, a.new-charity {
+a.form-anchor, a.new-climber, a.new-location, a.new-charity {
   display: block;
   margin: 7px 0 13px 11px;
   cursor: pointer; }
@@ -18655,18 +18629,6 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.focus {
 
 .navbar button {
   margin: 26px 0px 7px 0px; }
-
-.navbar-brand img {
-  height: auto;
-  width: auto;
-  max-width: 358px;
-  min-width: 182px;
-  max-height: 34px; }
-
-@media (max-width: 480px) {
-  .navbar-brand img {
-    width: 181px;
-    height: auto; } }
 
 .label {
   font-family: "Open Sans", sans-serif;
@@ -22230,7 +22192,7 @@ tbody.collapse.in {
     .nav > li > a {
       position: relative;
       display: block;
-      padding: 10px 15px; }
+      padding: 10px 1vw; }
       .nav > li > a:hover, .nav > li > a:focus {
         text-decoration: none;
         background-color: white; }
@@ -24549,6 +24511,22 @@ img.company-logo {
 #donation-goal {
   text-align: left; }
 
+.signed-in-user {
+  text-align: right;
+  float: right; }
+  .signed-in-user .signed-in-user-anchors {
+    display: inline-block;
+    margin-top: 12px; }
+  .signed-in-user img {
+    border-radius: 16px;
+    max-width: 62px;
+    margin: -24px 0 0 5px; }
+  .signed-in-user a {
+    color: #13bc96; }
+  .signed-in-user a.h3 {
+    color: #2292a4;
+    margin-bottom: 2px; }
+
 #team-motto {
   background-color: #A5E5D7;
   padding: 7px 14px;
@@ -24622,18 +24600,6 @@ table img {
 
 .navbar button {
   margin: 26px 0px 7px 0px; }
-
-.navbar-brand img {
-  height: auto;
-  width: auto;
-  max-width: 358px;
-  min-width: 182px;
-  max-height: 34px; }
-
-@media (max-width: 480px) {
-  .navbar-brand img {
-    width: 181px;
-    height: auto; } }
 
 .label {
   font-family: "Open Sans", sans-serif;
@@ -28197,7 +28163,7 @@ tbody.collapse.in {
     .nav > li > a {
       position: relative;
       display: block;
-      padding: 10px 15px; }
+      padding: 10px 1vw; }
       .nav > li > a:hover, .nav > li > a:focus {
         text-decoration: none;
         background-color: white; }
@@ -30525,18 +30491,6 @@ h4.text-capitalize {
 .navbar button {
   margin: 26px 0px 7px 0px; }
 
-.navbar-brand img {
-  height: auto;
-  width: auto;
-  max-width: 358px;
-  min-width: 182px;
-  max-height: 34px; }
-
-@media (max-width: 480px) {
-  .navbar-brand img {
-    width: 181px;
-    height: auto; } }
-
 .label {
   font-family: "Open Sans", sans-serif;
   text-transform: capitalize; }
@@ -34099,7 +34053,7 @@ tbody.collapse.in {
     .nav > li > a {
       position: relative;
       display: block;
-      padding: 10px 15px; }
+      padding: 10px 1vw; }
       .nav > li > a:hover, .nav > li > a:focus {
         text-decoration: none;
         background-color: white; }

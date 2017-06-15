@@ -3,6 +3,18 @@
 // Stairing is Caring
 // HOME STYLES
 
+//Header
+
+a.navbar-brand {
+  height: auto;
+  max-width: 40vw;
+  min-width: 260px;
+  padding: 24px 15px;
+  height: 100%;
+}
+.navbar-brand > img {width: 100%;}
+
+
 //Mascot
 img.mascot-ask {
     max-height: 108px;

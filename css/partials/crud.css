@@ -30,18 +30,6 @@
 .navbar button {
   margin: 26px 0px 7px 0px; }
 
-.navbar-brand img {
-  height: auto;
-  width: auto;
-  max-width: 358px;
-  min-width: 182px;
-  max-height: 34px; }
-
-@media (max-width: 480px) {
-  .navbar-brand img {
-    width: 181px;
-    height: auto; } }
-
 .label {
   font-family: "Open Sans", sans-serif;
   text-transform: capitalize; }
@@ -3604,7 +3592,7 @@ tbody.collapse.in {
     .nav > li > a {
       position: relative;
       display: block;
-      padding: 10px 15px; }
+      padding: 10px 1vw; }
       .nav > li > a:hover, .nav > li > a:focus {
         text-decoration: none;
         background-color: white; }
@@ -5922,6 +5910,22 @@ img.company-logo {
 
 #donation-goal {
   text-align: left; }
+
+.signed-in-user {
+  text-align: right;
+  float: right; }
+  .signed-in-user .signed-in-user-anchors {
+    display: inline-block;
+    margin-top: 12px; }
+  .signed-in-user img {
+    border-radius: 16px;
+    max-width: 62px;
+    margin: -24px 0 0 5px; }
+  .signed-in-user a {
+    color: #13bc96; }
+  .signed-in-user a.h3 {
+    color: #2292a4;
+    margin-bottom: 2px; }
 
 #team-motto {
   background-color: #A5E5D7;

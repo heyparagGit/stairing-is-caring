@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Stairing is Caring">
+    <meta name="author" content="Blueprint Consulting Services">
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./img/icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/icon/favicon-16x16.png">
+    <link rel="manifest" href="./img/icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./img/icon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
+    <script type="text/javascript" src="bower_components/numeral/min/numeral.min.js"></script>
+    <script type="text/javascript" src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="js/sic-scripts.js"></script>
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
+    <script type="text/javascript" src="bower_components/jquery-form-validator/form-validator/jquery.form-validator.min.js"></script>
+    <link rel="stylesheet" href="bower_components/jquery-ui/themes/base/jquery-ui.min.css"/>
+    <link rel="stylesheet" href="bower_components/jquery-ui/themes/base/autocomplete.css" />
+    <link href="css/style.css" rel="stylesheet" /><!-- Compiled Bootstrap CSS -->
+
+    <title>Stairing is Caring</title>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><img src="./img/SiC-logo-color.png" alt="Stairing is Caring" /></a>
+    </div>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li><a href="event-list.html">Events</a></li>
+            <li><a href="learn.html">Learn</a></li>
+            <li><a href="sign-up.html">My Team</a></li>
+        </ul>
+        <span class="signed-in-user">
+          <span class="signed-in-user-anchors">
+            <a class="h3" href="edit-climber.html">Signedin Username</a>
+            <a href="#">Sign Out</a>
+          </span>
+          <img src="img/placeholders/mechagodzilla.jpg" />
+        </span>
+    </div>
+          <!--/.nav-collapse -->
+      </div>
+  </nav>
+
+  <div class="container main" role="main">
+    <!-- Sign-up Form -->
+    <div class="row">
+        <div class="col-sm-2">
+        </div>
+        <div class="sic-form sign-up col-sm-8">
+            <h2 class="text-muted">Sign Up</h2>
+            <form id="sign-up-form" class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input class="form-control" id="first-name" type="text"  data-validation="length alphanumeric" data-validation-length="1-100" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" class="form-control" id="last-name" data-validation="length alphanumeric" data-validation-length="1-100" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="profile-pic">Profile Picture</label><br />
+                        <img id="profile-pic" src="http://www.radfaces.com/images/avatars/ultimate-warrior.jpg" /><br />
+                        <button class="btn btn-default btn-sm">New random image</button>
+                        <button class="btn btn-default btn-sm">Upload custom image</button>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" class="form-control" id="email" data-validation="email" name="email_confirmation" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-email">Confirm Email</label>
+                        <input type="text" class="form-control" id="confirm-email" name="email" data-validation="email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" name="pass_confirmation" data-validation="length" data-validation-length="min8" required />
+                        <a class="form-anchor" id="change-password-anchor">Change Password</a>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" class="form-control" id="confirm-password" name="pass" data-validation="length" data-validation-length="min8" required />
+                    </div>
+                    <div class="form-group">
+                        <div id="existing-company-group">
+                            <label id="company-label" for="company">Select Company</label>
+                            <input type="text" class="form-control" id="company-input" placeholder="Type to search" data-validation="length alphanumeric" data-validation-length="1-100" required />
+                            <a class="form-anchor" id="new-company-anchor">Add my company</a>
+                        </div>
+                        <div class="form-group" id="new-company-group">
+                            <div class="logo-upload">
+                              <div id="company-logo-upload">
+                                <span>Your Logo Here</span>
+                              </div>
+                              <button class="btn btn-default btn-sm">Upload logo image</button>
+                              <button id="x-new-company" class="btn btn-default btn-sm">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 text-right">
+                    <button id="submitClimberBtn" type="submit" class="btn btn-lg btn-success">Sign up</button>
+                    <p class="help-block">
+                        By clicking &quot;Sign up&quot; you agree to <a href="legal.html">terms and conditions</a>.
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /Sign-up Form -->
+    </div>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        buttonHandlers();
+        formHandlers();
+        newCompanyHandler();
+      });
+    </script>
+
+</body>

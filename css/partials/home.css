@@ -30,18 +30,6 @@
 .navbar button {
   margin: 26px 0px 7px 0px; }
 
-.navbar-brand img {
-  height: auto;
-  width: auto;
-  max-width: 358px;
-  min-width: 182px;
-  max-height: 34px; }
-
-@media (max-width: 480px) {
-  .navbar-brand img {
-    width: 181px;
-    height: auto; } }
-
 .label {
   font-family: "Open Sans", sans-serif;
   text-transform: capitalize; }
@@ -3604,7 +3592,7 @@ tbody.collapse.in {
     .nav > li > a {
       position: relative;
       display: block;
-      padding: 10px 15px; }
+      padding: 10px 1vw; }
       .nav > li > a:hover, .nav > li > a:focus {
         text-decoration: none;
         background-color: white; }
@@ -5871,6 +5859,16 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+
+a.navbar-brand {
+  height: auto;
+  max-width: 40vw;
+  min-width: 260px;
+  padding: 24px 15px;
+  height: 100%; }
+
+.navbar-brand > img {
+  width: 100%; }
 
 img.mascot-ask {
   max-height: 108px;
